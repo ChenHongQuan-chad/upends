@@ -1,0 +1,849 @@
+{% comment %} To edit the contents of this file, look inside the `sections`
+folder for the file name that comes directly after `section`. Eg. {% section
+'product__main' %} or {% section 'page__banner' %} {% endcomment %}
+<link rel="stylesheet" href="{{ 'element.min.css' | asset_url }}" />
+
+<main class="shopify-section giveaway-page" id="app" v-cloak>
+    <!-- 桌面 -->
+    <div class="desk new">
+        <div class="wrapper relative height-bigger">
+            <p class="img-absolute">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/givea-01.jpg?v=1667395969"
+                    alt=""
+                />
+            </p>
+            <div class="section upox">
+                <div class="absolute-column-center" style="width: 50%">
+                    <p style="color: #fff">Football Cup 2022 X UPENDS</p>
+                    <h3 style="color: #fff" class="margin-top-littler">
+                        Cheer for Your Country to Win
+                    </h3>
+                    <p style="color: #fff" class="margin-top-little">
+                        Nov 10 - Nov 30
+                    </p>
+                    <a href="#login">
+                        <el-button round class="is-uppercase margin-top-normal"
+                            >Join Now</el-button
+                        >
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper relative height-bigger">
+            <p class="img-absolute">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/givea-02.png?v=1667398951"
+                    alt=""
+                />
+            </p>
+            <div class="section upox">
+                <div class="absolute-column-center" style="width: 50%">
+                    <h2 style="color: #fff" class="margin-top-littler">
+                        JOIN THE<br />
+                        GIVEAWAY<br />
+                        TO WIN<br />
+                    </h2>
+                    <p style="color: #fff" class="margin-top-little">
+                        How to join:<br />
+                        Join the giveaway below and get entries every day<br />
+                        to vote for your own country, and winners will be<br />
+                        randomly selected from the country with the most
+                        entries.<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper relative height-bigger">
+            <p class="img-absolute">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/givea-03.jpg?v=1667395969"
+                    alt=""
+                />
+            </p>
+            <div class="section upox">
+                <div
+                    class="absolute-column-center"
+                    style="width: 40%; right: 0"
+                >
+                    <h3
+                        style="color: #fff"
+                        class="margin-top-littler is-uppercase"
+                    >
+                        Pass on the Football<br />
+                        Cheer for Your Country
+                    </h3>
+                    <p style="color: #fff" class="margin-top-little">
+                        Here comes the videos shot by influencers<br />
+                        around the world, showing their enthusiasm<br />
+                        and expectation for their countries<br />
+                        in FIFA World Cup Qatar 2022! How about you?<br />
+                        Let’s make videos ourselves to cheer<br />
+                        for our countries and share them<br />
+                        on your social media with #meshcoilisthefuture.<br />
+                    </p>
+                </div>
+                <div class="absolute-center">
+                    <el-button
+                        @click="showDialog = true"
+                        icon="el-icon-caret-right"
+                        circle
+                        style="font-size: 100px"
+                    ></el-button>
+                </div>
+            </div>
+            <el-dialog title=" Pass on the Football Cheer for Your Country" :visible.sync="showDialog" @open="$nextTick(()=>{$refs.givaeVideo.play()})"  @close="$refs.givaeVideo.pause()">
+                <video controls="controls"   loop="loop" autoplay="autoplay" style="width:100%; margin:0px; padding:0px;" ref="givaeVideo">
+                    <source src="https://cdn.shopify.com/videos/c/o/v/149341f181c045b8b55614bebbc705de.mp4" type="video/mp4" />
+                </video>
+            </el-dialog>
+        </div>
+    </div>
+    <div class="mobile new">
+        <div class="wrapper relative height-normal">
+            <p class="img-absolute"><img alt="" src="https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/UpBar_TT-mobile-1.jpg?v=1653816972"></p>
+        </div>
+    </div>
+    <!-- 投票功能模块 -->
+    <div class="wrapper relative bg-linear"  id="login">
+        <div class="section upox">
+            <div class="margin-top-bigger text-center">
+                <h3 style="color: #fff" class="is-uppercase">
+                    Cheer for Your Country to Win
+                </h3>
+                <p style="color: #fff" class="margin-top-little">
+                    FIFA World Cup Qatar 2022 is coming! Which team are you
+                    cheering for?<br />
+                    Let’s vote for our own countries to win FREE gifts!<br />
+                    Now fill in your personal information to join the global
+                    giveaway, earn entries every day<br />
+                    for your country, and we will randomly select the
+                    winners from the winning country<br />
+                    to get the latest Macbook Pro, iPhone 14 or UpBar RS for
+                    FREE! Hurry up!<br />
+                </p>
+            </div>
+            <el-row :gutter="isMobile?60:140" class="margin-top-bigger margin-bottom-bigger">
+                <el-col  :xs="24" :sm="24"  :md="10" :lg="10" >
+                    <div class="entry-wrapper row-bg border-radius-little">
+                        <!-- 头部积分模块 -->
+                        <el-row
+                            type="flex"
+                            style="padding-top: 10px; padding-bottom: 10px"
+                        >
+                            <el-col
+                                :span="8"
+                                v-for="(item,index) in entryInfo"
+                                class="flex-column-center"
+                            >
+                                <div class="entry-type-top">
+                                    <span
+                                        class="danger"
+                                        style="font-size: 24px"
+                                    >
+                                        {[item.entries]}
+                                    </span>
+                                    <span
+                                        class="unit"
+                                        style="font-size: 16px"
+                                        >{[item.unit]}</span
+                                    >
+                                </div>
+                                <div
+                                    style="
+                                        font-size: 16px;
+                                        line-height: 1.2;
+                                    "
+                                >
+                                    {[item.title]}
+                                </div>
+                            </el-col>
+                        </el-row>
+                        <!-- 积分banner -->
+                        <div class="banner img-box">
+                            <img
+                                src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/entry-banner.jpg?v=1667401937"
+                                alt=""
+                            />
+                        </div>
+                        <!-- 登录模块 -->
+                        <div class="login">
+                            <div
+                                class="login-form margin-top-littler padding-left-little padding-right-little"
+                                v-if="!userInfo.email"
+                            >
+                                <div class="text-center">Login</div>
+                                <el-form
+                                    label-position="top"
+                                    label-width="80px"
+                                    ref="loginForm"
+                                    :model="form"
+                                    :rules="rules"
+                                    @keyup.enter="login"
+                                >
+                                    <el-form-item
+                                        label="Full Name"
+                                        prop="name"
+                                    >
+                                        <el-input
+                                            v-model="form.username"
+                                        ></el-input>
+                                    </el-form-item>
+                                    <el-form-item
+                                        label="Email Address"
+                                        prop="email"
+                                    >
+                                        <el-input
+                                            v-model="form.email"
+                                        ></el-input>
+                                    </el-form-item>
+                                    <el-form-item
+                                        label="Country"
+                                        prop="country"
+                                    >
+                                        <el-select
+                                            filterable
+                                            v-model="form.country"
+                                            placeholder="Please select a country"
+                                            style="width: 100%"
+                                        >
+                                            <el-option
+                                                :label="item.label"
+                                                :value="item.value"
+                                                v-for="(item,index) in countryList"
+                                                :key="index"
+                                            ></el-option>
+                                        </el-select>
+                                    </el-form-item>
+                                    <el-form-item>
+                                        <el-button
+                                            type="primary"
+                                            @click="login"
+                                            style="width: 100%"
+                                            >Enter Giveaway</el-button
+                                        >
+                                    </el-form-item>
+                                </el-form>
+                            </div>
+                            <div
+                                class="login-out margin-top-little text-center"
+                                v-else
+                            >
+                                <span class="margin-right-littler"
+                                    >Entering as {[userInfo.username]}</span
+                                ><el-button
+                                    type="text"
+                                    size="mini"
+                                    @click="logout"
+                                    >LogOut</el-button
+                                >
+                            </div>
+                            <!-- tabs切换 -->
+                            <el-tabs
+                                :stretch="true"
+                                v-model="activeTab"
+                                @tab-click="handleClick"
+                                class="padding-left-little padding-right-little"
+                            >
+                                <el-tab-pane label="Earn Entries" name="01">
+                                    <div
+                                        class="entry--list padding-top-littler padding-bottom-littler"
+                                        v-for="(item,index) in entryList"
+                                        :key="index"
+                                    >
+                                        <el-row
+                                            :gutter="20"
+                                            type="flex"
+                                            align="middle"
+                                        >
+                                            <el-col :span="4">
+                                                <div class="img-icon flex">
+                                                    <img
+                                                        :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/platform-${item.platformId}.png?v=1667412001`"
+                                                        alt=""
+                                                        srcset=""
+                                                    />
+                                                </div>
+                                            </el-col>
+                                            <el-col :span="20">
+                                                <div
+                                                    class="platform-info flex-between"
+                                                >
+                                                    <div
+                                                        class="left-info"
+                                                        style="
+                                                            font-size: 16px;
+                                                        "
+                                                    >
+                                                        {[ item.entryInfo ]}
+                                                    </div>
+                                                    <div class="right-icon">
+                                                        <div
+                                                            class="img-icon lock"
+                                                            v-if="!userInfo.email"
+                                                        >
+                                                            <img
+                                                                src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/lock.png?v=1667416487"
+                                                                alt=""
+                                                                srcset=""
+                                                            />
+                                                        </div>
+                                                        <div
+                                                            class="entry"
+                                                            @click="addEntries(item)"
+                                                            v-else
+                                                        >
+                                                            + {[
+                                                            item.entryValue
+                                                            ]}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </el-col>
+                                        </el-row>
+                                    </div>
+                                </el-tab-pane>
+                                <!-- 个人积分记录 -->
+                                <el-tab-pane label="My Entries" name="02">
+                                    <div
+                                        style="
+                                            max-height: 700px;
+                                            overflow-y: auto;
+                                            overflow-x: hidden;
+                                        "
+                                        class="padding-left-littler padding-right-littler"
+                                    >
+                                        <template
+                                            v-if="entryRecordsList.length>0"
+                                        >
+                                            <div
+                                                class="entry--list padding-top-littler padding-bottom-littler"
+                                                v-for="(item,index) in entryRecordsList"
+                                                :key="index"
+                                            >
+                                                <el-row
+                                                    :gutter="20"
+                                                    type="flex"
+                                                    align="middle"
+                                                >
+                                                    <el-col :span="4">
+                                                        <div
+                                                            class="img-icon flex"
+                                                        >
+                                                            <img
+                                                                :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/platform-${item.platformId}.png?v=1667412001`"
+                                                                alt=""
+                                                                srcset=""
+                                                            />
+                                                        </div>
+                                                    </el-col>
+                                                    <el-col :span="20">
+                                                        <div
+                                                            class="platform-info flex-between"
+                                                        >
+                                                            <div
+                                                                class="left-info"
+                                                                style="
+                                                                    font-size: 16px;
+                                                                "
+                                                            >
+                                                                + {[
+                                                                item.entryValue
+                                                                ]}
+                                                            </div>
+                                                            <div
+                                                                class="right-icon"
+                                                            >
+                                                                <div
+                                                                    class="entry"
+                                                                >
+                                                                    {[
+                                                                    formatDateTime(new
+                                                                    Date(item.createdAt))
+                                                                    ]}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </el-col>
+                                                </el-row>
+                                            </div>
+                                        </template>
+                                        <el-empty
+                                            v-else
+                                            :image-size="200"
+                                        ></el-empty>
+                                    </div>
+                                </el-tab-pane>
+                                <el-tab-pane label="Leaders" name="03"
+                                    >Leaders</el-tab-pane
+                                >
+                            </el-tabs>
+                        </div>
+                    </div>
+                </el-col>
+                <el-col  :xs="24" :sm="24"  :md="14" :lg="14" >
+                    <!-- 国家积分排名 -->
+                    <div class="country-wrapper">
+                        <div class="contry-wrapper-title text-center padding-top-little  padding-bottom-little" style="color:#ff4503;font-size:35px">
+                            Points Ranking of Your Country
+                        </div>
+                        <template v-if="countryEntryList.length>0">
+                            <!-- 前三名 -->
+                            <el-row
+                                :gutter="20"
+                                type="flex"
+                                align="middle"
+                                class="country-three padding-left-little  padding-right-little  padding-top-little  padding-bottom-little"
+                            >
+                                <el-col :span="index===1?10:7" class="text-center"  v-for="(item,index) in countryEntryList.slice(0,3)"
+                                :key="index">
+                                    <div :class="['rank-wrapper-top',{'rank-first':index===1}]">
+                                        <div class="img-icon">
+                                            <img
+                                                :src="`https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/rank-0${index===1?1:index===0?3:2}.png?v=1667529181`"
+                                                alt=""
+                                                srcset=""
+                                            />
+                                            <img
+                                                :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Country-${item.countryName}.png?v=1667523182`"
+                                                alt=""
+                                                srcset=""
+                                                class="icon-country"
+                                            />
+                                            <span class="coutry-name">{[item.countryName]}</span>
+                                        </div>
+                                        <span :style="[{color:index===0?'#fb82ff':index===1?'#fee864':'#1cc1e7'},{'font-size':'18px'},{'margin-top':'-27px'},{'display':'block'}]">{[item.sum]}</span>
+                                    </div>
+                                </el-col>
+                            </el-row>
+                            <el-row
+                                :gutter="20"
+                                type="flex"
+                                align="middle"
+                                class="country-title margin-bottom-little"
+                            >
+                                <el-col :span="6" class="text-center">
+                                    <span :style="rankingStyle">Ranking</span>
+                                </el-col>
+                                <el-col :span="9">
+                                    <div
+                                        class="country-box flex-center"
+                                    >
+                                        Country
+                                    </div>
+                                </el-col>
+                                <el-col :span="9">
+                                    <div
+                                        class="country-info flex-between"
+                                    >
+                                        Entries
+                                    </div>
+                                </el-col>
+                            </el-row>
+                            <div class="last-country-list  no-scroll"  style="
+                                max-height: 1180px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                            ">
+                                <div
+                                class="country--list margin-bottom-little "
+                                v-for="(item,index) in countryEntryList.slice(3)"
+                                :key="index"
+                            >
+                                <el-row
+                                    :gutter="20"
+                                    type="flex"
+                                    align="middle"
+                                >
+                                    <el-col
+                                        :span="6"
+                                        class="text-center"
+                                    >
+                                        <div class="rank-wrapper">
+                                            <div class="img-icon flex">
+                                                <img
+                                                    :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/rank.png?v=1667522712`"
+                                                    alt=""
+                                                    srcset=""
+                                                />
+                                            </div>
+                                            <span>{[index + 4]}</span>
+                                        </div>
+                                    </el-col>
+                                    <el-col :span="9">
+                                        <div
+                                            class="country-box flex-center"
+                                        >
+                                            <div class="img-icon">
+                                                <img
+                                                    :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Country-${item.countryName}.png?v=1667523182`"
+                                                    alt=""
+                                                    srcset=""
+                                                />
+                                            </div>
+                                            <span
+                                                >{[item.countryName]}</span
+                                            >
+                                        </div>
+                                    </el-col>
+                                    <el-col :span="9">
+                                        <div
+                                            class="country-info flex-between"
+                                        >
+                                            <div class="left-info">
+                                                {[ item.sum ]}
+                                            </div>
+                                        </div>
+                                    </el-col>
+                                </el-row>
+                            </div>
+                            </div>
+                            
+                        </template>
+                        <el-empty v-else :image-size="200"></el-empty>
+                    </div>
+                </el-col>
+            </el-row>
+        </div>
+    </div>
+   
+   
+
+</main>
+<script src="{{ 'vue.min.js' | asset_url }}"></script>
+<script src="{{ 'element.min.js' | asset_url }}"></script>
+<script src="{{ 'axios.min.js' | asset_url }}"></script>
+<script>
+    // const SERVER = 'http://localhost:8080/server-givea'
+    const SERVER = "https://lovewebsite.net";
+    const service = axios.create({
+        baseURL: SERVER, // node环境的不同，对应不同的baseURL
+        timeout: 5000, // 请求的超时时间
+        //设置默认请求头，使post请求发送的是formdata格式数据// axios的header默认的Content-Type好像是'application/json;charset=UTF-8',我的项目都是用json格式传输，如果需要更改的话，可以用这种方式修改
+        // headers: {
+        // "Content-Type": "application/x-www-form-urlencoded"
+        // },
+        withCredentials: true, // 允许携带cookie
+        crossDomain:true
+    });
+    const app = new Vue({
+        el: "#app",
+        delimiters: ["{[", "]}"],
+        data() {
+            return {
+                entryInfo: [
+                    {
+                        title: "My Entries",
+                        entries: 0,
+                        unit: "",
+                    },
+                    {
+                        title: "All Entries",
+                        entries: 0,
+                        unit: "",
+                    },
+                    {
+                        title: "20 : 02 : 56",
+                        entries: 0,
+                        unit: "Days",
+                    },
+                ],
+                userInfo: {},
+                countryList: [],
+                // loginForm
+                form: {
+                    username: "",
+                    email: "",
+                    country: "",
+                },
+                rules: {
+                    username: [
+                        {
+                            required: true,
+                            message: "Plase Enter Your Full Name",
+                            trigger: "blur",
+                        },
+                        {
+                            min: 3,
+                            max: 10,
+                            message: "Plase 3 to 10 characters in length",
+                            trigger: "blur",
+                        },
+                    ],
+                    email: [
+                        {
+                            required: true,
+                            message: "Please enter the email address",
+                            trigger: "blur",
+                        },
+                        {
+                            type: "email",
+                            message: "Please enter the correct email address",
+                            trigger: ["blur", "change"],
+                        },
+                    ],
+                    country: [
+                        {
+                            required: true,
+                            message: "Please select a country",
+                            trigger: "change",
+                        },
+                    ],
+                },
+                activeTab: "01",
+                entryList: [], //积分类型
+                entryRecordsList: [], //积分类型
+                countryEntryList: [], //国家积分
+                showDialog:false
+            };
+        },
+        computed: {
+            rankingStyle() {
+                return  "transform: translateX(20px);display: inline-block;"
+            },
+            isMobile(){
+                return isMobile()
+            }
+        },
+        mounted() {
+            var scroll = new SmoothScroll('a[href*="#"]',{
+                offset:100
+            });
+            this.init();
+        },
+        methods: {
+            async init() {
+                this.entriesByCountry();
+                this.getCountryList();
+                this.getEntryList();
+            },
+            //切换
+            handleClick() {},
+            //新增积分
+            async entriesByCountry(row) {
+                let res = await service.get(
+                    `${SERVER}/entryRecords/entriesByCountry`
+                );
+                if (res.data && res.data.succces) {
+                    this.countryEntryList = res.data.data || [];
+                }
+            },
+            //新增积分
+            async addEntries(row) {
+                let data = {
+                    platformId: row.platformId,
+                    entryType: row.entryType,
+                };
+                let res = await service.post(
+                    `${SERVER}/entryRecords/add`,
+                    data
+                );
+                if (res.data && res.data.succces) {
+                    this.$message({
+                        message: res.data.message,
+                        type: "success",
+                    });
+                    this.getEntryRecordsList();
+                    this.entriesMyAndAll();
+                }
+            },
+            //获取个人和所有的积分
+            async entriesMyAndAll() {
+                let res = await service.get(
+                    `${SERVER}/entryRecords/entriesMyAndAll`
+                );
+                if (res.data && res.data.succces) {
+                    this.entryInfo[0].entries = res.data.data.sum;
+                    this.entryInfo[1].entries = res.data.data.sumAll;
+                }
+            },
+            //获取积分记录list
+            async getEntryRecordsList() {
+                let res = await service.get(`${SERVER}/entryRecords/list`);
+                if (res.data && res.data.succces) {
+                    this.entryRecordsList = res.data.data || [];
+                }
+            },
+            //获取积分类型list
+            async getEntryList() {
+                let res = await service.get(`${SERVER}/entries/list`);
+                if (res.data && res.data.succces) {
+                    this.entryList = res.data.data || [];
+                }
+            },
+            async getCountryList() {
+                let res = await service.get(`${SERVER}/countries/list`);
+                if (res.data && res.data.succces) {
+                    this.countryList = (res.data.data || []).map((item) => ({
+                        label: item.countryName,
+                        value: item.countryCode,
+                    }));
+                }
+            },
+            login() {
+                this.$refs["loginForm"].validate(async (valid) => {
+                    if (valid) {
+                        let data = this.form;
+                        let res = await service.post(
+                            `${SERVER}/users/registerAndLogin`,
+                            data
+                        );
+                        if (res.data && res.data.succces) {
+                            this.userInfo = res.data.data;
+                            this.getEntryRecordsList();
+                            this.entriesMyAndAll();
+                        }
+                    } else {
+                        return false;
+                    }
+                });
+            },
+            async logout() {
+                let res = await service.get(`${SERVER}/users/logout`);
+                if (res.data && res.data.succces) {
+                    this.userInfo = {};
+                    this.entryRecordsList = [];
+                    this.entryInfo[0].entries = 0;
+                    this.$message({
+                        message: "The account has been logout",
+                        type: "success",
+                    });
+                }
+            },
+            formatDateTime(date) {
+                var y = date.getFullYear();
+                var m = date.getMonth() + 1;
+                m = m < 10 ? "0" + m : m;
+                var d = date.getDate();
+                d = d < 10 ? "0" + d : d;
+                var h = date.getHours();
+                h = h < 10 ? "0" + h : h;
+                var minute = date.getMinutes();
+                minute = minute < 10 ? "0" + minute : minute;
+                var second = date.getSeconds();
+                second = second < 10 ? "0" + second : second;
+                return (
+                    y +
+                    "-" +
+                    m +
+                    "-" +
+                    d +
+                    " " +
+                    h +
+                    ":" +
+                    minute +
+                    ":" +
+                    second
+                );
+            },
+        },
+    });
+</script>
+<style>
+    .entry--list {
+        border-bottom: 1px solid #eee;
+    }
+    .row-bg {
+        background-color: #fff;
+    }
+    .flex-column-center {
+        border-right: 1px solie #eeeeee;
+    }
+    .right-icon {
+        cursor: pointer;
+    }
+    .rank-wrapper {
+        position: relative;
+        display: inline-block;
+        transform: translateX(20px);
+    }
+    .rank-wrapper .img-icon {
+        width: 60px;
+    }
+    .rank-wrapper span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .country-wrapper{
+        background-color: #5a0671;
+        border-radius: 16px;
+        border:2px solid #ad263a;
+    }
+   
+    .country-three .rank-wrapper-top .img-icon{
+        position: relative;
+    }
+    .country-three .rank-wrapper-top .img-icon .icon-country{
+        position: absolute;
+        left: 50%;
+        top: 42%;
+        transform: translate(-50%, -50%);
+    }
+    .country-three .rank-wrapper-top.rank-first .img-icon .icon-country{
+        top: 46%;
+        width: 100px;
+    }
+    .country-three .rank-wrapper-top .img-icon .coutry-name{
+        position: absolute;
+        bottom: 16%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        color:#550065;
+    }
+    .country-three .rank-wrapper-top.rank-first .img-icon .coutry-name{
+        bottom: 13%;
+    }
+    .country-title {
+        margin-top:10px;
+        font-size: 26px;
+        color: #ff4503;
+    }
+    .country-box{
+        padding-left: 40px;
+    }
+    .country-box .img-icon {
+        width: 60px;
+        display: flex;
+    }
+    .country-box span {
+        font-size: 20px;
+        color: #fff;
+        margin-left: 10px;
+    }
+    .country-info{
+        padding-left: 40px;
+    }
+    .country-info .left-info {
+        font-size: 24px;
+        padding: 0 30px 0 10px;
+        color: #fff;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 18px;
+        background-image: linear-gradient(to right, #c52092, #5a0671);
+    }
+    .el-dialog__body{
+        padding: 20px;
+        background-color: #eee;
+    }
+    @media screen and (max-width: 500px) {
+        .el-message-box{
+            width: 300px !important;
+        }
+        /* .el-dialog__wrapper .el-dialog {
+            width: 300px !important;
+            .el-dialog__body{
+                padding: 10px 20px!important;
+                .el-form-item__label{
+                width: 68px!important;
+                }
+                .el-select,.el-input{
+                width: 180px!important;
+                }
+            }
+        } */
+    }
+</style>

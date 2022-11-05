@@ -1,0 +1,234 @@
+{% comment %}
+  To edit the contents of this file, look inside the `sections` folder for the file name that comes directly after `section`. Eg. {% section 'product__main' %} or {% section 'page__banner' %}
+{% endcomment %}
+<main id="template-{{ template | replace: '.', '-' | handle }}" class="shopify-section default-page">
+ 
+    <!-- <section class="section__wrapper
+                  section
+                  ">-->
+    <div class="container">
+      {% section 'downloads' %}
+      
+<style>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   @font-face{
+  font-family:"alibaba";
+    src:url("../Assets/AlibabaSans-Light.ttf")
+  }
+ .container{
+	 width: 100%;
+   position:relative;
+ }
+ .banner{
+	width: 100%;
+  text-align:center;
+   padding:0
+ }
+  .banner img{
+  width:100%
+  }
+ .product{
+	 width: 290px;
+	 height: 310px;
+	 background-color:white;
+	 margin: 25px;
+   border:1px solid #E7EAED;
+ }
+  .product img{
+  margin-top:10px;
+  }
+  .product p{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: inherit;
+    list-style: none;
+    font-size: inherit;
+      font-family:"alibaba";
+  }
+ .product_container{
+    display: flex;
+   padding:25px;
+   flex-wrap: wrap;
+	 margin: 0 auto;
+   width:100%
+ }
+
+  .container01{
+   margin: 0 auto;
+   width:80%;
+    
+  }
+  .title{
+   position:absolute;  
+    top:220px;   
+    left:23%;
+    color:white;
+    line-height:45px;
+  
+     font-family:"alibaba";
+  }
+  .download-link{
+      font-family:"alibaba";
+    padding:8px;
+     border-bottom:1px solid #E7EAED;
+  }
+  .download-link a:after{
+  display: block;
+    float: right;
+    content: '';
+    width: 14px;
+    height: 17px;
+    margin-right: 5px;
+    margin-top: 14px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0283/9815/7955/files/down.png?v=1619620550);
+    background-position: -0px -0px;
+  }
+  .download-link01{
+    font-family:"alibaba";
+    padding:8px;
+   
+  }
+  .download-link01 a:after{
+  display: block;
+    float: right;
+    content: '';
+    width: 14px;
+    height: 17px;
+    margin-right: 5px;
+    margin-top: 14px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0283/9815/7955/files/down.png?v=1619620550);
+    background-position: -0px -0px;
+  }
+   @media screen and (max-width:500px){
+    .title{
+    position:absolute;
+    top:7px;
+    left:5px;
+    color:white;
+    font-size:10px;
+       line-height:15px;
+   word-spacing: 5px;
+    letter-spacing:3px;
+       font-family:"alibaba";
+  }
+  .container01{
+   margin: 0 auto;
+   width:100%;
+    
+  }
+
+  }
+ 
+  @media screen and (max-width:1780px){
+    .product{
+    width:230px;
+    }
+  }
+  
+ 
+  
+</style>
+
+  <div class="container">
+	  <div class="banner">
+		 <img  src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/banner3_2760135b-87c0-466d-af49-a2d085e23834.jpg?v=1620648410" alt="">
+        <p class="title">Everything you need from UPENDS</br>
+Download up-to-date posters, manuals and more for your business,</br> direct from your friendly UPENDS team.
+</p>
+    </div>
+    
+	</div>
+
+     <div class="container01">
+        <ul class="product_container">
+           <li class="product">
+            <div  style="background-color:#FAFAFA;text-align:center;">
+           <img  src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Uppor-6.png?v=1620658790">
+              <p >Uppor</p>
+            </div>
+             <div  class="download-link">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/20210519204139.png?v=1621428173">POSTER</a>
+            </div>
+             <div  class="download-link01">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Uppor_Manual.pdf?v=1620827973">MANUAL</a>
+            </div>
+          </li>
+           <li class="product">
+            <div  style="background-color:#FAFAFA;text-align:center;">
+           <img  src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/UpOX-5.png?v=1620658790">
+              <p >UpOX</p>
+            </div>
+             <div  class="download-link">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/UpOX-Poster_f5b57a25-1d08-4152-917b-61b867d9ed25.jpg?v=1620827501">POSTER</a>
+            </div>
+             <div  class="download-link01">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/UpOX_Manual.pdf?v=1620827938">MANUAL</a>
+            </div>
+          </li>
+           <li class="product">
+            <div  style="background-color:#FAFAFA;text-align:center;">
+           <img  src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Upcott-4.png?v=1620658790">
+              <p >Upcott</p>
+            </div>
+             <div  class="download-link">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Upcott-Poster.jpg?v=1620827501">POSTER</a>
+            </div>
+             <div  class="download-link01">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Upcott_Manual.pdf?v=1620827938">MANUAL</a>
+            </div>
+          </li>
+           <li class="product">
+            <div  style="background-color:#FAFAFA;text-align:center;">
+           <img  src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/upone3.png?v=1620658790">
+              <p >Upone</p>
+            </div>
+             <div  class="download-link">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Upone-Poster.jpg?v=1620827501">POSTER</a>
+            </div>
+             <div  class="download-link01">
+            <a target="_blank" href="">MANUAL</a>
+            </div>
+          </li>
+           <li class="product">
+            <div  style="background-color:#FAFAFA;text-align:center;">
+           <img  src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Uppen_Plus-2.png?v=1620658790">
+              <p >Uppen Plus</p>
+            </div>
+             <div  class="download-link">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Uppen-Plus-poster1-4.jpg?v=1620659559">POSTER</a>
+            </div>
+             <div  class="download-link01">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Uppen_Plus_Manual.pdf?v=1620827974">MANUAL</a>
+            </div>
+          </li>
+          <li class="product">
+            <div  style="background-color:#FAFAFA;text-align:center;">
+           <img  src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Uppen-1_0a751f74-3068-4779-b480-c60b435934bf.png?v=1620658790">
+              <p >Uppen</p>
+            </div>
+             <div  class="download-link">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Uppen-Poster.jpg?v=1620827501">POSTER</a>
+            </div>
+             <div  class="download-link01">
+            <a target="_blank" href="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Uppen_Manual_3aacfbbd-856f-4198-b1e0-614f26c6ef86.pdf?v=1620827973">MANUAL</a>
+            </div>
+          </li>
+             
+            
+          
+           
+           
+	   </ul>
+      
+</div>
+
+
+
+
+
+
+
+    </div>
+ 
+</main>

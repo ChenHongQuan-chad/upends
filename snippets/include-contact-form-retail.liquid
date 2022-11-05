@@ -1,0 +1,342 @@
+{% comment %}
+  Snippet can be used in section or block
+  eg. {% include 'include-contact-form' %}
+{% endcomment %}
+
+{% comment %}Assign object as block or section{% endcomment %}
+
+{% if type == 'block' %}
+  {% assign object = block %}
+{% else %}
+  {% assign object = section %}
+{% endif %}
+
+{% assign id = object.id %}
+
+{% assign title = object.settings.title %}
+{% assign content_text = object.settings.content_text %}
+{% assign social_enable = object.settings.social_enable %}
+{% assign content_image = object.settings.content_image %}
+{% assign form_position = object.settings.form_position %}
+{% assign text_alignment = object.settings.text_alignment %}
+
+{% if title != blank or content_text != blank or content_image != nil or social_enable %}
+  {% assign contact_content = true %}
+{% else %}
+  {% assign contact_content = false %}
+{% endif %}
+{% comment %}Text{% endcomment %}
+{% assign text_color = object.settings.text_color %}
+{% comment %}Background{% endcomment %}
+{% assign background = object.settings.background %}
+{% comment %}Layout{% endcomment %}
+{% assign width = object.settings.width %}
+{% assign padding_top = object.settings.padding_top %}
+{% assign padding_bottom = object.settings.padding_bottom %}
+{% assign padding_left = object.settings.padding_left %}
+{% assign padding_right = object.settings.padding_right %}
+{% assign animation = object.settings.animation | default: 'none' %}
+{% comment %} Advanced {% endcomment %}
+{% assign css_class = object.settings.css_class %}
+{% assign custom_css = object.settings.custom_css %}
+
+{% comment %} Is the color set to transparent? {% endcomment %}
+{% assign text_alpha = text_color | color_extract: 'alpha' %}
+
+{% if settings.form_button_style contains 'primary' %}
+  {% assign field_input_size = settings.button_primary_padding %}
+  {% assign field_input_style = 'primary-btn-style' %}
+{% elsif settings.form_button_style contains 'secondary' %}
+  {% assign field_input_size = settings.button_secondary_padding %}
+  {% assign field_input_style = 'secondary-btn-style' %}
+{% else %}
+  {% assign field_input_size = settings.button_link_padding %}
+{% endif %}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% capture section_css -%}
+
+  .contact-form__form {
+    color: {% if text_alpha != 0 %}{{ text_color }}{% else %}{{ settings.regular_color }}{% endif %};
+  }
+
+  .contact-form__form {
+    background-color: {% if background_alpha != 0 %}{{ background }}{% endif %};
+  }
+{%- endcapture -%}
+
+{% style %}
+  #shopify-section-{{ id }} {
+    padding-top: {{ padding_top }}px;
+    padding-bottom: {{ padding_bottom }}px;
+    padding-left: {{ padding_left }}px;
+    padding-right: {{ padding_right }}px;
+    {% if width == 'wide' %}
+      width: 100%;
+    {% endif %}
+  }
+  {% include 'css-loop', css: section_css, id: id %}
+  {% include 'css-loop', css: custom_css, id: id %}
+  .es-list{
+    margin-left:0!important;
+    width:100px!important;
+  }
+  .country-field .es-list{
+    width: auto!important;
+  }
+{% endstyle %}
+
+<section class="section
+              {{ css_class }}
+              is-width-{{ width }}
+              "
+          {% if animation != 'none' %}
+            data-scroll-class="{{ animation }}"
+          {% endif %}>
+
+  {% if context == 'contact-template' %}
+    <div class="container hide-when-banner-enabled">
+      {% include 'heading', title: page.title, heading_tag: 'h1', context: 'contact-page', text_alignment: 'center' %}
+    </div>
+  {% endif %}
+
+  <div class="container
+              content
+              contact-form
+              {% if contact_content == true %}
+              contact-form--{{ form_position }}
+              {% else %}
+              contact-form--center
+              {% endif %}
+              ">
+    <p class="one-whole column">If you are a retailer or distributor of electronic cigarettes and are interested in reselling our products, just contact us.</p>
+   <div class="swiper contact-swiper one-whole  column" style="    overflow: hidden;">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+         {% if block.type == 'textfield' %}
+          <div class="swiper-slide">
+             {% if block.settings.link != blank %}
+             <a href="/pages/contact" class="text-align-center padding-little white border-radius-normal box-shadow-normal" style="
+          background-color: #919da9; display: block;">
+              {% else %}
+               <div class="text-align-center padding-little white border-radius-normal box-shadow-normal" style="
+          background-color: #919da9;">
+              {% endif %}
+              <h2 class="contact-form__heading title is-uppercase" style="color:#fff;"><span>{{ block.settings.label }}</span></h2>
+              <div class="contact-form__text" style="max-width: 440px;margin: 0 auto;">
+                {{ block.settings.description }}
+              </div>
+               {% if block.settings.link != blank %}
+             	</a>
+              {% else %}
+               </div>
+             {% endif %}
+          </div>
+         {% elsif block.type == 'product' %}
+        	{% assign product = all_products[block.settings.product] %}
+              {% if product %}
+              <div class="swiper-slide">
+                <div class="product-wrap"> 
+                  <div class="product-image__wrapper"> 
+                    <div class="image__container product__imageContainer"> 
+                      <a href="{{product.url}}" title="{{ product.title }}" class="product-image">
+                        <div class="image-element__wrap" style=" max-width: 400px;"> 
+                         <img src="{{ product.featured_image | img_url: '1600x'  }}" alt="{{ product.featured_image.alt | escape }}" id="{{ ulId }}_main1_img"/>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumbnail__caption text-align-left"> 
+                    <div class="product-thumbnail"> 
+                    	<a href="{{product.url}}" class="product-thumbnail__title">
+                      		{{ product.title }}
+                      	</a>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+		</div>
+    </div>
+    <div class="contact-form__form one-whole column margin-top-little border-radius-normal" style="width:100%;">
+      <div class="form__success-message"></div>
+      <div class="one-whole column contact-form__form-errors">
+        <p class="form__error"></p>
+      </div>
+
+      {% form 'contact', class: 'contact-form contact-form--contact-section' %}
+    
+      <p class="one-whole column">If you have urgent matters, please call:<span class="header__link"> +86 0755 26687707</span></p>
+      <div class="contact-form__blocks">
+        <div class="container">
+
+          <!-- first_name field-->
+          <div class="one-half column">
+            <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
+              {% assign name_attr = 'contact.form.name' | handle %}
+              <label for="contactFormFirstName" class="label {% if settings.use_placeholders %}is-sr-only{% endif %}">
+                {{ 'contact.form.first' | t }}
+              </label>
+              <input  type="text" placeholder="Enter your {{ 'contact.form.first' | t }}" name="contact[first_name]" id="contactFormFirstName" class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
+            </div>
+          </div>
+          
+           <!-- last_name field-->
+          <!-- <div class="one-half column">
+            <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
+              {% assign name_attr = 'contact.form.name' | handle %}
+              <label for="contactFormLastName" class="label {% if settings.use_placeholders %}is-sr-only{% endif %}">
+                {{ 'contact.form.last' | t }}
+              </label>
+              <input  type="text" placeholder="Enter your {{ 'contact.form.last' | t }}" name="contact[last_name]" id="contactFormLastName" class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
+            </div>
+          </div> -->
+          <!-- phone field-->
+          <div class="one-half column">
+            <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
+              {% assign name_attr = 'contact.form.phone' | handle %}
+              <label for="ContactFormPhone" class="label {% if settings.use_placeholders %}is-sr-only{% endif %}">
+                {{ 'contact.form.phone' | t }} <span class="required">*</span>
+              </label>
+              <!-- /^([+]?0?\d{2,3}-?|\([+]?0?\d{2,3}\)|\([+]?0?\d{2,3}\))?\d+$|^([+]?0?\d{2,3}-?|\([+]?0?\d{2,3}\)|\([+]?0?\d{2,3}\))?[1-9]\d{4,10}(-\d{1,10})?$/.test(value) -->
+              <div class="select-phone" style="display: flex;align-items:center;justify-content:center;">
+                <select  id="countryListSelect" style="width:13%;font-size: 1rem;height: 2.25em;" class="border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}">
+                </select>
+                <input required="required" onblur=phoneBlur(event)  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" id="formPhone"  class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
+              </div>
+              <input style="display:none ;" required="required" onblur=""  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" name="contact[phone]" id="ContactFormPhone" class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
+            </div>
+          </div>
+
+          <!-- email field-->
+           <div class="one-half column">
+            <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
+              <label for="contactFormEmail" class="label {% if settings.use_placeholders %}is-sr-only{% endif %}">
+                {{ 'contact.form.email' | t }} <span class="required">*</span>
+              </label>
+              <input type="email" placeholder="Enter your {{ 'contact.form.email' | t }}" id="contactFormEmail" class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" required="required">
+            </div>
+          </div>
+          
+          <!-- country field-->
+         <div class="one-half column country-field">
+            <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
+              <label for="contactFormCountry" class="label">
+                {{ 'contact.form.country' | t }} <span class="required">*</span>
+              </label>
+              <select required id="contactFormCountry" name="contact[country]" data-default="" style="height: 36px;line-height: 36px;outline: none;width:100%;" class="border-radius-little">{{ country_option_tags }}</select>
+            </div>
+          </div>
+
+          <!-- textarea field -->
+          <div class="one-whole column">
+            <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
+              <label for="contactFormMessage" class="label {% if settings.use_placeholders %}is-sr-only{% endif %}">
+                {{ 'contact.form.message' | t }} 
+              </label>
+              <textarea placeholder="Input your{{ 'contact.form.message' | t }}..." id="contactFormMessage" class="border-radius-little textarea is-{{ field_input_style }} is-{{ field_input_size }}" name="contact[body]"></textarea>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <input type="hidden" name="challenge" value="false" />
+      <div class="container">
+        <div class="one-whole column">
+          {% assign submit_label = 'contact.form.send' | t %}
+          {% include 'button', label: submit_label, style: settings.form_button_style, class: 'is-within-form width-100 border-radius-normal' %}
+        </div>
+      </div>
+        {% if form.posted_successfully? %}
+        <div class="one-whole column margin-top-little">
+          <p class="quote success has-margin-bottom">{{ 'contact.form.post_success' | t }}</p>
+        </div>
+        {% endif %}
+
+        {% if form.errors %}
+        <div class="one-whole column contact-form__form-errors  column margin-top-little">
+
+          <p class="quote error">{{ 'general.forms.post_error' | t }}</p>
+
+          {% assign message = 'contact.form.message' | t %}
+          {% for field in form.errors %}
+          {% if field == 'form' %}
+          <p class="form__error">
+            {{ form.errors.messages[field] }}
+          </p>
+          {% else %}
+          <p class="form__error">
+            {% assign field_name = field | replace: 'body', message %}
+            {{ 'general.forms.post_field_error_html' | t: field: field_name, error: form.errors.messages[field] }}
+          </p>
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      {% endform %}
+    </div>
+
+  </div>
+</section>
+
+{% comment %}JavaScript{% endcomment %}
+<script
+  type="application/json"
+  data-section-id="{{ object.id }}"
+  data-section-data
+>
+  {}
+</script>
+<script src="{{ 'z__jsCustomContactForm.js' | asset_url }}"></script>
+<script src="{{ 'jquery-editable-select.min.js' | asset_url }}"></script>
+<script src="{{ 'all-country-code.js' | asset_url }}"></script>
+<script>
+      let contryList = getAllCountryCode()
+      
+      //根据id查找对象，
+      let countrySelectObj=document.getElementById('countryListSelect');
+      //ContactFormPhone 和 formPhone
+      //根据id查找对象，
+      let formPhone = document.getElementById('formPhone');
+      let ContactFormPhone = document.getElementById('ContactFormPhone');
+
+      //添加一个选项
+      function addOption(opt){
+        countrySelectObj.add(new Option(`+${opt.dialCode}`,`+${opt.dialCode}`));
+      }
+      contryList.forEach(opt => {
+        addOption(opt)
+      });
+      $('#countryListSelect').editableSelect({
+          effects: 'fade',   //下拉列表出来的方式
+          duration: 200,  //时间
+      }).on('select.editable-select', function (e) {
+        // do something...
+          ContactFormPhone.value = $("#countryListSelect").val() + formPhone.value
+          console.log(ContactFormPhone);
+          console.log(ContactFormPhone.value);
+      })
+      
+      function phoneBlur(e){
+        ContactFormPhone.value = $("#countryListSelect").val()+ e.target.value
+        console.log(ContactFormPhone);
+        console.log(ContactFormPhone.value);
+      }
+
+      $('#contactFormCountry').editableSelect({
+          effects: 'fade',   //下拉列表出来的方式
+          duration: 200,  //时间
+      });
+      
+      var swiper = new Swiper(".contact-swiper", {
+      	 	slidesPerView: 4,
+        	spaceBetween: 30,
+        loope:true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+</script>

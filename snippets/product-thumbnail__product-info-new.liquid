@@ -1,0 +1,18 @@
+<div class="product-thumbnail">
+  {% if settings.display_vendor %}
+    <span class="product-thumbnail__vendor">{{ product.vendor }}</span>
+  {% endif %}
+
+  <a href="{{ product.url | within: collection }}" class="product-thumbnail__title">{{ product.title }}</a>
+
+  {% if collection_handles contains 'coming-soon' %}
+    {% if settings.stickers_enabled == false %}
+      {{ 'collections.general.coming_soon' | t }}
+    {% endif %}
+  {% else %}
+  {% endif %}
+  <div class="app-description">
+    {{product.metafields.accentuate.app_description}}
+  </div>
+
+</div>

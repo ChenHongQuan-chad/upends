@@ -1,0 +1,2 @@
+!function(t){(function(t,e){}).bind(t('section[data-section-id="c5lk4tsoddh"]').get(0))({url:"https://library.layouthub.com/HUB/files/Tm92LS0yMDE5/NTc0ODY0ODc5/First_release/pages/Faqs4/Faqs/",settings:{}},jQuery)}(jQuery),function(t){(function(t,e){}).bind(t('section[data-section-id="wop55x7snj"]').get(0))({url:"https://library.layouthub.com/HUB/files/TWF5LS0yMDIw/NTkwNDU2ODky/twenty-twenty-summer/pages/TEDutUIbxMvOYP26/banner-2/",settings:{}},jQuery)}(jQuery),console.log("This page layout has been built by https://www.layouthub.com")
+

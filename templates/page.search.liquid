@@ -1,0 +1,1123 @@
+{% comment %}
+  To edit the contents of this file, look inside the `sections` folder for the file name that comes directly after `section`. Eg. {% section 'product__main' %} or {% section 'page__banner' %}
+{% endcomment %}
+<link rel="stylesheet" href="{{ 'element.min.css' | asset_url }}">
+
+<main  class="shopify-section default-page" id="app"  v-cloak>
+    <div class="search">
+      <section class="section__wrapper section">
+        <div class="container">
+            <h1>Where to Buy UPENDS Products？</h1>
+            <small>UPENDS products are available from retailers and wholesalers all over the world! Go find a vendor.</small>
+            <div class="search-main">
+              <el-select
+                class="blue-bg"
+                v-model="continent"
+                v-if="continents.length>0"
+                default-first-option
+                no-match-text="No Data">
+                <el-option
+                  v-for="item in continents"
+                  :key="item.value"
+                  :label="item.label"
+                  :value="item.value">
+                </el-option>
+              </el-select>
+              <el-select
+              class="search-icon"
+                v-model="country"
+                v-if="countryList.length>0"
+                default-first-option
+                filterable
+                no-match-text="No Data"
+                placeholder="Search country">
+                <el-option
+                  v-for="(item,index) in countryList"
+                  :key="item.index"
+                  :label="item.name"
+                  :value="item.name">
+                </el-option>
+              </el-select>
+            </div>
+        </div>
+      </section>
+    </div>
+    <div class="section">
+      <ul class="selectOptions" v-if="continents.length>0 && !countryMiddle">
+        <li v-for="(item,index) in continentsReal" :key="index">
+          <el-row :gutter="50" type="flex" align="middle">
+            <el-col :span="8">
+              <img :src="item.img" :alt="item.label" class="w-100">
+              <h2>{[item.label]}</h2>
+            </el-col>
+            <el-col :span="16" v-if="item.countries.length>0">
+              <ul class="countries">  
+                <li v-for="(it,ind) in item.countries" :key="ind" @click="countryMiddle = it.name">
+                  <img :src="it.img" :alt="it.name">
+                  <h3>{[it.name]}</h3>
+                </li>
+              </ul>
+            </el-col>
+          </el-row> 
+        </li>
+      </ul>
+      <!-- 搜索结果 -->
+      <div class="search-reasult" v-else v-loading="loading">
+        <div class="country-title">
+          <span class="title">
+          {[ slectedCountry.name ]}
+          </span>
+           <span class="go-back" @click="goBack()">
+          	
+          	</span>
+        </div>
+        <div class="province-main" v-if="slectedCountry.provinces.length>0" >
+          <div class="province" v-for="(item,index) in slectedCountry.provinces" :key="index">
+            <div class="province-title" >
+              {[ item.name ]}
+            </div>
+            <el-row class="shops" :gutter="40" v-if="item.shops.length>0">
+              <el-col :span="6" v-for="(it,ind) in item.shops" :key="ind">
+                <ul class="shop" :class="{'min-height-213':it.name==='Love vape'||it.name==='Vape Chaos'}">
+                  <li v-if="it.hasOwnProperty('name')">
+                    {[it.name]}
+                  </li>
+                  <li v-if="it.hasOwnProperty('tel')">
+                     <label for="">Tel: </label><span>{[it.tel]}</span>
+                  </li>
+                  <li v-if="it.hasOwnProperty('email')">
+                    <label for="">Email:  </label><span>{[it.email]}</span>
+                  </li>
+                  <li v-if="it.hasOwnProperty('website')">
+                    <label for="">Website: </label><a :href="it.website" rel="nofollow" target="_blank">{[it.website]}</a>
+                  </li>
+                  <li v-if="it.hasOwnProperty('address')">
+                    <label for="">Address: </label><span>{[it.address]}</span>
+                  </li>
+                </ul>
+              </el-col>
+            </el-row>
+          </div>
+        </div>
+      </div>  
+    </div>
+</main>
+<script  src="{{ 'vue.min.js' | asset_url }}"></script>
+<script  src="{{ 'element.min.js' | asset_url }}"></script>
+<script>
+
+    // 大洲
+    const continents = [
+      {
+        label:'Global',
+        value:0,
+        countries:[
+          {
+            name:'Bahrain',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Bahrain.jpg?v=1620660170'
+          },
+//           {
+//             name:'Malaysia',
+//             img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Malaysia.jpg?v=1610037770'
+//           },
+          {
+            name:'Japan',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Japan.jpg?v=1610037770'
+          },
+          {
+            name:'New Zealand',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/New_Zealand.jpg?v=1610037770'
+          },
+          {
+            name:'China',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/China.jpg?v=1610037769'
+          },
+          {
+            name:'Vietnam',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Vietnam.jpg?v=1610037770'
+          },
+          {
+            name:'Myanmar',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Myanmar.jpg?v=1610037770'
+          },
+          {
+            name:'Saudi Arabia',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Saudi.jpg?v=1610037770'
+          },
+          {
+            name:'Indonesia',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Indonesia.jpg?v=1610622063'
+          },
+          {
+            name:'Kazakhstan',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Kazakhstan.jpg?v=1623165092'
+          },
+          {
+            name:'USA',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/USA.jpg?v=1610037770'
+          },
+          {
+            name:'Mexico',
+            img:'https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Mexico.jpg?v=1625790575'
+          },
+          {
+            name:'Netherlands',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Netherlands.jpg?v=1620916700'
+          },
+          {
+            name:'UK',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/UK.jpg?v=1610037770'
+          },
+          {
+            name:'Russia',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Russia.jpg?v=1610037770'
+          },
+          {
+            name:'Ukraine',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Ukraine.jpg?v=1610037770'
+          },
+          {
+            name:'Belarus',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Belarus.jpg?v=1610037769'
+          },
+          {
+            name:'Germany',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Germany.jpg?v=1610037769'
+          },
+          {
+            name:'Greece',
+            img:'https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Greece.jpg?v=1625790742'
+          },
+          {
+            name:'Belgium',
+            img:'https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Belgium.jpg?v=1630020639'
+          },
+          {
+            name:'Australia',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Australia.jpg?v=1623165092'
+          },
+          {
+            name:'UAE United Arab Emirates',
+            img:'https://cdn.shopify.com/s/files/1/0283/9815/7955/files/UAE_United_Arab_Emirates.jpg?v=1630020987'
+          },
+           {
+            name:'Morocco',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Morocco.png?v=1658856270'
+          },
+        ]
+      },
+      {
+        label:'ASIA PACIFIC',
+        img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/ASIA.png?v=1617899672',
+        value:1,
+        countries:[
+          {
+            name:'Bahrain',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Bahrain.jpg?v=1620660170'
+          },
+//           {
+//             name:'Malaysia',
+//             img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Malaysia.jpg?v=1610037770'
+//           },
+          {
+            name:'Japan',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Japan.jpg?v=1610037770'
+          },
+          {
+            name:'New Zealand',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/New_Zealand.jpg?v=1610037770'
+          },
+          {
+            name:'China',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/China.jpg?v=1610037769'
+          },
+          {
+            name:'Vietnam',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Vietnam.jpg?v=1610037770'
+          },
+          {
+            name:'Myanmar',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Myanmar.jpg?v=1610037770'
+          },
+          {
+            name:'Saudi Arabia',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Saudi.jpg?v=1610037770'
+          },
+           {
+            name:'Indonesia',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Indonesia.jpg?v=1610622063'
+          },
+          {
+            name:'Kazakhstan',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Kazakhstan.jpg?v=1623165092'
+          },
+          {
+            name:'Australia',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Australia.jpg?v=1623165092'
+          },
+          {
+            name:'UAE United Arab Emirates',
+            img:'https://cdn.shopify.com/s/files/1/0283/9815/7955/files/UAE_United_Arab_Emirates.jpg?v=1630020987'
+          },
+           {
+            name:'Morocco',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Morocco.png?v=1658856270'
+          },
+        ]
+      },
+      {
+        label:'EUROPE',
+        img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/EUROPE.png?v=1617899702',
+        value:2,
+        countries:[
+          {
+            name:'Netherlands',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Netherlands.jpg?v=1620916700'
+          },
+          {
+            name:'UK',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/UK.jpg?v=1610037770'
+          },
+          {
+            name:'Russia',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Russia.jpg?v=1610037770'
+          },
+          {
+            name:'Ukraine',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Ukraine.jpg?v=1610037770'
+          },
+          {
+            name:'Belarus',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Belarus.jpg?v=1610037769'
+          },
+          {
+            name:'Germany',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/Germany.jpg?v=1610037769'
+          },
+          {
+            name:'Greece',
+            img:'https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Greece.jpg?v=1625790742'
+          },
+          {
+            name:'Belgium',
+            img:'https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Belgium.jpg?v=1630020639'
+          },
+        ]
+      },
+      {
+        label:'AMERICA',
+        img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/AMERICA.png?v=1617899687',
+        value:3,
+        countries:[
+          {
+            name:'USA',
+            img:'https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/USA.jpg?v=1610037770'
+          },
+          {
+            name:'Mexico',
+            img:'https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Mexico.jpg?v=1625790575'
+          },
+        ]
+      },
+    ]
+
+    //国家选择之后渲染内容
+    const countryShops = [
+      {
+        name:'Bahrain',
+        provinces:[
+          {
+            name:'Wholesaler',
+            shops:[
+              {
+                name:'Vape In Bahrain',
+                tel:'+973 3456 5656',
+                email:'info@vapeinbahrain.com',
+                website:'https://www.vapeinbahrain.com'
+              },
+            ]
+          },
+          {
+            name:'Retailer',
+            shops:[
+              {
+                name:'Zara Abdulla',
+                tel:'+973 3733 0919',
+                email:'bhvaperz@gmail.com',
+                website:'https://bhvapers.com/upends/upends-uppor-by-upends'
+              },
+              {
+                name:'Vape club Bahrain',
+                tel:'+973 3322 1118',
+                email:'customercare@vcbh.com',
+                website:'https://www.vcbh.com/product/uppor-kit/'
+              },
+            ]
+          },
+        ]
+      },
+//       {
+//         name:'Malaysia',
+//         provinces:[
+//           {
+//             name:'',
+//             shops:[
+//               {
+//                 name:'Gear Best',
+//                 website:'https://uk.gearbest.com'
+//               },
+//             ]
+//           }
+//         ]
+//       },
+      {
+        name:'Japan',
+        provinces:[
+          {
+            name:'Retailer',
+            shops:[
+              {
+                name:'Vapelog',
+                tel:'04-7199-3679',
+                email:'contact@vapelog.jp',
+                website:'https://vapelog.jp/',
+                address:' In SEICHO 1065-1 Takada, Kashiwa-City Chiba '
+              },
+              {
+                name:'Drom.jp',
+                website:'https://store.shopping.yahoo.co.jp/vapecollection/info.html'
+              },
+              {
+                name:'Rakuten',
+                tel:'029-875-6098',
+                email:'vape-japan@shop.rakuten.co.jp',
+                website:'https://search.rakuten.co.jp/',
+                address:'〒300-0805　茨城県土浦市宍塚1786-1'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'New Zealand',
+        provinces:[
+          {
+            name:'Retailer',
+            shops:[
+              {
+                name:'Xvape',
+                tel:'09 2147 959',
+                email:'info@xvape.co.nz',
+                website:'https://www.xvape.co.nz',
+                address:' 6/689 Whangaparaoa Road, Stanmore Bay, Auckland 0932'
+              },
+              
+            ]
+          },
+        ]
+      },
+      {
+        name:'Australia',
+        provinces:[
+         {
+            name:'Wholesale',
+            shops:[
+              {
+                name:'dollardirect',
+                tel:'0412366677',
+                email:'info@dollardirect.com.au',
+                website:'https://dollardirect.com.au',
+                address:' PO BOX 1135, BONDI JUNCTION, NSW, 1355,Australia'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'UAE United Arab Emirates',
+        provinces:[
+         {
+            name:'Retailer',
+            shops:[
+              {
+                name:'Mohammed Shaheen',
+                tel:'+971 52 788 7949',
+                email:'info@dakhoon.com',
+                website:'https://dakhoon.com/collections/vape-e-shisha/products/uppor-pod-kit',
+              },
+            ]
+          }
+        ]
+      },
+       {
+        name:'Morocco',
+        provinces:[
+         {
+            name:'Retailer',
+            shops:[
+              {
+                name:'SMARTBOARD',
+                tel:'+971 52 788 7949',
+                email:'nidal.hizouni@upox.fr',
+                website:'https://upox.ma/    or www.upox.fr',
+                address:' 36, BUREAUX ASSLAM AV ABDELALI BENCHKROUNE Etage 6 N24 VN, 30000, Fès Maroc'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'China',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'Everzon',
+                email:'support@everzon.com',
+                website:'https://www.everzon.com'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Vietnam',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'Vape Club VN',
+                tel:'024 6686 6600',
+                email:'thevapeclub@helix.com.vn',
+                website:'https://thevapeclub.vn/'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Myanmar',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'Hi Hi Vape',
+                tel:'09-787878 346; 09-787878 347; 09-787878 349; 09-7 6868 3344',
+                website:'https://hihivape.com'
+              },
+               {
+                name:'Double H Vape Store',
+                tel:'+95 9961600007',
+                email:'doublehvapestore@gmail.com',
+                website:'https://www.facebook.com/doublehvapestore'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Saudi Arabia',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'Dukhan Store',
+                website:'https://dukhanstore.com'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Indonesia',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'Vapehan',
+                tel:'+62 812-9655-1818',
+                email:'Shop@Vapehan.Com',
+                website:'https://vapehan.com'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Kazakhstan',
+        provinces:[
+          {
+            name:'Wholesale&Retail',
+            shops:[
+              {
+                name:'Ciga',
+                tel:'7 (700) 500-10-88',
+                website:'https://ciga.kz'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'USA',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'Sweet Southern Vapes',
+                tel:'850-461-2324',
+                website:'https://sweetsouthernvapes.com'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Mexico',
+        provinces:[
+          {
+            name:'Retailer',
+            shops:[
+              {
+                name:'la vaperia',
+                tel:'+52 8180997543',
+                email:'ventas@vaperia.com.mx',
+                website:'https://www.lavaperia.com/apps/omega-search/?type=product&q=upends'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Netherlands',
+        provinces:[
+          {
+            name:'Wholesaler',
+            shops:[
+              {
+                name:'UEG',
+                tel:'+31852738448',
+                email:'info@uegholland.com',
+                website:'https://www.uegholland.com',
+                address:'Biezenbeemd 1, 4907 EE Oosterhout, The Netherlands'
+              },
+             
+            ]
+          },
+              {
+            name:'Retailer',
+            shops:[
+               {
+                name:'Slimroken',
+                tel:'085 - 273 83 17 ',
+                email:'info@slimroken.nl',
+                website:'https://www.slimroken.nl/',
+                address:'Werkmansbeemd 26,4907EW Oosterhout,The Netherlands'
+              },
+              {
+                name:'Damp-e',
+                tel:'31 30 268 9833',
+                email:'info@damp-e.nl',
+                website:'https://damp-e.nl/',
+                address:'Slotlaan 291, 3701 GH Zeist'
+              },
+              
+            ]
+          },
+        ]
+      },
+      {
+        name:'UK',
+        provinces:[
+          {
+            name:'Wholesaler',
+            shops:[
+              {
+                name:'JM Wholesale',
+                tel:'+44 (0) 116 273 1706',
+                email:'sales@jm-wholesale.co.uk',
+                website:'https://jm-wholesale.co.uk',
+                address:'Industrial Unit, 319-321 St Saviours Road, Leicester, LE5 4HG'
+              },
+             
+              {
+                name:'Vape Distribution',
+                tel:'+44 (0) 1992 525432',
+                email:'info@vapedistribution.com',
+                website:'https://www.vapedistribution.co.uk',
+                address:'Leytonstone House, Hanbury Drive, Leytonstone, London E11 1GA'
+              },
+              {
+                name:'Coilbenders Distribution',
+                tel:'07445843722',
+                email:'sales@coilbendersdistro.co.uk',
+                website:'https://coilbendersdistribution.com',
+                address:'6, Osprey Rd, Goshawk Units, Sowton Industrial Estate, Exeter EX2 7JG'
+              },
+              {
+                name:'EQ Wholesale',
+                tel:'01204 590870',
+                email:'admin@eqwholesale.co.uk',
+                website:'https: //www.eqwholesale.co.uk',
+                address:'Unit 9 Hall Moss Business Park, Bull Hill, Bolton Road, Darwen, BB3 2TT'
+              }
+            ]
+          },
+          {
+            name:'Retailer',
+            shops:[
+              {
+                name:'Evapo',
+                tel:'+44 (0) 20 3044 2811',
+                email:'support@evapo.co.uk',
+                website:'https://www.evapo.co.uk',
+                address:'50 Trident Court, One Oakcroft Road, Chessington, Surrey KT9 1BD'
+              },
+              {
+                name:'Uk E-cig Store',
+                tel:'+44 (0) 20 3475 4885',
+                email:'support@ukecigstore.com',
+                website:'https://www.ukecigstore.com',
+                address:'30-32 Fleet Street, London, EC4Y 1AA - Registered in England and Wales'
+              },
+              {
+                name:'Vape Club',
+                tel:'+44 (0) 01923 479 992',
+                email:'info@vapeclub.co.uk',
+                website:'https://www.vapeclub.co.uk',
+                address:'Unit 27, Greenhill Crescent, Watford, Hertfordshire, WD18 8YB'
+              },
+               {
+                name:'Vape HQ',
+                tel:'+44 (0) 1623 657085',
+                email:'info@vapehq.co.uk',
+                website:'https://vapehq.co.uk',
+                address:'Unit A, Enterprise Road, Mansfield, Nottinghamshire, NG19 7JX'
+              },
+              {
+                name:'Va Woo',
+                tel:'+44 (0) 2036702131',
+                email:'support@vawoo.co.uk',
+                website:'https://www.vawoo.co.uk'
+              },
+              {
+                name:'Micks Vapes',
+                email:'micksvapes@outlook.com',
+                website:'https://www.micksvapes.uk',
+                address:'219 Derby Road, Stapleford, Nottingham, NG9 7AZ'
+              },
+              {
+                name:'Rc Vapes',
+                tel:'+44 (0) 01379 308090',
+                email:'online@rc-vapes.co.uk',
+                website:'https://rc-vapes.co.uk',
+                address:'24A St Nicholas St, Diss IP22 4LB'
+              },
+              {
+                name:'Vapour Buddy',
+                tel:'+441902636444',
+                email:'support@vapoubuddy.co.uk',
+                website:'https://www.vapourbuddy.co.uk',
+                address:'12 Ensdale Row, Willenhall WV13 2BJ'
+              },
+              {
+                name:'Yuvape',
+                tel:'+44 (0) 208 778 5544',
+                email:'sales@yuvape.co.uk',
+                website:'https://www.yuvape.co.uk',
+                address:'40b Sydenham Road, London, SE26 5QF'
+              },
+              {
+                name:'CBD Mega Shop',
+                tel:'+447852457766',
+                email:'contact[@]cbdmegashop.co.uk',
+                website:'https://cbdmegashop.co.uk',
+                address:'71-75, Shelton Street, Covent Garden, London, WC2H 9JQ'
+              },
+              {
+                name:'Complete Sales',
+                tel:'+44 (0) 0800 567 7796',
+                website:'https://www.completesales.co.uk',
+                address:'46 Fraser Close, Laindon, Basildon, Essex SS15 6SU'
+              },
+              {
+                name:'Ultimate Juice',
+                tel:'+44 800 161 3244',
+                email:'websiteorders@ultimatejuice.co.uk',
+                website:'https://www.ultimatejuice.co.uk',
+                address:'Unit 24, Albion Industrial Estate CV6 5PY'
+              },
+              {
+                name:'A Fist Full Of Vapes',
+                tel:'0800 567 7796',
+                email:'support@afistfulofvapes.co.uk',
+                website:'https://afistfulofvapes.co.uk/',
+                address:'603 Leek Rd, Hanley, Stoke-on-Trent ST1 3HQ'
+              },
+              {
+                name:'Shop 2 Stop',
+                website:'https://www.shoptostop.co.uk'
+              },
+              {
+                name:'Voro Vapes',
+                website:'https://vorovape.co.uk'
+              },
+              {
+                name:'V12 Vapes',
+                tel:'+44 (0) 020 8090 1619',
+                website:'https://www.v12vapes.co.uk'
+              },
+              {
+                name:'Ne- Vapes',
+                website:'https://www.ne-vapes.co.uk'
+              },
+              {
+                name:'Mega Vape',
+                website:'https://www.megavape.co.uk'
+              },
+              {
+                name:'Vape Cloud',
+                tel:'+44 (0) 0161 956 2049',
+                website:'https://www.vapeclouduk.co.uk'
+              },
+              {
+                name:'Vapour Village',
+                tel:'+44 (0) 01462 414255',
+                website:'https://www.vapourvillage.com'
+              },
+              {
+                name:'My Vape Store',
+                tel:'+44 (0) 01626 897776',
+                website:'https://www.myvapestore.co.uk'
+              },
+              {
+                name:'The Great British Vape Shop',
+                tel:'+44 (0) 2072420800',
+                website:'https://www.gbvapeshop.com'
+              },
+              {
+                name:'Vapurz Lounge',
+                tel:'+44 77 8888 8275',
+                email:'info@vapourzlounge.co.uk',
+                website:'https://vapourzlounge.co.uk'
+              },
+              {
+                name:'Urban Vape Store',
+                tel:'+44 (0) 800 772 3678',
+                email:'info@urbanvape.store',
+                website:'https://urbanvape.store'
+              },
+              {
+                name:'Love Vape',
+                tel:'+44 (0) 02077 387 185',
+                email:'info@lovevape.co',
+                website:'https://lovevape.co'
+              },
+             {
+                name:'Southampton Vaping Centre',
+                website:'https://www.southamptonvapingcentre.co.uk'
+              },
+              {
+                name:'Kapre Lounge ',
+                tel:'+44 1737 212219',
+                email:'shop@vapechaos.co.uk',
+                website:'https://www.kaprelounge.com'
+              },
+              
+              {
+                name:'Vape Chaos',
+                tel:'+44 (0) 01843 587314',
+                email:'shop@vapechaos.co.uk',
+                website:'https://www.vapechaos.co.uk'
+              },
+              
+               {
+                name:'Amesbury Vapourium',
+                website:'https://www.purduetech.co.uk'
+              },
+              {
+                name:'Green Worthing ',
+                tel:'+44 (0) 01903 200110',
+                website:'https://greenheadshop.com'
+              },
+              {
+                name:'White Vape Co',
+                tel:'+44 (0) 330 380 0657',
+                email:'info@whitevapeco.co.uk',
+                website:'https://www.whitevapeco.co.uk'
+              },
+              {
+                name:'Ideal Vape',
+              	tel: '+44 (0) 1444 685243',
+                website:'https://www.idealvape.com'
+              },
+              
+              {
+                name:'IMOD',
+                tel:'+44 1425 839344',
+                website:'https://www.imodvape.com'
+              },
+              {
+                name:'Purple Haze',
+                website:'https://www.purplehazevaping.co.uk/'
+              },
+              {
+                name:'Billy Vapes',
+                tel:'01158440767',
+                website:'http://www.billysmokes.net'
+              },
+              {
+                name:'Forever Green UK',
+                website:'https://www.forevergreencbd.co.uk'
+              },
+              
+            ]
+          },
+        ]
+      },
+      {
+        name:'Russia',
+        provinces:[
+          {
+            name:'Wholesaler',
+            shops:[
+              {
+                name:'UPENDS.RU',
+                email:'info@upends.ru',
+                website:'https://upends.ru'
+              },
+              {
+                name:'Vape Guys Distribution',
+                tel:'+7 (495) 266-62-92',
+                email:'info@vapeguysdistro.ru',
+                website:'https://vapeguysdistro.ru',
+                address:'г.Москва, ул.Угрешская д2, стр1',
+              },
+              {
+                name:'ООО «ЖиЖа»',
+                tel:'+7 (343) 339-49-57   8 (800) 551-34-03',
+                email:'help@vape.ru',
+                website:'http://el-cigarette.com',
+                address:'г. Екатеринбург, ул. Вишневая, д. 2д, оф. 403',
+              },
+              {
+                name:'SS-Трейд',
+                tel:'+7 (499) 398-00-47',
+                email:'opt@optss.ru',
+                website:'http://optss.ru',
+                address:'Москва, ул. Кировоградская, д. 15 (ТЦ «Электронный рай», павильон 1В-24)',
+              },
+               {
+                name:'Armango',
+                tel:'8(800)500-30-67',
+                website:'https://armango.com/catalog/es_uppen_pod_kit_600_mah_rose_gold.html',
+              },
+            ]
+          },
+          {
+            name:'Retailer',
+            shops:[
+            {
+                name:'Elcigara',
+                tel:'+7 912 020-32-33',
+                email:'ELCIGARA@YANDEX.RU',
+                website:'https://elcigara.ru',
+                address:'Красногеройская улица, 39, Ижевск'
+              },
+              {
+                name:'Vapetabakerka',
+                tel:'+7 985 042 82 32   +7 929 539 47 77',
+                email:'sale@vapetabakerka.ru',
+                website:'https://vapetabakerka.ru',
+                address:'г.Люберцы, ул. Кирова д.3',
+              },
+              {
+                name:'Магазина Lucky-Smoker (Лаки Смокер)',
+                tel:'8 926 575 33 03',
+                email:'lsvapeshop@gmail.com',
+                website:'https://www.lucky-smoker.ru',
+                address:'г. Москва, Метро Царицыно Каспийская 22к1, второй этаж',
+              },
+              {
+                name:'Vapezone',
+                tel:'8(812)241-17-65',
+                email:'lzakaz@vapezone.pro',
+                website:'https://vapezone.pro',
+                address:'198217 Санкт-Петербург, пр. Ветеранов 36/2',
+              },
+              {
+                name:'Joyeshop',
+                tel:'8(800)500-88-38',
+                website:'https://joyeshop.ru/catalog/es_uppen_pod_kit_600_mah_classic_silver.html',
+              },
+              {
+                name:'Smoking',
+                tel:'8 (800) 500 67 90',
+                website:'https://smoking-shop.ru/brands/upends/',
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Ukraine',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'UPENDS.RU',
+                email:'info@upends.ru',
+                website:'https://upends.ru'
+              },
+              {
+                name:'Dartvaper',
+                tel:'+38 093 170 34 94',
+                email:'dartvaperua@gmail.com',
+                website:'https://dartvaper.com.ua'
+              },
+              {
+                name:'Iparovoz',
+                tel:'(068) 481-86-86',
+                email:'iparovoz.net@gmail.com',
+                website:'https://iparovoz.com.ua'
+              },
+              {
+                name:'Ukraine Liquid Lab（exclusive for UpOX & Uppen Plus）',
+                tel:'+380673203195',
+                website:'https://upends.bitrix24.shop/oblast12'
+              },
+              {
+                name:'Ukraine Liquid Lab（exclusive for UpOX & Uppen Plus）',
+                tel:'+380673203195',
+                website:'https://upends.com.ua/'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Belarus',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'UPENDS.RU',
+                email:'info@upends.ru',
+                website:'https://upends.ru'
+              },
+              {
+                name:'Sigaretnet.by',
+                tel:'8 (033)662-13-13',
+                website:'https://www.sigaretnet.by'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Germany',
+        provinces:[
+          {
+            name:'',
+            shops:[
+              {
+                name:'Dreamlike Vape Store',
+                tel:'02225 - 9115616',
+                website:'https://dreamlike-vapestore.de'
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Greece',
+        provinces:[
+          {
+            name:'Wholesale',
+            shops:[
+              {
+                name:'Smok-e',
+                tel:'+30 2103005444',
+                email:'info@smok-e.gr',
+                website:'https://smok-e.gr/',
+              },
+            ]
+          }
+        ]
+      },
+      {
+        name:'Belgium',
+        provinces:[
+          {
+            name:'Wholesale',
+            shops:[
+              {
+                name:'UEG',    
+                tel:'+31852738448',          
+                email:'info@uegholland.com',
+                website:'https://www.uegholland.com',
+                address:'Biezenbeemd 1, 4907 EE Oosterhout, The Netherlands',
+              },
+            ]
+          }
+        ]
+      },
+    ]
+
+    const app = new Vue({
+      el: '#app',
+      delimiters: ['{[', ']}'],
+      data() {
+        return {
+          continent:0,
+          continents,
+          country:'',
+          countryList:[],
+          loading:false,
+          countryShops,
+          slectedCountry:undefined,
+          countryMiddle:'',
+        }
+      },
+      computed: {
+        continentsReal() {
+          return this.continents.slice(1)
+        },
+      },
+      watch: {
+        continent: {
+          handler(newValue){
+            this.country=''
+            this.countryList = this.continents.find(item=>item.value == newValue).countries
+          },
+          immediate:true
+        },
+        country(newV){
+          this.countryMiddle = newV
+        },
+        countryMiddle(newV){
+          if(newV){
+            this.loading = true
+            this.slectedCountry = this.countryShops.find(item=>item.name===newV)
+            console.log(this.slectedCountry)
+            this.loading = false
+          }
+        },
+      },
+        methods: {
+          goBack(){
+          	this.countryMiddle='';
+            console.log(1)
+          }
+        }
+      
+    })
+  </script>

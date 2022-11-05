@@ -1,0 +1,248 @@
+{% comment %}
+ LayoutHub (https://layouthub.com)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from LayoutHub
+ {% endcomment %} 
+ <div class="lh-sections-wrapper" data-id="5e2117b8cf20cf555b40a8b2" data-type="page">
+<section id="" data-section-id="hrpgc5n6z2" data-section="banner" data-layouthub="section">  
+ <div class="lh-container-fluid">
+   <div class="lh-row">
+      <div class="lh-banner">
+              <div class="lh-banner-item">
+                  <img src="https://cdn.shopify.com/s/files/1/0283/9815/7955/t/8/assets/212.jpg?v=1595932946" alt="image testtimonial" class="lh-image-testimonial">
+                  <div class="lh-overlay no"></div>
+                  <div class="lh-container">
+                      <div class="lh-row">
+                              <div class="lh-banner-item-content lh-mr">
+                                  <p class="lh-banner-item-content-sub-title"  data-lhi="sub_title"></p>
+                                  <h3 class="lh-banner-item-content-title"  data-lhi="title"><br>  <br>  <br> <br></h3>
+                                  <!--<a href="" class="lh-banner-item-button"  data-lhi="btn"></a>-->
+                              </div>
+                      </div>
+                  </div>   
+               </div>
+        
+      </div>
+    </div>
+</div>
+  </section><section id="" data-section-id="8wmxzb9264v" data-section="blog-slider0" data-layouthub="section">  
+ 
+
+<div class="lh-blog-block">
+	<div class="lh-blog-wrapper">
+		<div class="lh-container">
+			<div class="lh-collection-heading">
+				<h3 class="lh-collection-heading__title"  data-lhi="title">OUR BLOG</h3>
+				<p class="lh-collection-heading__des"  data-lhi="des">News about UPENDS</p>
+			</div>
+			<div class="lh-blog-list">
+				<div class="js-blog-list owl-carousel owl-theme">
+					{% assign current = blogs['media'] %}
+			 
+
+			{% assign limit = 10%}
+
+			{% for item in current.articles limit:limit%}
+				<div class="lh-blog-item">
+					<div class="lh-blog--thumbnail">
+						<a href="{{item.url}}">
+							 
+								<img src="{{ item.image | img_url: '555x380', crop: 'center' }}" alt="Image">
+							 
+						</a>
+					</div>
+					<div class="lh-blog--body">
+						<div class="lh-body--meta">
+							<span class="lh-body--meta__general lh-body--meta__date">
+								<a href="{{item.url}}">{{ item.created_at | date : format : 'abbreviated_date' }}</a>
+							</span>
+							{% if item.comments_count > 0 %}
+							<span class="lh-body--meta__general lh-body--meta__comment">
+								<a href="{{item.url}}#comments">{{item.comments_count}} Comment</a>
+							</span>
+							{% endif %}
+						</div>
+						<div class="lh-body--header ">
+							<h3 class="lh-body--header__title ellipsis">
+								<a href="{{item.url}}">{{item.title}}</a>
+							</h3>
+						</div>
+						<!-- <div class="lh-body--content ">
+							{% if item.excerpt.size > 0 %}
+							<p>
+								{{ item.excerpt | strip_html | truncate : 150 }}
+							</p>
+							{% else %}
+							<p>
+								{{ item.content | strip_html | truncate : 150 }}
+							</p>
+							{% endif %}
+						</div> -->
+						<!-- <div class="lh-body--action">
+							<a href="{{item.url}}" class="lh-body--action__btn"></a>
+						</div> -->
+					</div>
+				</div>
+			{% endfor %}</div>
+			</div>
+			 
+			<div class="lh-button"  data-lhi="cta" data-lhi-child="a"><a href="/blogs/media" data-ga-action="tracking" data-ga-label="View more">View more</a></div>
+			 
+		</div>
+	</div>
+</div>
+
+   </section><section id="" data-section-id="5zuksvn5l2j" data-section="blog-slider2" data-layouthub="section">  
+ 
+
+<div class="lh-blog-block">
+	<div class="lh-blog-wrapper">
+		<div class="lh-container">
+			<div class="lh-collection-heading">
+				<h3 class="lh-collection-heading__title"  data-lhi="title">Vape Knowledge</h3>
+				<p class="lh-collection-heading__des"  data-lhi="des">Knowledge about Vaping</p>
+			</div>
+			<div class="lh-blog-list">
+				<div class="js-blog-list owl-carousel owl-theme">
+					{% assign current = blogs['vape-knowledge'] %}
+			 
+
+			{% assign limit = 10%}
+
+			{% for item in current.articles limit:limit%}
+				<div class="lh-blog-item">
+					<div class="lh-blog--thumbnail">
+						<a href="{{item.url}}">
+							 
+								<img src="{{ item.image | img_url: '555x380', crop: 'center' }}" alt="Image">
+							 
+						</a>
+					</div>
+					<div class="lh-blog--body">
+						<div class="lh-body--meta">
+							<span class="lh-body--meta__general lh-body--meta__date">
+								<a href="{{item.url}}">{{ item.created_at | date : format : 'abbreviated_date' }}</a>
+							</span>
+							{% if item.comments_count > 0 %}
+							<span class="lh-body--meta__general lh-body--meta__comment">
+								<a href="{{item.url}}#comments">{{item.comments_count}} Comment</a>
+							</span>
+							{% endif %}
+						</div>
+						<div class="lh-body--header ">
+							<h3 class="lh-body--header__title ellipsis">
+								<a href="{{item.url}}">{{item.title}}</a>
+							</h3>
+						</div>
+						<!-- <div class="lh-body--content ">
+							{% if item.excerpt.size > 0 %}
+							<p>
+								{{ item.excerpt | strip_html | truncate : 150 }}
+							</p>
+							{% else %}
+							<p>
+								{{ item.content | strip_html | truncate : 150 }}
+							</p>
+							{% endif %}
+						</div> -->
+						<!-- <div class="lh-body--action">
+							<a href="{{item.url}}" class="lh-body--action__btn"></a>
+						</div> -->
+					</div>
+				</div>
+			{% endfor %}</div>
+			</div>
+			 
+			<div class="lh-button"  data-lhi="cta" data-lhi-child="a"><a href="/blogs/vape-knowledge" data-ga-action="tracking" data-ga-label="View more">View more</a></div>
+			 
+		</div>
+	</div>
+</div>
+
+   </section><section id="" data-section-id="a9uf6pafrj" data-section="testimonial2" data-layouthub="section">  
+ 
+
+
+
+
+
+
+<div class="lh-testimonial3-section">
+    <div class="lh-container">
+        <div class="lh-heading">
+            <h2 class="lh-title"  data-lhi="title" data-lh-lang>{{'a9uf6pafrj.3q25k_html' | t }}</h2>
+            <div class="lh-quote"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+            <g>
+                <path d="M91.2,25.3c-2.8-4.5-7.1-7.5-12.3-8.4c-5.4-1-11.1,0.4-15.5,3.8c-4.4,3.3-7.2,8.3-7.7,13.7c-0.5,5.4,1.1,10.6,4.6,14.7
+                    c2.9,3.4,6.7,5.7,10.9,6.6l-1.6,25.2l0.2,0.5c0.4,1.1,1.4,1.8,2.5,1.9c0.1,0,0.1,0,0.2,0c1.1,0,2.1-0.6,2.5-1.5
+                    c0.9-1.8,2-3.8,3.2-6.1c5.4-10.1,12.7-24,15.1-31.8C95.2,37.5,94.5,30.6,91.2,25.3z M88.1,42.2c-1.9,6.2-7.3,16.9-12.1,26L77,50.8
+                    l-2.7-0.2c-3.8-0.3-7.3-2.1-9.8-5c-2.5-2.9-3.7-6.7-3.3-10.6c0.4-3.9,2.3-7.4,5.5-9.8c2.6-2,5.7-3,8.8-3c0.8,0,1.6,0.1,2.4,0.2
+                    c4.6,0.8,7.2,3.6,8.6,5.8C89,32.1,89.5,37.4,88.1,42.2z"/>
+                <path d="M28.9,17c-5.4-1-11.1,0.4-15.5,3.8C9,24.2,6.2,29.1,5.7,34.5c-0.5,5.4,1.1,10.6,4.6,14.7c2.9,3.4,6.7,5.7,10.9,6.6
+                    l-1.6,25.2l0.2,0.5c0.4,1.1,1.4,1.8,2.5,1.9c0.1,0,0.1,0,0.2,0c1.1,0,2-0.6,2.5-1.5c0.9-1.8,2-3.8,3.2-6.1
+                    c5.4-10.1,12.7-24,15.1-31.8c1.9-6.3,1.1-13.2-2.1-18.5C38.5,20.8,34.1,17.9,28.9,17z M38.1,42.2c-1.9,6.2-7.3,16.9-12.1,26
+                    L27,50.8l-2.7-0.2c-3.8-0.3-7.3-2.1-9.8-5c-2.5-2.9-3.7-6.7-3.3-10.6c0.4-3.9,2.3-7.4,5.5-9.8c2.6-2,5.7-3,8.8-3
+                    c0.8,0,1.6,0.1,2.4,0.2c4.6,0.8,7.2,3.6,8.6,5.8C39,32.1,39.5,37.4,38.1,42.2z"/>
+            </g>
+            </svg></div>
+        </div>
+        <div class="lh-testimonial-wrapper">
+            <div class="lh-owl-testimonial owl-carousel owl-theme owl-loaded owl-drag">
+                 <div class="item">
+                        <div class="lh-box">
+                            <p class="lh-description"  data-lhi="ttm_items[0]desc"  data-lh-lang data-lhis="ttm_items-desc">{{'a9uf6pafrj.erq9n5_desc' | t }}</p>
+                        </div>
+                    </div>
+                 <div class="item">
+                        <div class="lh-box">
+                            <p class="lh-description"  data-lhi="ttm_items[1]desc"  data-lh-lang data-lhis="ttm_items-desc">{{'a9uf6pafrj.erq9n4_desc' | t }}</p>
+                        </div>
+                    </div>
+                 <div class="item">
+                        <div class="lh-box">
+                            <p class="lh-description"  data-lhi="ttm_items[2]desc"  data-lh-lang data-lhis="ttm_items-desc">{{'a9uf6pafrj.erq9n3_desc' | t }}</p>
+                        </div>
+                    </div>
+                 
+            </div>
+
+            <div class="lh-owl-testimonial-dots owl-carousel owl-theme owl-loaded owl-drag">
+                 <div class="item">
+                        <text  data-lhi="ttm_items[0]dots" data-lhis="ttm_items-dots"><img src="{{'a9uf6pafrj_people-2.jpg' | asset_url }}" alt="Avatar" class="hub-img" /></text><div class="lh-info-content">
+                            <div class='lh-info'>
+                                <h4 class='lh-name'  data-lhi="ttm_items[0]name"  data-lh-lang data-lhis="ttm_items-name">{{'a9uf6pafrj.erq9n5_name' | t }}</h4>
+                                <p class='lh-job'  data-lhi="ttm_items[0]job"  data-lh-lang data-lhis="ttm_items-job"></p>
+                            </div>
+                        </div>
+                    </div>
+                 <div class="item">
+                        <text  data-lhi="ttm_items[1]dots" data-lhis="ttm_items-dots"><img src="{{'a9uf6pafrj_people-4.jpg' | asset_url }}" alt="Avatar" class="hub-img" /></text><div class="lh-info-content">
+                            <div class='lh-info'>
+                                <h4 class='lh-name'  data-lhi="ttm_items[1]name"  data-lh-lang data-lhis="ttm_items-name">{{'a9uf6pafrj.erq9n4_name' | t }}</h4>
+                                <p class='lh-job'  data-lhi="ttm_items[1]job"  data-lh-lang data-lhis="ttm_items-job"></p>
+                            </div>
+                        </div>
+                    </div>
+                 <div class="item">
+                        <text  data-lhi="ttm_items[2]dots" data-lhis="ttm_items-dots"><img src="{{'a9uf6pafrj_people-5.jpg' | asset_url }}" alt="Avatar" class="hub-img" /></text><div class="lh-info-content">
+                            <div class='lh-info'>
+                                <h4 class='lh-name'  data-lhi="ttm_items[2]name"  data-lh-lang data-lhis="ttm_items-name">{{'a9uf6pafrj.erq9n3_name' | t }}</h4>
+                                <p class='lh-job'  data-lhi="ttm_items[2]job"  data-lh-lang data-lhis="ttm_items-job"></p>
+                            </div>
+                        </div>
+                    </div>
+                 
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+ 
+  </section>
+</div>
+ {%schema%} 
+{"locales":{"en":{"a9uf6pafrj":{"3q25k_html":"WHAT OUR <br>CUSTOMER SAYING","erq9n5_desc":"\u201cI purchase this pen expecting very little due to the price. However I was pleasantly surprised on my first use. This is now my go everywhere Vape. I have several different sizes but when I leave the house this is the one that goes with me.\u201d","erq9n4_desc":"\u201cMy first vape system and my last(unless it breaks). Came charged and i didnt need to recharge yet, maybe im a light user. Anyway i like the pen look for discreetness and it just looks and works good.\u201d","erq9n3_desc":"\u201cI really like this vape pen. This is my first experience with the manufacturer and a pen that works by mouth draw. I really like it. The draw is perfect, the pen is elegant and discreet, and it feels natural in my hand. Definitely recommend! \u201d","erq9n5_name":"Norma Bernal","erq9n4_name":"Mick Watt","erq9n3_name":"Paula"}}},"name":"Media"}
+ {%endschema%}

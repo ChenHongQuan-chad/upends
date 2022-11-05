@@ -1,0 +1,201 @@
+{% comment %}
+** Contact page - section **
+- Main area
+{% endcomment %}
+
+{% include 'include-contact-form-retail', context: 'contact-template' %}
+
+{% schema %}
+  {
+    "name": "Contact Retail",
+    "class": "contact-section jsCustomContactForm",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "content_image",
+        "label": "Image",
+        "info": "1000 x 1000px recommended"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "content_text",
+        "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "social_enable",
+        "label": "Display social media icons",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      },
+      {
+        "type": "header",
+        "content": "Contact form"
+      },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background",
+        "default": "#E5E5E5"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text",
+        "default": "#000000",
+        "info": "Does not apply to placeholders."
+      },
+      {
+        "type": "select",
+        "id": "form_position",
+        "label": "Form position",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "right"
+      },
+      {
+        "type": "header",
+        "content": "Layout"
+      },
+      {
+        "type": "select",
+        "id": "width",
+        "label": "Width",
+        "default": "wide",
+        "options": [
+          {
+            "value": "standard",
+            "label": "Standard"
+          },
+          {
+            "value": "wide",
+            "label": "Wide"
+          }
+        ],
+        "default": "standard"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "label": "Top spacing",
+        "default": 40,
+        "min": 0,
+        "max": 80,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "label": "Bottom spacing",
+        "default": 40,
+        "min": 0,
+        "max": 80,
+        "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "Advanced"
+      },
+      {
+        "type": "text",
+        "id": "css_class",
+        "label": "CSS Class"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_css",
+        "label": "Custom CSS"
+      }
+    ],
+    "blocks": [
+
+      {
+        "type": "textarea",
+        "name": "Wrapper area",
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Title"
+          },
+		  {
+            "type": "text",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+              "type": "url",
+              "id": "link",
+              "label": "Wrapper link"
+          }
+ 			
+        ]
+      },
+	 {
+        "type": "product",
+        "name": "Product customer",
+        "settings": [
+          {	
+            "type": "product",
+            "id": "product",
+            "label": "Choose Product"
+          }
+        ]
+      }
+      
+      
+    ],
+    "default": {
+      "settings": {
+        "title": "Get in touch today",
+        "content_text": "<p>Customize your contact form to suit your business! Add custom fields like a dropdown menu, checkbox, text fields and more, so that you can gather pertinent info from shoppers right from the get-go, to help answer their inquiries more effectively.</p>"
+      },
+      "blocks": [
+        {
+          "type": "textarea",
+          "settings": {
+            "label": "Name"
+          }
+        }
+       
+      ]
+    }
+  }
+{% endschema %}

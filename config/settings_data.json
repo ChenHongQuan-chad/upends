@@ -1,0 +1,3235 @@
+{
+  "current": {
+    "show_announcement_bar": true,
+    "show_popup": false,
+    "show_fixed_message": true,
+    "header_layout": "classic",
+    "footer_layout": "classic",
+    "product_layout": "classic",
+    "image_loading_style": "fade-in",
+    "logo_mobile": "shopify:\/\/shop_images\/600x200px.png",
+    "mobile_logo_width": 200,
+    "logo_mobile_position": "center",
+    "logo_menu_position": "left",
+    "show_search_icon_mobile": true,
+    "mobile_sidebar_position": "below",
+    "icon_style": "icons",
+    "mobile_menu_background_color": "#ffffff",
+    "mobile_menu_opacity": 100,
+    "mobile_menu_link_color": "#183364",
+    "mobile_menu_link_hover_color": "#36599a",
+    "button_primary_padding": "regular",
+    "button_primary_bg_color": "#0072c5",
+    "button_primary_bg_color_transparency": 100,
+    "button_primary_border_color": "rgba(0,0,0,0)",
+    "button_primary_text_color": "#ffffff",
+    "button_primary_bg_color--highlight": "#ffffff",
+    "button_primary_bg_color_transparency--highlight": 100,
+    "button_primary_border_color--highlight": "#0072c5",
+    "button_primary_text_color--highlight": "#0072c5",
+    "button_primary_border_radius": 0,
+    "button_secondary_padding": "large",
+    "button_secondary_bg_color": "rgba(0,0,0,0)",
+    "button_secondary_bg_color_transparency": 0,
+    "button_secondary_border_color": "#ffffff",
+    "button_secondary_text_color": "#ffffff",
+    "button_secondary_bg_color--highlight": "#ffffff",
+    "button_secondary_bg_color_transparency--highlight": 100,
+    "button_secondary_border_color--highlight": "#ffffff",
+    "button_secondary_text_color--highlight": "#000000",
+    "button_secondary_border_radius": 0,
+    "button_link_padding": "regular",
+    "button_link_text_color": "#000000",
+    "button_link_text_color--highlight": "#ccc",
+    "button_link_underline_style": "solid",
+    "button_link_underline_thickness": 1,
+    "button_cart_padding": "regular",
+    "button_cart_bg_color": "#0072c5",
+    "button_cart_bg_color--highlight": "#ffffff",
+    "button_cart_border_color": "#0072c5",
+    "button_cart_border_color--highlight": "#0072c5",
+    "button_cart_text_color": "#ffffff",
+    "button_cart_text_color--highlight": "#0072c5",
+    "button_cart_icon": "cart",
+    "button_cart_icon_position": "left",
+    "button_cart_border_radius": 2,
+    "icon": "icon_solid",
+    "toggle_icon_style": "plus_and_minus",
+    "social_media_share_style": "squared",
+    "breadcrumb_capitalization": "none",
+    "breadcrumb_separator": "arrow",
+    "breadcrumb_size": "regular",
+    "dropdown_style": "vertical",
+    "dropdown_position": "below-header",
+    "dropdown_link_spacing": "medium",
+    "use_placeholders": false,
+    "form_button_style": "button--primary",
+    "display_heading_divider": true,
+    "heading_divider_animation": "none",
+    "heading_divider_style": "long",
+    "heading_divider_width": 2,
+    "toggle_sidebar": false,
+    "tab_style": "regular",
+    "table_styles_enabled": true,
+    "qty_box_style": "box",
+    "qty_border_radius": 0,
+    "tag_style": "solid",
+    "mega_menu_1": true,
+    "mega_menu_2": false,
+    "mega_menu_3": false,
+    "mega_menu_4": false,
+    "mega_menu_5": false,
+    "mega_menu_6": false,
+    "mega_menu_7": false,
+    "mega_menu_8": false,
+    "mega_menu_9": false,
+    "mega_menu_10": false,
+    "shop_bg_color": "#ffffff",
+    "border_color": "#d3d3d3",
+    "regular_color": "#747474",
+    "link_color": "#636363",
+    "link_hover_color": "#000000",
+    "heading_color": "#000000",
+    "banner_heading_color": "#ffffff",
+    "divider_color": "#000000",
+    "logo_text": "#ffffff",
+    "header_background": "#ffffff",
+    "header_link_color": "#0072c5",
+    "header_link_hover_color": "#3863b1",
+    "header_cart_badge_color": "#a58ced",
+    "cart_background_color": "#fff",
+    "show_dropdown_shadow": true,
+    "dropdown_background": "#ffffff",
+    "dropdown_background_opacity": 100,
+    "dropdown_link_color": "#636363",
+    "dropdown_link_hover_color": "#000000",
+    "footer_background": "#78b1e6",
+    "footer_border": "#000000",
+    "footer_link_color": "#ffffff",
+    "footer_link_hover_color": "#fefefe",
+    "footer_text_color": "#ffffff",
+    "sale_color": "#ae3333",
+    "was_price_color": "#a6a6a6",
+    "product_hover_text_color": "#ae3333",
+    "product_hover_bg_color": "#ffffff",
+    "banner_bestseller": "#ff80c1",
+    "banner_comingsoon": "#ff8002",
+    "banner_new": "#ebd62b",
+    "banner_preorder": "#1aa8d5",
+    "banner_sale": "#88ad44",
+    "banner_staffpick": "#a58ced",
+    "qty_icon_color": "#000000",
+    "qty_icon_hover_color": "#000000",
+    "qty_background_color": "#ffffff",
+    "qty_background_hover_color": "#ffffff",
+    "regular__font": "helvetica_n4",
+    "regular_font_size": 16,
+    "logo__font": "helvetica_n7",
+    "logo_font_size": 20,
+    "logo_font_style": "none",
+    "nav__font": "neue_aachen_n4",
+    "nav_font_size": 20,
+    "nav_letter_spacing": 0,
+    "nav_font_style": "none",
+    "dropdown_heading_font_size": 20,
+    "dropdown_font_size": 18,
+    "dropdown_letter_spacing": 0,
+    "dropdown_font_style": "none",
+    "button__font": "neue_aachen_n6",
+    "button_letter_spacing": 0,
+    "button_font_style": "none",
+    "heading__font": "neue_aachen_n6",
+    "heading_size": 30,
+    "heading_letter_spacing": 0,
+    "heading_font_style": "uppercase",
+    "preheading_font": "helvetica_n4",
+    "preheading_size": 15,
+    "preheading_style": "none",
+    "subheading_font": "neue_aachen_n5",
+    "subheading_size": 15,
+    "subheading_style": "none",
+    "banner_heading__font": "neue_aachen_n7",
+    "banner_heading_size": 60,
+    "banner_heading_style": "none",
+    "banner_text__font": "neue_aachen_n4",
+    "banner_text_size": 30,
+    "banner_text_letter_spacing": 1,
+    "footer_heading_font_size": 18,
+    "footer_font_size": 14,
+    "search_option": "everything",
+    "search_title": "Search",
+    "search_placeholder": "What are you looking for?",
+    "search_heading_color": "#000",
+    "search_display_style": "overlay",
+    "search_popup_bg": "#fff",
+    "search_menu": "",
+    "enable_autocomplete": true,
+    "search_to_display": 5,
+    "show_secondary_image": false,
+    "display_vendor": false,
+    "thumbnail_hover_enabled": false,
+    "thumbnail_text_alignment": "left",
+    "stickers_enabled": false,
+    "sticker_shape": "square",
+    "sticker_position": "left",
+    "collection_swatches": false,
+    "collection_swatches_shape": "circle",
+    "enable_shopify_review_comments": false,
+    "enable_shopify_collection_badges": false,
+    "display_product_quantity": false,
+    "limit_quantity": false,
+    "display_inventory_left": false,
+    "inventory_threshold": 10,
+    "free_price_text": "Free",
+    "product_form_style": "swatches",
+    "swatch_style": "rounded",
+    "notify_me_form": false,
+    "notify_me_description": "<p>Notify me when this product is available:<\/p>",
+    "size_chart": "",
+    "enable_quickshop": false,
+    "quickshop_button_style": "button--2",
+    "quickshop_show_vendor": false,
+    "quickshop_show_price_savings": true,
+    "show_dynamic_checkout_button": false,
+    "quickshop_truncate_words": false,
+    "quickshop_truncate_words_limit": 20,
+    "qs_popup_color": "#fff",
+    "show_product_gallery_thumbnails": false,
+    "quickshop_arrows": true,
+    "quickshop_magnify_images": false,
+    "quickshop_speed": 0,
+    "quickshop_gallery_transition_styles": "slide",
+    "quickshop_thumbnail_position": "bottom-thumbnails",
+    "enable_thumbnail_slider": true,
+    "quickshop_gallery_position": "left",
+    "video_looping": false,
+    "cart_action": "drawer",
+    "show_lock_icon": true,
+    "cart_icon": "basket",
+    "display_special_instructions": false,
+    "display_tos_checkbox": false,
+    "tos_page": "",
+    "display_savings": false,
+    "display_ajax_quantity_box": false,
+    "cart_message": "",
+    "go_to_checkout": true,
+    "enable_shipping_calculator": true,
+    "shipping_calculator_default_country": "United States",
+    "show_multiple_currencies": false,
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "USD CAD INR GBP AUD EUR JPY",
+    "default_currency": "USD",
+    "disqus_enabled": false,
+    "disqus_shortname": "",
+    "twitter_link": "https:\/\/twitter.com\/UPENDS_Global",
+    "facebook_link": "https:\/\/www.facebook.com\/Upends-100666014772251\/?modal=admin_todo_tour",
+    "youtube_link": "https:\/\/www.youtube.com\/channel\/UCySVw7x1qzP-aRWcGJuL1_w",
+    "vimeo_link": "",
+    "pinterest_link": "",
+    "tumblr_link": "",
+    "instagram_link": "https:\/\/www.instagram.com\/upends_global\/",
+    "snapchat_link": "",
+    "houzz_link": "",
+    "linkedin_link": "",
+    "dribbble_link": "",
+    "behance_link": "",
+    "flickr_link": "",
+    "email_link": "support@upends.com",
+    "og_image_fallback": "",
+    "favicon": "shopify:\/\/shop_images\/64x64px__-1_2.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "show_labels": false,
+    "quikckshop_show_price_savings": true,
+    "field_input_style": "square",
+    "logo_width": 200,
+    "btn1_font_size": 12,
+    "btn1_border_radius": 0,
+    "btn1_block": false,
+    "btn1_bg_color": "#ffffff",
+    "btn1_border_color": "rgba(0,0,0,0)",
+    "btn1_text_color": "#000000",
+    "btn1_bg_color--highlight": "#000000",
+    "btn1_border_color--highlight": "rgba(0,0,0,0)",
+    "btn1_text_color--highlight": "#ffffff",
+    "btn2_font_size": 16,
+    "btn2_border_radius": 0,
+    "btn2_block": false,
+    "btn2_bg_color": "rgba(0,0,0,0)",
+    "btn2_border_color": "#000000",
+    "btn2_text_color": "#000000",
+    "btn2_bg_color--highlight": "#000000",
+    "btn2_border_color--highlight": "#000000",
+    "btn2_text_color--highlight": "#ffffff",
+    "btn3_font_size": 12,
+    "btn3_border_radius": 2,
+    "btn3_bg_color": "#000000",
+    "btn3_bg_color_transparency": 100,
+    "btn3_bg_color--highlight": "#fff",
+    "btn3_bg_color_transparency--highlight": 100,
+    "btn3_border_color": "#000000",
+    "btn3_border_color--highlight": "#000000",
+    "btn3_text_color": "#ffffff",
+    "btn3_text_color--highlight": "#000",
+    "btn3_icon": "heart",
+    "btn3_icon_position": "left",
+    "btn3_animation": "checkmark",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "icon_label": "megaphone",
+          "text": "<p>COVID-19 Information: Shipping & Communication Delays May Occur<\/p>",
+          "alignment": "center",
+          "size": "regular",
+          "button_label": "",
+          "link": "",
+          "button_style": "button--primary",
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "width": "wide",
+          "homepage_only": true,
+          "enable_sticky": false,
+          "show_close_icon": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header__top-bar": {
+        "type": "header__top-bar",
+        "blocks": {
+          "header__top-bar-0": {
+            "type": "text",
+            "settings": {
+              "text": ""
+            }
+          },
+          "1564160346825": {
+            "type": "menu",
+            "settings": {
+              "menu": "",
+              "menu_alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "header__top-bar-0",
+          "1564160346825"
+        ],
+        "settings": {
+          "show_top_bar": false,
+          "font": "helvetica_n7",
+          "font_style": "none",
+          "font_size": 18,
+          "letter_spacing": 0,
+          "background": "#000000",
+          "link_color": "#c3c3c3",
+          "link_hover_color": "#ffffff",
+          "text_color": "#ffffff",
+          "width": "standard",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header-classic": {
+        "type": "header-classic",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/200-newlogo-85_200x_1.png",
+          "tag": "UPENDS' Disposable Vapes,Pod Mod,Vape pen - UPENDS",
+          "logo_width": 130,
+          "main_linklist": "main-menu",
+          "menu_alignment": "end",
+          "display_search": true,
+          "icon_style": "icons",
+          "enable_overlay": false,
+          "show_text_shadow": true,
+          "overlay_link_color": "#183364",
+          "overlay_link_hover_color": "#183364",
+          "overlay_background": "#ffffff",
+          "overlay_background_opacity": 0,
+          "overlay_logo_width": 100,
+          "enable_sticky": true,
+          "sticky_background_opacity": 100,
+          "scroll_logo_width": 90,
+          "width": "standard",
+          "vertical_alignment": "center",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-1": {
+        "type": "mega-menu-1",
+        "blocks": {
+          "1592120134366": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "buy-uppen-kit",
+              "richtext_bottom": ""
+            }
+          },
+          "1592120152708": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "silver-uppen",
+              "richtext_bottom": ""
+            }
+          },
+          "1592120168092": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "buy-uppen-pod",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "1592120134366",
+          "1592120152708",
+          "1592120168092"
+        ],
+        "settings": {
+          "parent_link": "Shop",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "footer__icon-bar": {
+        "type": "footer__icon-bar",
+        "blocks": {
+          "1559011704063": {
+            "type": "text",
+            "settings": {
+              "icon": "bunny",
+              "text": "CRUELTY FREE",
+              "link": ""
+            }
+          },
+          "footer__icon-bar-0": {
+            "type": "text",
+            "settings": {
+              "icon": "cloud",
+              "text": "INSPIRED BY YOU",
+              "link": ""
+            }
+          },
+          "footer__icon-bar-1": {
+            "type": "text",
+            "settings": {
+              "icon": "shield",
+              "text": "ETHICALLY SOURCED",
+              "link": ""
+            }
+          },
+          "footer__icon-bar-2": {
+            "type": "text",
+            "settings": {
+              "icon": "leaf-2",
+              "text": "100% NATURAL",
+              "link": ""
+            }
+          },
+          "footer__icon-bar-3": {
+            "type": "text",
+            "settings": {
+              "icon": "heart",
+              "text": "MADE LOCALLY",
+              "link": ""
+            }
+          },
+          "1559011765495": {
+            "type": "text",
+            "settings": {
+              "icon": "recycle",
+              "text": "RESPONSIBLE PACKAGING",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1559011704063",
+          "footer__icon-bar-0",
+          "footer__icon-bar-1",
+          "footer__icon-bar-2",
+          "footer__icon-bar-3",
+          "1559011765495"
+        ],
+        "settings": {
+          "show_icon_bar": false,
+          "alignment": "center",
+          "icon_position": "row",
+          "size": "medium",
+          "background": "#ebebeb",
+          "link_color": "#ffffff",
+          "link_hover_color": "#000000",
+          "text_color": "#000000",
+          "width": "standard",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "footer-classic": {
+        "type": "footer-classic",
+        "blocks": {
+          "1592106298606": {
+            "type": "link_list",
+            "settings": {
+              "menu": "support",
+              "social_icons_footer": true
+            }
+          },
+          "footer-classic-1": {
+            "type": "link_list",
+            "settings": {
+              "menu": "footer",
+              "social_icons_footer": false
+            }
+          },
+          "1559752958390": {
+            "type": "link_list",
+            "settings": {
+              "menu": "upends-service",
+              "social_icons_footer": false
+            }
+          },
+          "1563557700911": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_title": "",
+              "newsletter_richtext": "",
+              "display_first_name": false,
+              "display_last_name": false
+            }
+          }
+        },
+        "block_order": [
+          "1592106298606",
+          "footer-classic-1",
+          "1559752958390",
+          "1563557700911"
+        ],
+        "settings": {
+          "copyright_text": "",
+          "display_designed_by": false,
+          "display_shopify": false,
+          "display_payment_methods": true,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product__sidebar": {
+        "type": "product__sidebar",
+        "settings": {
+          "show_sidebar": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product__main": {
+        "type": "product__main",
+        "settings": {
+          "product_breadcrumb": false,
+          "display_thumbnails": true,
+          "gallery_arrows": true,
+          "enable_zoom": true,
+          "enable_product_lightbox": true,
+          "slideshow_speed": 3,
+          "slideshow_transition": "slide",
+          "thumbnail_position": "bottom-thumbnails",
+          "enable_thumbnail_slider": true,
+          "display_vendor": false,
+          "display_sku": false,
+          "enable_shopify_product_badges": false,
+          "display_savings": false,
+          "display_collections": false,
+          "display_type": false,
+          "display_tags": false,
+          "display_social_buttons": false,
+          "product_description_position": "top",
+          "show_payment_button": false,
+          "product_images_position": "left",
+          "set_product_height": true,
+          "product_height": 480,
+          "video_looping": false,
+          "width": "standard",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product-sections__main": {
+        "type": "product-sections__main",
+        "blocks": {
+          "product-sections__main-2": {
+            "type": "product_gallery",
+            "settings": {
+              "display_thumbnails": true,
+              "gallery_arrows": true,
+              "enable_zoom": true,
+              "enable_product_lightbox": true,
+              "slideshow_speed": 3,
+              "slideshow_transition": "slide",
+              "thumbnail_position": "bottom-slider",
+              "enable_thumbnail_slider": true,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 80,
+              "padding_right": 80,
+              "animation": "none"
+            }
+          },
+          "product-sections__main-1": {
+            "type": "product_info",
+            "settings": {
+              "display_vendor": false,
+              "display_sku": false,
+              "enable_shopify_product_badges": false,
+              "display_savings": true,
+              "display_collections": false,
+              "display_type": false,
+              "display_tags": false,
+              "display_social_buttons": false,
+              "product_description_position": "top",
+              "show_payment_button": true,
+              "set_product_height": true,
+              "product_height": 350,
+              "video_looping": false,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 40,
+              "padding_right": 40,
+              "animation": "none"
+            }
+          },
+          "1564417741937": {
+            "type": "recommended_products",
+            "settings": {
+              "width": "standard",
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "fadeInDown"
+            }
+          },
+          "1592116671264": {
+            "type": "product_reviews",
+            "settings": {
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "product-sections__main-2",
+          "product-sections__main-1",
+          "1564417741937",
+          "1592116671264"
+        ],
+        "settings": {
+          "product_breadcrumb": false,
+          "padding_top": 20,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header-centered__top-bar": {
+        "type": "header-centered__top-bar",
+        "settings": {
+          "show_social_icons": false,
+          "text": "<p>Add a phone number or other information.<\/p>",
+          "font": "open_sans_n4",
+          "font_style": "none",
+          "font_size": 14,
+          "letter_spacing": 0,
+          "top_bar_background": "rgba(0,0,0,0)",
+          "top_bar_link": "#f30f0f",
+          "top_bar_link_hover": "rgba(0,0,0,0)",
+          "top_bar_text": "rgba(0,0,0,0)",
+          "display_search": true,
+          "icon_style": "icons",
+          "cart_button_background": "#000000",
+          "cart_button_text": "#ffffff",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "header-centered": {
+        "type": "header-centered",
+        "settings": {
+          "logo": "",
+          "logo_width": 160,
+          "logo_position": "above",
+          "main_linklist": "main-menu",
+          "menu_spacing": "default",
+          "enable_overlay": false,
+          "show_text_shadow": false,
+          "overlay_background": "rgba(0,0,0,0)",
+          "overlay_background_opacity": 0,
+          "overlay_link_color": "rgba(0,0,0,0)",
+          "overlay_link_hover_color": "rgba(0,0,0,0)",
+          "overlay_logo": "",
+          "overlay_logo_width": 80,
+          "enable_sticky": false,
+          "sticky_background_opacity": 50,
+          "scroll_logo_width": 200,
+          "width": "standard",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-2": {
+        "type": "mega-menu-2",
+        "blocks": {
+          "mega-menu-2-0": {
+            "type": "menu",
+            "settings": {
+              "menu_1": "",
+              "menu_1_link": ""
+            }
+          },
+          "1559747600703": {
+            "type": "mixed",
+            "settings": {
+              "richtext_top": "BENEFITS",
+              "image_top": "",
+              "image_link_top": "",
+              "image_caption_top": "<p>✔&nbsp;Benefit number one<\/p>\n<p>✔ Benefit number two<\/p>\n<p>✔ Benefit number three<\/p>\n<p>✔ Benefit number four and all of these can be a sentence or longer than 1-2 words<\/p>",
+              "menu_1": "",
+              "menu_1_link": "",
+              "menu_2": "",
+              "menu_2_link": "",
+              "menu_3": "",
+              "menu_3_link": "",
+              "menu_4": "",
+              "menu_4_link": "",
+              "image_bottom": "",
+              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-4": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_link": "",
+              "image_caption": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-2-0",
+          "1559747600703",
+          "mega-menu-2-4"
+        ],
+        "settings": {
+          "parent_link": "Bath and Shower",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-3": {
+        "type": "mega-menu-3",
+        "blocks": {
+          "mega-menu-3-0": {
+            "type": "menu",
+            "settings": {
+              "menu_1": "",
+              "menu_1_link": ""
+            }
+          },
+          "1559748521869": {
+            "type": "featured_promo",
+            "settings": {
+              "image": "",
+              "richtext": "<p>Get luscious locks now!<\/p>",
+              "bgr_color": "#eeeeee",
+              "text_color": "#000000",
+              "promo_link": "shopify:\/\/collections\/hair",
+              "button_label": "Shop Hair",
+              "button_style": "button--1"
+            }
+          },
+          "mega-menu-3-5": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559747814769": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-3-0",
+          "1559748521869",
+          "mega-menu-3-5",
+          "1559747814769"
+        ],
+        "settings": {
+          "parent_link": "Hair",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-4": {
+        "type": "mega-menu-4",
+        "blocks": {
+          "mega-menu-4-5": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559747883433": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559747891814": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1565107767822": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-4-5",
+          "1559747883433",
+          "1559747891814",
+          "1565107767822"
+        ],
+        "settings": {
+          "parent_link": "Face",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-5": {
+        "type": "mega-menu-5",
+        "blocks": {
+          "mega-menu-5-1": {
+            "type": "featured_promo",
+            "settings": {
+              "image": "",
+              "richtext": "<p>Add description and links to your promotion<\/p>",
+              "bgr_color": "#eeeeee",
+              "text_color": "#000000",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--1"
+            }
+          },
+          "mega-menu-5-5": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559748478822": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559748481834": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-5-1",
+          "mega-menu-5-5",
+          "1559748478822",
+          "1559748481834"
+        ],
+        "settings": {
+          "parent_link": "Gift Ideas",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "mega-menu-6": {
+        "type": "mega-menu-6",
+        "blocks": {
+          "1559748432638": {
+            "type": "featured_promo",
+            "settings": {
+              "image": "",
+              "richtext": "<p>Add description and links to your promotion<\/p>",
+              "bgr_color": "#eeeeee",
+              "text_color": "#000000",
+              "promo_link": "",
+              "button_label": "Shop now",
+              "button_style": "button--1"
+            }
+          },
+          "mega-menu-6-5": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559748391110": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          },
+          "1559748426523": {
+            "type": "featured_product",
+            "settings": {
+              "featured_product": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "1559748432638",
+          "mega-menu-6-5",
+          "1559748391110",
+          "1559748426523"
+        ],
+        "settings": {
+          "parent_link": "Nude Packaging",
+          "enable_mega_menu_border": false,
+          "mega_menu_background_color": "#f6f6f6",
+          "mega_menu_text_color": "#404040",
+          "show_mega_bottom_bar": false,
+          "mega_bottom_bar_icon": "",
+          "mega_bottom_bar_text": "Add your deal, information or promotional text",
+          "mega_bottom_bar_link": "",
+          "size": "regular",
+          "bottom_banner_bg": "#007ace",
+          "bottom_banner_text": "#efefef",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_close_icon": true,
+          "show_popup_on_mobile": false,
+          "display_border": true,
+          "border_color": "#000000",
+          "border_width": 0,
+          "newsletter_title": "<a href=\"https\/\/:www.upends.com\/pages\/win\">JOIN THE UPENDS NEXT-LEVEL GIVEAWAY<\/a>",
+          "newsletter_text": "<p><a href=\"\/zh-cn\/pages\/win\" title=\"Next level vaping\">Win free China tour,discover exciting China<\/a><\/p>",
+          "newsletter_section_text_align": "center",
+          "text_color": "#000000",
+          "background_color": "#ffffff",
+          "show_signup_form": true,
+          "display_first_name": false,
+          "display_last_name": false,
+          "image": "shopify:\/\/shop_images\/875X600_1236_369.jpg",
+          "image_cropping": "center",
+          "image_position": "left",
+          "overlay_color": "#000000",
+          "overlay_background_opacity": 33,
+          "popup_delay": 2,
+          "popup_days_to_hide": "2",
+          "animation": "zoomIn",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "404__banner": {
+        "type": "404__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "shopify:\/\/shop_images\/3Y8A8688_3.jpg",
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "404__main": {
+        "type": "404__main",
+        "settings": {
+          "not_found_text": "<p>We&#x27;re sorry, but the page you&#x27;re looking for could not be found.<\/p><p>Try searching or <a href=\"\/collections\/all\">continue shopping<\/a>.<\/p>",
+          "display_search_field": true,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "password__main": {
+        "type": "password__main",
+        "settings": {
+          "custom_logo": "",
+          "password-page-background": "",
+          "pagework_page_bg_stretched": true,
+          "copyright_text": "",
+          "display_designed_by": true,
+          "display_shopify": true,
+          "social_media": true,
+          "password_page_background_color": "#ffffff",
+          "password_page_text_color": "#000000",
+          "newsletter_title": "Subscribe",
+          "newsletter_richtext": "<p>Sign up to get the latest on sales, new releases and more …<\/p>",
+          "show_signup_form": true,
+          "display_first_name": false,
+          "display_last_name": false,
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "fixed-message": {
+        "type": "fixed-message",
+        "settings": {
+          "text": "",
+          "button_label": "",
+          "button_style": "button--primary",
+          "background": "#000000",
+          "background_opacity": 0,
+          "text_color": "#ffffff",
+          "width": "wide",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "product__recommendations": {
+        "type": "product__recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "product_recommendations_style": "grid",
+          "product_recommendations_heading": "",
+          "products_per": 3,
+          "recommended_products_limit": 3,
+          "align_height": false,
+          "collection_height": 200
+        }
+      },
+      "page__main": {
+        "type": "page__main",
+        "settings": {
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__banner": {
+        "type": "page-faq__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "",
+          "image_darken": false,
+          "subtitle": "",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__main": {
+        "type": "page-faq__main",
+        "settings": {
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__column1": {
+        "type": "page-faq__column1",
+        "blocks": {
+          "page-faq__column1-0": {
+            "type": "heading",
+            "settings": {
+              "title": "Product Information"
+            }
+          },
+          "page-faq__column1-1": {
+            "type": "content",
+            "settings": {
+              "title": "Are your products all natural?",
+              "answer": "<p>Yes! We are always on the hunt for the freshest ingredients to create our products. The key to all natural products is to ensure the products are potent and as fresh as possible.<\/p>"
+            }
+          },
+          "page-faq__column1-2": {
+            "type": "content",
+            "settings": {
+              "title": "What is the shelf life of your products?",
+              "answer": "<p>Our products are all 100% natural and are made with fresh ingredients. This does mean that their shelf life may be somewhat lower than traditional beauty products but that's the trade off! The shelf life of our products do range from 1 month to 5 years.<\/p>"
+            }
+          },
+          "page-faq__column1-3": {
+            "type": "content",
+            "settings": {
+              "title": "Do you test on animals?",
+              "answer": "<p>Absolutely not. We take pride in ensuring that no products are ever tested on animals.&nbsp;We only select ingredients from companies who do not test on animals and when we are in the process of developing new products, we only test them out with human volunteers.<\/p>"
+            }
+          },
+          "page-faq__column1-5": {
+            "type": "content",
+            "settings": {
+              "title": "Is your packaging recyclable?",
+              "answer": "<p>You bet! While we aim to eliminate packaging from all of our products, there are still some products that require some help staying put. All packaging is 100% recyclable though, and can be brought back to our physical locations for a fun treat!<\/p>"
+            }
+          },
+          "page-faq__column1-4": {
+            "type": "heading",
+            "settings": {
+              "title": "Order Information"
+            }
+          },
+          "page-faq__column1-6": {
+            "type": "content",
+            "settings": {
+              "title": "When will my order ship?",
+              "answer": "<p>Because our products are handmade, we need about 3-4 days to pack and ship your full order. Orders placed after our afternoon cutoff will ship the next business day.<\/p>"
+            }
+          },
+          "1564163024067": {
+            "type": "content",
+            "settings": {
+              "title": "How is my shipping calculated?",
+              "answer": "<p>Our shipping rates are determined by location and the total weight of your order. Shipping rates will be calculated and displayed at checkout!<\/p>"
+            }
+          },
+          "page-faq__column1-7": {
+            "type": "content",
+            "settings": {
+              "title": "I have a question about my order, what should I do?",
+              "answer": "<p>Reach out! Visit our contact page for any information regarding your order! We&rsquo;re happy to answer questions about Orders, Order Modifications, Shipping, Returns, &amp; Cancellations.<\/p>"
+            }
+          },
+          "1564162991424": {
+            "type": "content",
+            "settings": {
+              "title": "What is your return policy?",
+              "answer": "<p>If you&rsquo;re not happy with a certain product, that&rsquo;s okay!&nbsp;We just ask that returned items be 50% intact and returned with their original packaging. You can return items up to 30 days after the date it was shipped.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq__column1-0",
+          "page-faq__column1-1",
+          "page-faq__column1-2",
+          "page-faq__column1-3",
+          "page-faq__column1-5",
+          "page-faq__column1-4",
+          "page-faq__column1-6",
+          "1564163024067",
+          "page-faq__column1-7",
+          "1564162991424"
+        ],
+        "settings": {
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-faq__column2": {
+        "type": "page-faq__column2",
+        "blocks": {
+          "page-faq__column2-0": {
+            "type": "image",
+            "settings": {
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "page-faq__column2-0"
+        ],
+        "settings": {
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__banner": {
+        "type": "blog__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "shopify:\/\/shop_images\/20210316112718.jpg",
+          "image_darken": false,
+          "subtitle": "About Vaping with UPENDS",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__sidebar": {
+        "type": "blog__sidebar",
+        "blocks": {
+          "667ebaf1-fb74-4eab-a202-ec438a1ff4c6": {
+            "type": "recent_posts",
+            "settings": {
+              "title": "The Latest",
+              "blog": "articles",
+              "text": "<p>Browse our latest articles and join in on the<br\/>conversation!<\/p>",
+              "blog_post_count": 10
+            }
+          },
+          "1564173250193": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_title": "Subscribe",
+              "newsletter_richtext": "<p>Sign up to get the exclusive deals and new <br\/>product information.<\/p>",
+              "display_first_name": false,
+              "display_last_name": false
+            }
+          }
+        },
+        "block_order": [
+          "667ebaf1-fb74-4eab-a202-ec438a1ff4c6",
+          "1564173250193"
+        ],
+        "settings": {
+          "show_sidebar": true,
+          "sidebar_position": "right",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "blog__main": {
+        "type": "blog__main",
+        "settings": {
+          "blog_tags": false,
+          "blog_posts_per_row": 1,
+          "blog_posts_per_page": 12,
+          "pagination_type": "basic_pagination",
+          "blog_author": true,
+          "blog_date": true,
+          "blog_read_time": true,
+          "blog_comment_count": true,
+          "blog_show_tags": true,
+          "blog_show_excerpt": true,
+          "show_border": true,
+          "button_label": "Continue Reading",
+          "button_type": "button--secondary",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-details__main": {
+        "type": "page-details__main",
+        "blocks": {
+          "1595252790575": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Layer_1_24ced96d-a4ed-422d-8fe2-4fa8b9247247.png",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "left",
+              "text_horizontal_position": "left",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 0,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": false,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1596427267302": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/UPPEN_-mobile_-0729.png",
+              "link": "shopify:\/\/products\/buy-uppen-kit",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "left",
+              "text_horizontal_position": "left",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1595253251385": {
+            "type": "rich_text",
+            "settings": {
+              "title": "COMFORTABLE AND NATURAL  ERGONOMIC DESIGN<br> WITH THE JOY  OF LIFE IN EVERY DETAIL",
+              "heading_font": "neue_aachen_n6",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 30,
+              "text": "",
+              "text_font": "open_sans_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "center",
+              "text_size": 16,
+              "columns": 1,
+              "button_label": "",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "rgba(0,0,0,0)",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 180,
+              "width": "wide",
+              "padding_top": 80,
+              "padding_bottom": 20,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1595253664783": {
+            "type": "custom_html",
+            "settings": {
+              "html_content": "<p style=\"text-align:center;\">Roman-column-inspired battery body, Clarinet-inspired mouthpiece,<br>together with an 18K gold-plated clip highlighting your unique taste and individual personality. <\/p>",
+              "width": "standard",
+              "padding_top": 0,
+              "padding_bottom": 30,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1595253791521": {
+            "type": "custom_html",
+            "settings": {
+              "html_content": "<div id=\"shopify-section-1595252982702\" class=\"shopify-section\n                details__block\n                block__gallery\n                \n                  jsGallery\n                \" data-theme-editor-block-37982202187='{\"id\":\"1595252982702\",\"type\":\"gallery\"}'>\n\n        \n\n          \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<style data-shopify=\"\">\n  #shopify-section-1595252982702 {\n    padding-top: 20px;\n    padding-bottom: 20px;\n    \n  }\n\n  \n#shopify-section-1595252982702 .gallery-item__overlay {\n    background-color: rgba(0, 0, 0, 0.77);\n   }#shopify-section-1595252982702 \n\n  .gallery-item__overlay .icon {\n    fill: #ffffff;\n   }\n  \n\n<\/style>\n\n\n<section class=\"section\n                \n                is-width-standard\n\n                \n                  has-gutter-enabled\n                \n                \n                  has-multirow-blocks\n                \n                \n                \">\n\n  \n\n  <div class=\"\n              is-justify-center\n              gallery__wrapper\n              gallery-type--classic\n              \n              container\n              \n              \">\n\n    \n      \n\n        \n\n        \n        \n        \n        \n\n        \n          <div class=\"gallery__item\n                      \n                        has-gutter\n                      \n                      \n                        \n\n\n\n\n  one-third\n\n                        medium-down--one-half\n                        small-down--one-whole\n                      \n                      column\n                      \">\n\n            \n\n              <div class=\"gallery__item-wrap is-relative\">\n                \n                  \n\n\n\n\n\n\n\n\n\n\n\n<div class=\"image-element__wrap\" style=\"max-width: 480px; background: none;\">\n  <img alt=\"\" class=\"transition--fade-in lazyautosizes lazyloaded\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1600x.png?v=1595253039\" data-sizes=\"auto\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_5000x.png?v=1595253039 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_4500x.png?v=1595253039 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_4000x.png?v=1595253039 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_3500x.png?v=1595253039 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_3000x.png?v=1595253039 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_2500x.png?v=1595253039 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_2000x.png?v=1595253039 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1800x.png?v=1595253039 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1600x.png?v=1595253039 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1400x.png?v=1595253039 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1200x.png?v=1595253039 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1000x.png?v=1595253039 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_800x.png?v=1595253039 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_600x.png?v=1595253039 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_400x.png?v=1595253039 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_200x.png?v=1595253039 200w,\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_5000x.png?v=1595253039 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_4500x.png?v=1595253039 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_4000x.png?v=1595253039 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_3500x.png?v=1595253039 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_3000x.png?v=1595253039 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_2500x.png?v=1595253039 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_2000x.png?v=1595253039 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1800x.png?v=1595253039 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1600x.png?v=1595253039 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1400x.png?v=1595253039 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1200x.png?v=1595253039 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1000x.png?v=1595253039 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_800x.png?v=1595253039 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_600x.png?v=1595253039 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_400x.png?v=1595253039 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_200x.png?v=1595253039 200w,\" height=\"300\" width=\"480\" style=\"\" sizes=\"269px\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_1600x.png?v=1595253039\">\n    <p style=\"text-align:center;padding-top:20px;\">Roman Column<\/p>\n<\/div>\n\n\n\n<noscript>\n  <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-01-480x300px_2000x.png?v=1595253039\" alt=\"\">\n<\/noscript>\n\n                \n\n                \n\n              <\/div>\n\n            \n          <\/div>\n        \n      \n\n        \n\n        \n        \n        \n        \n\n        \n          <div class=\"gallery__item\n                      \n                        has-gutter\n                      \n                      \n                        \n\n\n\n\n  one-third\n\n                        medium-down--one-half\n                        small-down--one-whole\n                      \n                      column\n                      \">\n\n            \n\n              <div class=\"gallery__item-wrap is-relative\">\n                \n                  \n\n\n\n\n\n\n\n\n\n\n\n<div class=\"image-element__wrap\" style=\"max-width: 480px; background: none;\">\n  <img alt=\"\" class=\"transition--fade-in lazyautosizes lazyloaded\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1600x.png?v=1595253052\" data-sizes=\"auto\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_5000x.png?v=1595253052 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_4500x.png?v=1595253052 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_4000x.png?v=1595253052 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_3500x.png?v=1595253052 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_3000x.png?v=1595253052 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_2500x.png?v=1595253052 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_2000x.png?v=1595253052 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1800x.png?v=1595253052 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1600x.png?v=1595253052 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1400x.png?v=1595253052 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1200x.png?v=1595253052 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1000x.png?v=1595253052 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_800x.png?v=1595253052 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_600x.png?v=1595253052 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_400x.png?v=1595253052 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_200x.png?v=1595253052 200w,\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_5000x.png?v=1595253052 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_4500x.png?v=1595253052 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_4000x.png?v=1595253052 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_3500x.png?v=1595253052 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_3000x.png?v=1595253052 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_2500x.png?v=1595253052 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_2000x.png?v=1595253052 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1800x.png?v=1595253052 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1600x.png?v=1595253052 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1400x.png?v=1595253052 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1200x.png?v=1595253052 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1000x.png?v=1595253052 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_800x.png?v=1595253052 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_600x.png?v=1595253052 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_400x.png?v=1595253052 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_200x.png?v=1595253052 200w,\" height=\"300\" width=\"480\" style=\"\" sizes=\"269px\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_1600x.png?v=1595253052\">\n    <p style=\"text-align:center;padding-top:20px;\">Clarinet Mouthpiece<\/p>\n<\/div>\n\n\n\n<noscript>\n  <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-02-480x300px_2000x.png?v=1595253052\" alt=\"\">\n<\/noscript>\n\n                \n\n                \n\n              <\/div>\n\n            \n          <\/div>\n        \n      \n\n        \n\n        \n        \n        \n        \n\n        \n          <div class=\"gallery__item\n                      \n                        has-gutter\n                      \n                      \n                        \n\n\n\n\n  one-third\n\n                        medium-down--one-half\n                        small-down--one-whole\n                      \n                      column\n                      \">\n\n            \n\n              <div class=\"gallery__item-wrap is-relative\">\n                \n                  \n\n\n\n\n\n\n\n\n\n\n\n<div class=\"image-element__wrap\" style=\"max-width: 480px; background: none;\">\n  <img alt=\"\" class=\"transition--fade-in lazyautosizes lazyloaded\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1600x.png?v=1595253067\" data-sizes=\"auto\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_5000x.png?v=1595253067 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_4500x.png?v=1595253067 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_4000x.png?v=1595253067 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_3500x.png?v=1595253067 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_3000x.png?v=1595253067 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_2500x.png?v=1595253067 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_2000x.png?v=1595253067 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1800x.png?v=1595253067 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1600x.png?v=1595253067 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1400x.png?v=1595253067 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1200x.png?v=1595253067 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1000x.png?v=1595253067 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_800x.png?v=1595253067 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_600x.png?v=1595253067 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_400x.png?v=1595253067 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_200x.png?v=1595253067 200w,\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_5000x.png?v=1595253067 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_4500x.png?v=1595253067 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_4000x.png?v=1595253067 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_3500x.png?v=1595253067 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_3000x.png?v=1595253067 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_2500x.png?v=1595253067 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_2000x.png?v=1595253067 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1800x.png?v=1595253067 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1600x.png?v=1595253067 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1400x.png?v=1595253067 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1200x.png?v=1595253067 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1000x.png?v=1595253067 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_800x.png?v=1595253067 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_600x.png?v=1595253067 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_400x.png?v=1595253067 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_200x.png?v=1595253067 200w,\" height=\"300\" width=\"480\" style=\"\" sizes=\"269px\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_1600x.png?v=1595253067\">\n    <p style=\"text-align:center;padding-top:20px;\">18K Gold Plated Clip<\/p>\n<\/div>\n\n\n\n<noscript>\n  <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/IMG-03-480x300px_2000x.png?v=1595253067\" alt=\"\">\n<\/noscript>\n\n                \n\n                \n\n              <\/div>\n\n            \n          <\/div>\n        \n      \n\n        \n\n        \n        \n        \n        \n\n        \n      \n\n        \n\n        \n        \n        \n        \n\n        \n      \n    \n  <\/div>\n<\/section>\n\n\n<script type=\"application\/json\" data-section-id=\"1595252982702\" data-section-data=\"\">\n  {\n    \"gallery_type\": \"classic\",\n    \"show_gutter\": true\n  }\n<\/script>\n<script data-theme-editor-load-script=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/t\/8\/assets\/z__jsGallery.js?v=12112826367421463867\"><\/script>\n\n\n        \n\n        <\/div>",
+              "width": "standard",
+              "padding_top": 30,
+              "padding_bottom": 70,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1592282858670": {
+            "type": "custom_html",
+            "settings": {
+              "html_content": "<div style=\"width:100%;min-height:600px;display: block;margin: 0 auto;\" class=\"section is-width-standard has-gutter-enabled animated fadeIn\">\n<h2 style=\"text-align:center;font-size:30px;\">DRAMATICALLY ENHANCED DESIGN AND HYGIENE<br>With 99.9% Antibacterial Rate<\/h2>\n<br>\n<p style=\"text-align:center\">\nIncorporating the antibacterial properties of nanometric silver,<br>\nthe mouthpiece effectively inhibits bacteria growth at a rate of 99.9%.<br>\nThe easy-to-use cap protects your pod from dust and dirt.<\/p>\n<br>\n<\/div>",
+              "width": "wide",
+              "padding_top": 80,
+              "padding_bottom": 40,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1596427530992": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Layer_1_mb.png",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1595254807378": {
+            "type": "custom_html",
+            "settings": {
+              "html_content": "<div class=\"container is-flex is-justify-center\"><h2 class=\"title\" style=\"text-align:center;\">ENJOY A NEXT-LEVEL MTL VAPING \nEXPERIENCE<br>WITH NEW \nGENERATION COIL – ETCHIP\n<\/h2><\/div>",
+              "width": "standard",
+              "padding_top": 80,
+              "padding_bottom": 20,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1595255279032": {
+            "type": "custom_html",
+            "settings": {
+              "html_content": "<div class=\"\n              is-justify-center\n              gallery__wrapper\n              gallery-type--classic\n              \n              container\n              \n              \">\n\n    \n      \n\n        \n\n        \n        \n        \n        \n\n        \n          <div class=\"gallery__item\n                      \n                        has-gutter\n                      \n                      \n                        \n\n\n\n\n  one-third\n\n                        medium-down--one-half\n                        small-down--one-whole\n                      \n                      column\n                      none\">\n\n            \n\n              <div class=\"gallery__item-wrap is-relative\">\n                \n                  \n\n\n\n\n\n\n\n\n\n\n\n<div class=\"image-element__wrap\" style=\"max-width: 500px; background: none;\">\n  <img alt=\"\" class=\"transition--fade-in lazyautosizes lazyloaded\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1600x.gif?v=1595255018\" data-sizes=\"auto\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_5000x.gif?v=1595255018 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_4500x.gif?v=1595255018 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_4000x.gif?v=1595255018 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_3500x.gif?v=1595255018 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_3000x.gif?v=1595255018 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_2500x.gif?v=1595255018 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_2000x.gif?v=1595255018 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1800x.gif?v=1595255018 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1600x.gif?v=1595255018 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1400x.gif?v=1595255018 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1200x.gif?v=1595255018 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1000x.gif?v=1595255018 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_800x.gif?v=1595255018 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_600x.gif?v=1595255018 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_400x.gif?v=1595255018 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_200x.gif?v=1595255018 200w,\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_5000x.gif?v=1595255018 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_4500x.gif?v=1595255018 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_4000x.gif?v=1595255018 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_3500x.gif?v=1595255018 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_3000x.gif?v=1595255018 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_2500x.gif?v=1595255018 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_2000x.gif?v=1595255018 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1800x.gif?v=1595255018 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1600x.gif?v=1595255018 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1400x.gif?v=1595255018 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1200x.gif?v=1595255018 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1000x.gif?v=1595255018 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_800x.gif?v=1595255018 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_600x.gif?v=1595255018 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_400x.gif?v=1595255018 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_200x.gif?v=1595255018 200w,\" height=\"281\" width=\"500\" style=\"\" sizes=\"262px\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_1600x.gif?v=1595255018\">\n    <p style=\"text-align:center;padding-top:20px;\">With a fast e-liquid delivery speed and oil-locking feature, the special flax base prevents dry hits, popping, spitting and leakage.<\/p>\n<\/div>\n\n\n\n<noscript>\n  <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_2000x.gif?v=1595255018\" alt=\"\">\n<\/noscript>\n\n                \n\n                \n                  <div class=\"gallery-item__overlay is-flex is-align-center is-justify-center\">\n                    \n                      <a href=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-01-500x280px_2000x.gif?v=1595255018\" data-fancybox=\"1595254940761\" class=\"gallery__link\">\n                        \n\n<span class=\"icon \" data-icon=\"zoom\">\n\n  \n\n    <svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 100 100\"><title>z<\/title>\n<g id=\"zoom\"><path d=\"M92.83,90.18,71.47,68.83a38.58,38.58,0,1,0-6.29,5l22,22ZM14,41.46A30.47,30.47,0,1,1,44.47,71.93,30.51,30.51,0,0,1,14,41.46Z\"><\/path><polygon points=\"48.47 20.31 40.47 20.31 40.47 37.46 23.32 37.46 23.32 45.46 40.47 45.46 40.47 62.61 48.47 62.61 48.47 45.46 65.62 45.46 65.62 37.46 48.47 37.46 48.47 20.31\"><\/polygon><\/g><\/svg>\n\n  \n<\/span>\n\n                      <\/a>\n                    \n                    \n                  <\/div>\n                \n\n              <\/div>\n\n            \n          <\/div>\n        \n      \n\n        \n\n        \n        \n        \n        \n\n        \n          <div class=\"gallery__item\n                      \n                        has-gutter\n                      \n                      \n                        \n\n\n\n\n  one-third\n\n                        medium-down--one-half\n                        small-down--one-whole\n                      \n                      column\n                      none\">\n\n            \n\n              <div class=\"gallery__item-wrap is-relative\">\n                \n                  \n\n\n\n\n\n\n\n\n\n\n\n<div class=\"image-element__wrap\" style=\"max-width: 500px; background: none;\">\n  <img alt=\"\" class=\"transition--fade-in lazyautosizes lazyloaded\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1600x.gif?v=1595255036\" data-sizes=\"auto\" data-srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_5000x.gif?v=1595255036 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_4500x.gif?v=1595255036 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_4000x.gif?v=1595255036 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_3500x.gif?v=1595255036 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_3000x.gif?v=1595255036 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_2500x.gif?v=1595255036 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_2000x.gif?v=1595255036 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1800x.gif?v=1595255036 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1600x.gif?v=1595255036 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1400x.gif?v=1595255036 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1200x.gif?v=1595255036 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1000x.gif?v=1595255036 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_800x.gif?v=1595255036 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_600x.gif?v=1595255036 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_400x.gif?v=1595255036 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_200x.gif?v=1595255036 200w,\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_5000x.gif?v=1595255036 5000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_4500x.gif?v=1595255036 4500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_4000x.gif?v=1595255036 4000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_3500x.gif?v=1595255036 3500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_3000x.gif?v=1595255036 3000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_2500x.gif?v=1595255036 2500w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_2000x.gif?v=1595255036 2000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1800x.gif?v=1595255036 1800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1600x.gif?v=1595255036 1600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1400x.gif?v=1595255036 1400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1200x.gif?v=1595255036 1200w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1000x.gif?v=1595255036 1000w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_800x.gif?v=1595255036 800w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_600x.gif?v=1595255036 600w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_400x.gif?v=1595255036 400w,\n    \/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_200x.gif?v=1595255036 200w,\" height=\"280\" width=\"500\" style=\"\" sizes=\"262px\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_1600x.gif?v=1595255036\">\n    <p style=\"text-align:center;padding-top:20px;\">With the enlarged heating area and improved heating efficiency, the high resistance heating mesh creates fulfilling vapor from the very first puff.<\/p>\n<\/div>\n\n\n\n<noscript>\n  <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_2000x.gif?v=1595255036\" alt=\"\">\n<\/noscript>\n\n                \n\n                \n                  <div class=\"gallery-item__overlay is-flex is-align-center is-justify-center\">\n                    \n                      <a href=\"\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/GIF-02-500x280px_2000x.gif?v=1595255036\" data-fancybox=\"1595254940761\" class=\"gallery__link\">\n                        \n\n<span class=\"icon \" data-icon=\"zoom\">\n\n  \n\n    <svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 100 100\"><title>z<\/title>\n<g id=\"zoom\"><path d=\"M92.83,90.18,71.47,68.83a38.58,38.58,0,1,0-6.29,5l22,22ZM14,41.46A30.47,30.47,0,1,1,44.47,71.93,30.51,30.51,0,0,1,14,41.46Z\"><\/path><polygon points=\"48.47 20.31 40.47 20.31 40.47 37.46 23.32 37.46 23.32 45.46 40.47 45.46 40.47 62.61 48.47 62.61 48.47 45.46 65.62 45.46 65.62 37.46 48.47 37.46 48.47 20.31\"><\/polygon><\/g><\/svg>\n\n  \n<\/span>\n\n                      <\/a>\n                    \n                    \n                  <\/div>\n                \n\n              <\/div>\n\n            \n          <\/div>\n        \n      \n\n        \n\n        \n        \n        \n        \n\n        \n      \n\n        \n\n        \n        \n        \n        \n\n        \n      \n\n        \n\n        \n        \n        \n        \n\n        \n      \n    \n  <\/div>",
+              "width": "wide",
+              "padding_top": 80,
+              "padding_bottom": 80,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1592283491852": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "right",
+              "image": "shopify:\/\/shop_images\/8b81e9cc-a18f-48b5-955c-ef65efcfc4e3.gif",
+              "image_crop": "center",
+              "title": "A UNIQUE DESIGN FOR EASY CONNECTION WITH MAGNETIC AUTO-FOCUS FUNCTION",
+              "heading_size": "regular",
+              "text": "<p>The built-in magnets draw the pod to the right position securely, and a quick vibration click indicates that it&#x27;s ready for use.<\/p><p><\/p><p><\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "left",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 80,
+              "padding_bottom": 0,
+              "animation": "fadeIn"
+            }
+          },
+          "1596163049334": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Your Long-lasting companion",
+              "heading_font": "neue_aachen_n6",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 30,
+              "text": "<p>With a 600mAh integral battery and the 10W Etchip coil,<\/p><p>you can enjoy a fulfilling vapor all day long, just from one single charge<\/p>",
+              "text_font": "helvetica_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "center",
+              "text_size": 16,
+              "columns": 1,
+              "button_label": "",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "rgba(0,0,0,0)",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 180,
+              "width": "half",
+              "padding_top": 50,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1595255676947": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fdabd6e5-7a38-432f-848d-dea306134c1d_1200x_4b466f67-ae15-4eab-8826-2fb2ab31a8af.png",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "standard",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1597297218148": {
+            "type": "custom_html",
+            "settings": {
+              "html_content": "<div class=\"container is-flex is-justify-center\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0283\/9815\/7955\/files\/icon1_6524f3e2-0386-4213-829c-6234138fe094.svg?v=1597297269\" style=\"min-width:100%;\"><\/div>",
+              "width": "standard",
+              "padding_top": 0,
+              "padding_bottom": 80,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1596427758998": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG-5.png",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 50,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1592284227147": {
+            "type": "image_with_text",
+            "settings": {
+              "image_position": "left",
+              "image": "shopify:\/\/shop_images\/ccf446dc-6c25-4ede-83a1-370ed6ad2bb6_600x_fe6fdd3d-3811-4c41-afff-02aecced85d7.png",
+              "image_crop": "right",
+              "image_link": "shopify:\/\/products\/buy-uppen-kit",
+              "title": "Specifications:",
+              "heading_size": "regular",
+              "text": "<p>Size: 16 * 134mm<\/p><p>Battery: 600mAh<\/p><p>Average Output: 10W<\/p><p>Capacity: 2.0ML<\/p><p>Resistance: 1.2ohm<\/p><p>Allowed Input: DC5V-750mA<\/p><p><strong>Package Includes: <\/strong><\/p><p>1 * Uppen Battery,<\/p><p>1 * Uppen Refillable Pod,<\/p><p>1 * USB Cable,<\/p><p>1 * User Guide &amp; Warranty Card<\/p>",
+              "button_label": "",
+              "button_style": "button--primary",
+              "alignment": "left",
+              "vertical_position": "center",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "width": "standard",
+              "show_gutter": false,
+              "padding_top": 40,
+              "padding_bottom": 80,
+              "animation": "none"
+            }
+          },
+          "1596166328971": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG-08-1920x1000px_f42b2f27-a00f-4e09-a0e3-64d8684bcbd5.png",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "rgba(0,0,0,0)",
+              "background_opacity": 0,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 80,
+              "padding_bottom": 80,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "1596427891445": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Layer_5_mb.png",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 30,
+              "padding_bottom": 40,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "1595252790575",
+          "1596427267302",
+          "1595253251385",
+          "1595253664783",
+          "1595253791521",
+          "1592282858670",
+          "1596427530992",
+          "1595254807378",
+          "1595255279032",
+          "1592283491852",
+          "1596163049334",
+          "1595255676947",
+          "1597297218148",
+          "1596427758998",
+          "1592284227147",
+          "1596166328971",
+          "1596427891445"
+        ],
+        "settings": {
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__banner": {
+        "type": "page-contact__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "",
+          "image_darken": false,
+          "subtitle": "We love to hear from you!",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__main": {
+        "type": "page-contact__main",
+        "blocks": {
+          "page-contact__main-0": {
+            "type": "textfield",
+            "settings": {
+              "label": "Name",
+              "required": true
+            }
+          },
+          "page-contact__main-1": {
+            "type": "email",
+            "settings": {
+              "label": "Email"
+            }
+          },
+          "1564170182418": {
+            "type": "checkbox",
+            "settings": {
+              "label": "Subject",
+              "required": false,
+              "options_1": "Product Inquiry",
+              "options_2": "Order Inquiry",
+              "options_3": "Other",
+              "options_4": "",
+              "options_5": "",
+              "options_6": "",
+              "options_7": "",
+              "options_8": "",
+              "options_9": "",
+              "options_10": ""
+            }
+          },
+          "page-contact__main-2": {
+            "type": "textarea",
+            "settings": {
+              "label": "Message",
+              "required": true
+            }
+          }
+        },
+        "block_order": [
+          "page-contact__main-0",
+          "page-contact__main-1",
+          "1564170182418",
+          "page-contact__main-2"
+        ],
+        "settings": {
+          "content_image": "",
+          "title": "Need to get in touch?",
+          "content_text": "<p>We're always happy to chat and help answer any questions you may have! Please note, we try our best to respond to all inquiries within 48 hours, Monday - Friday.<\/p>",
+          "social_enable": true,
+          "text_alignment": "left",
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "form_position": "right",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__sections": {
+        "type": "page-contact__sections",
+        "blocks": {
+          "page-contact__sections-0": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Come and visit",
+              "heading_font": "helvetica_n7",
+              "heading_color": "#ffffff",
+              "heading_alignment": "left",
+              "heading_size": 50,
+              "text": "<p>Stop by one of our locations!&nbsp;<\/p>\n<p>Mon-Fri: 9:00am - 6:00pm<br>Sat: 10:00am - 3:00pm<br>Sun: Closed<\/p>",
+              "text_font": "helvetica_n4",
+              "text_color": "#ffffff",
+              "text_alignment": "left",
+              "text_size": 16,
+              "columns": 1,
+              "button_label": "",
+              "button_link": "",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#000000",
+              "gradient": "rgba(0,0,0,0)",
+              "gradient_rotation": 180,
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "page-contact__sections-1": {
+            "type": "map",
+            "settings": {
+              "map_address": "Bath",
+              "map_height": 400,
+              "zoom_level": 11,
+              "map_image": "",
+              "api_key": "",
+              "show_pin": false,
+              "map_style": "silver",
+              "width": "half",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "page-contact__sections-0",
+          "page-contact__sections-1"
+        ],
+        "settings": {
+        }
+      },
+      "collection__banner": {
+        "type": "collection__banner",
+        "settings": {
+          "show_banner": true,
+          "image": "shopify:\/\/shop_images\/3_12523199-814a-4190-8816-ddd0cf6ef93d.jpg",
+          "image_darken": false,
+          "subtitle": "",
+          "width": "wide",
+          "banner_height": "large",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection__sidebar": {
+        "type": "collection__sidebar",
+        "settings": {
+          "show_sidebar": false,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection__main": {
+        "type": "collection__main",
+        "blocks": {
+          "beb80e8c-0636-41b2-9333-088928573727": {
+            "type": "menu",
+            "settings": {
+              "menu": "collections"
+            }
+          }
+        },
+        "block_order": [
+          "beb80e8c-0636-41b2-9333-088928573727"
+        ],
+        "settings": {
+          "collection_breadcrumb": false,
+          "collection_tags": false,
+          "collection_sort": false,
+          "show_promo_banner": false,
+          "image_darken": true,
+          "promo_title": "Special sale on now!",
+          "promo_text": "<p>Description of promotion with lots of details.<\/p>",
+          "banner_height": "medium",
+          "align_height": false,
+          "collection_height": 380,
+          "products_per_row": 3,
+          "mobile_products_per_row": "1",
+          "pagination_limit": 48,
+          "pagination_type": "basic_pagination",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "cart__banner": {
+        "type": "cart__banner",
+        "settings": {
+          "show_banner": false,
+          "image": "",
+          "image_darken": false,
+          "subtitle": "Subheading",
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "cart__main": {
+        "type": "cart__main",
+        "blocks": {
+          "1564171735975": {
+            "type": "featured_collection",
+            "settings": {
+              "title": "Current favourites",
+              "collection": "uppen",
+              "products_per": 5,
+              "mobile_products_per_row": "1",
+              "products_limit": 5,
+              "align_height": false,
+              "collection_height": 200,
+              "collection_style": "grid",
+              "width": "wide",
+              "show_gutter": true,
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "1564171735975"
+        ],
+        "settings": {
+          "display_product_quantity_cart": true,
+          "display_savings": true,
+          "cart_message": "",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection-subcollection__main": {
+        "type": "collection-subcollection__main",
+        "settings": {
+          "collection_breadcrumb": true,
+          "show_promo_banner": false,
+          "image": "",
+          "image_darken": true,
+          "promo_title": "Special sale on now!",
+          "promo_text": "<p>Description of promotion with lots of details.<\/p>",
+          "banner_height": "medium",
+          "collections_per_row": 2,
+          "mobile_collections_per_row": "1",
+          "align_height": false,
+          "collection_height": 400,
+          "button_style": "button--primary",
+          "overlay_background": "#d3d3d3",
+          "overlay_background_opacity": 0,
+          "overlay_text": "#000000",
+          "collection_title_below_image": false,
+          "width": "standard",
+          "padding_top": 13,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "subcollection__featured-collection": {
+        "type": "subcollection__featured-collection",
+        "settings": {
+          "collection_tags": true,
+          "collection_sort": true,
+          "align_height": false,
+          "collection_height": 200,
+          "products_per_row": 3,
+          "mobile_products_per_row": "1",
+          "pagination_limit": 48,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "list-collections__main": {
+        "type": "list-collections__main",
+        "settings": {
+          "menu": "collections",
+          "collections_per_row": 2,
+          "pagination_limit": 48,
+          "pagination_type": "basic_pagination",
+          "align_height": false,
+          "collection_height": 400,
+          "button_style": "button--secondary",
+          "overlay_background": "#939393",
+          "overlay_background_opacity": 0,
+          "overlay_text": "#ffffff",
+          "collection_title_below_image": false,
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1592102147383": {
+        "type": "index__slideshow-classic",
+        "blocks": {
+          "90755c67-bc0d-49af-9b0d-6296f9217af7": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "link": "",
+              "image": "shopify:\/\/shop_images\/10_-PC_Banner_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/10_-PC_1.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "697c7210-73e8-495c-8b5a-7180e07f2b57": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "link": "",
+              "image": "shopify:\/\/shop_images\/UpBar-Air-banner-PC_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/UpBar-Air-banner-_1.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "d00eae7d-db78-472b-aea6-7a2257bf0bc1": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upleaf",
+              "image": "shopify:\/\/shop_images\/Upleaf_Banner_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Upleaf_Banner_-600x800px_1.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "1945d013-aa81-4588-a804-b724294eff44": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upbar-rs",
+              "image": "shopify:\/\/shop_images\/01-UpBar_RS_banner_PC_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/01-UpBar_RS_banner_1.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "aef10714-d817-4bd9-9cd7-9a58870c721b": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/www.upends.com\/products\/upbar-air",
+              "image": "shopify:\/\/shop_images\/02-UpBar_Air_banner_PC_2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/02-UpBar_Air_banner_2.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "995a62a8-ab1c-4e8a-8f9a-cf5539e350bb": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/copy-of-upbar-mod",
+              "image": "shopify:\/\/shop_images\/07-UpBar_Mod_banner_PC_7_3514129c-76a2-45af-abaa-e7a020483c56.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/07-UpBar_Mod_banner_7_db59a20a-d235-473f-921e-3a05faccc5f1.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "ea6bf3a8-9bf1-403f-9ccb-791724ee1e4c": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upbar-box",
+              "image": "shopify:\/\/shop_images\/06-UpBar_Box_banner_PC_6.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/06-UpBar_Box_banner_6_10cac068-5660-44da-8f9f-4ac09ae507d0.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "2c8c7fd4-3e36-4d9b-b9b6-e30f06a7f4d6": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upbar",
+              "image": "shopify:\/\/shop_images\/03-UpBar_banner_PC_3_79a96518-409c-47a6-944f-e10b27edf981.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/03-UpBar_banner_3.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "left",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "6c987abf-6aa8-4aa9-8d37-6a12eb83f2c6": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upbar-tt",
+              "image": "shopify:\/\/shop_images\/04-UpBar_TT_banner_PC_4_ca7a42d8-2228-4353-9ee5-49c44c0fb842.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/04-UpBar_TT_banner_4_ef8fc0d9-d815-4c12-9e25-3ef0fdc39e78.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "62cf2bca-08f0-4b52-9ed6-c842ee343afc": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upbar-pnt",
+              "image": "shopify:\/\/shop_images\/05-UpBar_PNT_banner_PC_5.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/05-UpBar_PNT_banner_5.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "1b9d364b-23f4-438b-a595-372ae8eb3b3e": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upbar-titan",
+              "image": "shopify:\/\/shop_images\/08-UpBar_Titan_banner_PC_8.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/08-UpBar_Titan_banner_8.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "1592102147383-0": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upox",
+              "image": "shopify:\/\/shop_images\/09-UpOX_banner_PC_9.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/09-UpOX_banner_9.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#ffffff",
+              "heading_color": "#ffffff",
+              "subheading_color": "#ffffff",
+              "text_alignment": "left",
+              "text_horizontal_position": "left",
+              "background_color": "#000000",
+              "background_opacity": 0,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "shopify:\/\/pages\/brand",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--link-style",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "#ffffff",
+              "heading_color_mobile": "#ffffff",
+              "subheading_color_mobile": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "90755c67-bc0d-49af-9b0d-6296f9217af7",
+          "697c7210-73e8-495c-8b5a-7180e07f2b57",
+          "d00eae7d-db78-472b-aea6-7a2257bf0bc1",
+          "1945d013-aa81-4588-a804-b724294eff44",
+          "aef10714-d817-4bd9-9cd7-9a58870c721b",
+          "995a62a8-ab1c-4e8a-8f9a-cf5539e350bb",
+          "ea6bf3a8-9bf1-403f-9ccb-791724ee1e4c",
+          "2c8c7fd4-3e36-4d9b-b9b6-e30f06a7f4d6",
+          "6c987abf-6aa8-4aa9-8d37-6a12eb83f2c6",
+          "62cf2bca-08f0-4b52-9ed6-c842ee343afc",
+          "1b9d364b-23f4-438b-a595-372ae8eb3b3e",
+          "1592102147383-0"
+        ],
+        "settings": {
+          "image_transition": "slide",
+          "image_slideshow_speed": 4,
+          "show_arrows": true,
+          "show_nav_buttons": true,
+          "mobile_text_below_image": false,
+          "width": "wide",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1592105262266": {
+        "type": "index__image-with-text",
+        "disabled": true,
+        "blocks": {
+          "1592105262266-2": {
+            "type": "text",
+            "settings": {
+              "title": "Uppen, as pretty as it is good.",
+              "heading_size": "regular",
+              "text": "<p>When you’re looking for the best technology coupled with subtle and discreet design, the Uppen vape pen has it all.<\/p>",
+              "button_label": "MORE ABOUT Uppen",
+              "link": "shopify:\/\/products\/uppen",
+              "button_style": "button--link-style",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "alignment": "left",
+              "vertical_position": "center"
+            }
+          },
+          "1592105262266-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/222.png",
+              "image_crop": "none",
+              "image_link": "https:\/\/www.upends.com\/products\/uppen"
+            }
+          }
+        },
+        "block_order": [
+          "1592105262266-2",
+          "1592105262266-0"
+        ],
+        "settings": {
+          "width": "standard",
+          "show_gutter": false,
+          "padding_top": 20,
+          "padding_bottom": 20,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1592105517939": {
+        "type": "index__image-with-text",
+        "disabled": true,
+        "blocks": {
+          "1592105517939-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/555.png",
+              "image_crop": "none",
+              "image_link": "shopify:\/\/blogs\/vape-news\/vapers-aware-of-health-threats-from-filthy-mouthpieces"
+            }
+          },
+          "1592105517939-2": {
+            "type": "text",
+            "settings": {
+              "title": "World's 1<sup style=\"font-size:14px;\">ST<\/sup> Antibacterial Vape Pen",
+              "heading_size": "regular",
+              "text": "<p>Dramatically Enhanced Hygiene<\/p><p>The innovative refined mouthpiece incorporates antibacterial technology to provide protection against common bacteria, while the quality snug-fitting cap helps keep it clean when not in use.<\/p>",
+              "button_label": "WHY IT’S IMPORTANT",
+              "link": "https:\/\/www.upends.com\/blogs\/media\/the-worlds-first-antibacterial-vape-pen",
+              "button_style": "button--link-style",
+              "background": "#f5f5f7",
+              "text_color": "rgba(0,0,0,0)",
+              "alignment": "left",
+              "vertical_position": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1592105517939-0",
+          "1592105517939-2"
+        ],
+        "settings": {
+          "width": "wide",
+          "show_gutter": true,
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "animation": "none",
+          "css_class": "second-level-tile",
+          "custom_css": "#shopify-section-1592105517939 {\nbackground-color:#f3f4f5;}"
+        }
+      },
+      "1592105866855": {
+        "type": "index__image-with-text",
+        "disabled": true,
+        "blocks": {
+          "1592105866855-2": {
+            "type": "text",
+            "settings": {
+              "title": "World's 1<sup style=\"font-size:14px;\">ST<\/sup> Vape Pen with Mesh Inside",
+              "heading_size": "regular",
+              "text": "<p>Etchip Coil for Next Level MTL Experience<\/p><p>The bespoke 1.2 Ohm Etchip Coil has been engineered to provide an even temperature and controlled liquid delivery, for a distinctive smooth, fulfilling draw and no popping, spitting or leakage.<\/p>",
+              "button_label": "WHAT IS ETCHIP",
+              "link": "shopify:\/\/blogs\/media\/a-new-type-of-mesh-coil",
+              "button_style": "button--link-style",
+              "background": "rgba(0,0,0,0)",
+              "text_color": "rgba(0,0,0,0)",
+              "alignment": "left",
+              "vertical_position": "center"
+            }
+          },
+          "1592105866855-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/590X607-20375_600x_149149f8-3fc8-4a75-aade-769cb44924e5.gif",
+              "image_crop": "none",
+              "image_link": "shopify:\/\/blogs\/media\/a-new-type-of-mesh-coil"
+            }
+          }
+        },
+        "block_order": [
+          "1592105866855-2",
+          "1592105866855-0"
+        ],
+        "settings": {
+          "width": "standard",
+          "show_gutter": true,
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1592105977672": {
+        "type": "index__testimonial",
+        "disabled": true,
+        "blocks": {
+          "1592105977672-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/unnamed.jpg",
+              "quote": "<p><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">It&#x27;s just as pretty as it is good!<\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">Most of the time, if somebody spends too much time to make their product pretty, they are trying to cover up how awful their product actually is.<\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">However, in this case(Uppen), it&#x27;s just as pretty as it is good!<\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">It works really well.<\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">We are big surprised, and we big recommend this.<\/a><\/p>",
+              "text": "<p>Ryan Hall<\/p>",
+              "info_text": "rgba(0,0,0,0)",
+              "info_background": "rgba(0,0,0,0)"
+            }
+          },
+          "1594975769171": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Adrian.jpg",
+              "quote": "<p><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">This one for MTL is very very good, and tasty.<\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\"> Even though you keep vaping non-stop for 20 times or 30 times, you won’t feel hot, and the flavor itself remain the same.<\/a><\/p>",
+              "text": "<p>Adrian Lo Dejavu<\/p>",
+              "info_text": "rgba(0,0,0,0)",
+              "info_background": "rgba(0,0,0,0)"
+            }
+          },
+          "1594975919838": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/DJLsb.jpg",
+              "quote": "<p><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">This one vapes amazingly! <\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\"> When I vape this one for the first time, I couldn&#x27;t believe this was a new company only judging by the way it vapes. <\/a><\/p>",
+              "text": "<p>DJLsb Vapes <\/p>",
+              "info_text": "rgba(0,0,0,0)",
+              "info_background": "rgba(0,0,0,0)"
+            }
+          },
+          "1594975928073": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/todd-Reviews.jpg",
+              "quote": "<p><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">An excellent pod system! <\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\"> The drip tip is really comfortable. <\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\"> I think they’ve done a great job in this pod, and especially on the coil. <\/a><\/p>",
+              "text": "<p>Todd Reviews<\/p>",
+              "info_text": "rgba(0,0,0,0)",
+              "info_background": "rgba(0,0,0,0)"
+            }
+          },
+          "1594975933469": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/vaping_VC.png",
+              "quote": "<p><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">I&#x27;ve got to admit it&#x27;s damn good pod kit. I&#x27;m very impressed with how well it works. <\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\"> The battery life on it is phenomenal. And the flavor from it is absolutely super!<\/a><\/p>",
+              "text": "<p>Vaping with Vic<\/p>",
+              "info_text": "rgba(0,0,0,0)",
+              "info_background": "rgba(0,0,0,0)"
+            }
+          },
+          "1594979719898": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/zophie.jpg",
+              "quote": "<p><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\">It’s so simple to use!<\/a><br\/><a href=\"https:\/\/www.upends.com\/pages\/uppen-reviews\" title=\"https:\/\/www.upends.com\/pages\/uppen-reviews\"> It performs just fine. The flavor is not changing. It’s not getting warm or hot.  <\/a><\/p>",
+              "text": "<p>Zophie Vapes<\/p>",
+              "info_text": "rgba(0,0,0,0)",
+              "info_background": "rgba(0,0,0,0)"
+            }
+          }
+        },
+        "block_order": [
+          "1592105977672-0",
+          "1594975769171",
+          "1594975919838",
+          "1594975928073",
+          "1594975933469",
+          "1594979719898"
+        ],
+        "settings": {
+          "show_border": true,
+          "enable_images": true,
+          "crop_shape": "circle",
+          "card_alignment": "center",
+          "card_text": "#000000",
+          "card_background": "#f3f3f4",
+          "width": "wide",
+          "padding_top": 20,
+          "padding_bottom": 20,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "1592106201952": {
+        "type": "index__newsletter",
+        "disabled": true,
+        "settings": {
+          "display_first_name": false,
+          "display_last_name": false,
+          "newsletter_title": "Subscribe",
+          "newsletter_richtext": "<p>Sign up to get the latest on sales, new releases and more …<\/p>",
+          "newsletter_section_text_align": "center",
+          "background_color": "#ffffff",
+          "text_color": "#000000",
+          "image_darken": false,
+          "image_cropping": "center",
+          "image_position": "left",
+          "width": "wide",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "padding_left": 0,
+          "padding_right": 0,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "article__banner": {
+        "type": "article__banner",
+        "settings": {
+          "show_banner": false,
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "article__sidebar": {
+        "type": "article__sidebar",
+        "blocks": {
+          "18442207-83e1-4b16-8df9-fa8da6a07462": {
+            "type": "recent_posts",
+            "settings": {
+              "title": "The Latest",
+              "blog": "articles",
+              "blog_post_count": 10
+            }
+          },
+          "4199f911-1118-453f-b971-a891ce4443ea": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_title": "Subscribe",
+              "newsletter_richtext": "<p>Sign up to get the latest on sales, new releases and more …<\/p>",
+              "display_first_name": false,
+              "display_last_name": false
+            }
+          }
+        },
+        "block_order": [
+          "18442207-83e1-4b16-8df9-fa8da6a07462",
+          "4199f911-1118-453f-b971-a891ce4443ea"
+        ],
+        "settings": {
+          "show_sidebar": true,
+          "sidebar_position": "right",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "article__main": {
+        "type": "article__main",
+        "blocks": {
+          "1592118001864": {
+            "type": "author_share",
+            "settings": {
+              "blog_author": false,
+              "display_social_buttons": true
+            }
+          },
+          "1592117991383": {
+            "type": "related_posts",
+            "settings": {
+              "show_border": false,
+              "blog_show_excerpt": false,
+              "blog_show_tags": false,
+              "button_label": "",
+              "button_type": "none"
+            }
+          },
+          "2e164736-11af-4962-aff1-6ec8cdc8a5b6": {
+            "type": "ads",
+            "settings": {
+              "title": "",
+              "image": "shopify:\/\/shop_images\/76df0585-e64d-4d41-980a-84d223bd377a.gif",
+              "promo_link": "https:\/\/www.upends.com\/pages\/retail-wholesale-program"
+            }
+          }
+        },
+        "block_order": [
+          "1592118001864",
+          "1592117991383",
+          "2e164736-11af-4962-aff1-6ec8cdc8a5b6"
+        ],
+        "settings": {
+          "show_breadcrumb": true,
+          "blog_author": true,
+          "blog_date": true,
+          "blog_read_time": true,
+          "blog_comment_count": true,
+          "show_tags": true,
+          "show_featured_image": true,
+          "show_image": true,
+          "image": "shopify:\/\/shop_images\/upbar-rs_92304533-0fd9-4dc1-a703-509a7e8231f8.gif",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page__banner__1": {
+        "type": "page__banner__1",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/UPENDS_Protects-0826.jpg",
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "medium",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "banner-style",
+          "custom_css": ".banner__heading {color:#183364;font-size:2em;font-weight:500;}"
+        }
+      },
+      "product__main_upone": {
+        "type": "product__main_upone",
+        "blocks": {
+          "product__main_upone-0": {
+            "type": "recommended_products",
+            "settings": {
+              "width": "wide",
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          },
+          "c28fa74f-9007-42ed-9a44-f5c104c1fa82": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Our-Product---__01_5b23e69c-3b26-4133-881f-dd48b669a447.png",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Image with Text Overlay",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#FFFFFF",
+              "background_opacity": 77,
+              "border_color": "#FFFFFF",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "9de0cc54-3419-49bb-9028-8c61f7090861": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Our-Product---__02.png",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Image with Text Overlay",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#FFFFFF",
+              "background_opacity": 77,
+              "border_color": "#FFFFFF",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--primary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": false,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "273dc925-b1fd-496c-8057-3dc9fd0e44b2": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Our-Product---__03.png",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#FFFFFF",
+              "background_opacity": 77,
+              "border_color": "#FFFFFF",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": false,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "ffbe7333-f8d9-4888-936e-ff09f583205f": {
+            "type": "image_with_overlay",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Our-Product---__04.png",
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Image with Text Overlay",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#FFFFFF",
+              "background_opacity": 77,
+              "border_color": "#FFFFFF",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "product__main_upone-0",
+          "c28fa74f-9007-42ed-9a44-f5c104c1fa82",
+          "9de0cc54-3419-49bb-9028-8c61f7090861",
+          "273dc925-b1fd-496c-8057-3dc9fd0e44b2",
+          "ffbe7333-f8d9-4888-936e-ff09f583205f"
+        ],
+        "settings": {
+          "product_breadcrumb": false,
+          "display_thumbnails": true,
+          "gallery_arrows": true,
+          "enable_zoom": true,
+          "enable_product_lightbox": true,
+          "slideshow_speed": 0,
+          "slideshow_transition": "slide",
+          "thumbnail_position": "bottom-thumbnails",
+          "enable_thumbnail_slider": true,
+          "display_vendor": false,
+          "display_sku": false,
+          "enable_shopify_product_badges": false,
+          "display_savings": true,
+          "display_collections": false,
+          "display_type": false,
+          "display_tags": false,
+          "display_social_buttons": true,
+          "product_description_position": "top",
+          "show_payment_button": true,
+          "product_images_position": "left",
+          "set_product_height": false,
+          "product_height": 500,
+          "video_looping": false,
+          "width": "standard",
+          "padding_top": 20,
+          "padding_bottom": 20,
+          "animation": "none",
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "collection_main_top": {
+        "type": "collection_main_top",
+        "blocks": {
+          "collection_main_top-1": {
+            "type": "menu",
+            "settings": {
+              "menu": "collections"
+            }
+          }
+        },
+        "block_order": [
+          "collection_main_top-1"
+        ],
+        "settings": {
+          "show_sidebar": true,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page__banner_brand": {
+        "type": "page__banner_brand",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/wallhaven-4dlyo3.jpg",
+          "title": "",
+          "sub_title": "SUPER VALUE VAPING STARTS HERE AND NOW",
+          "image_darken": false,
+          "width": "wide",
+          "banner_height": "large",
+          "padding_top": 0,
+          "padding_bottom": 0,
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-details__new": {
+        "type": "page-details__new",
+        "blocks": {
+          "page-details__new-0": {
+            "type": "image_with_overlay",
+            "settings": {
+              "pretext": "<p>Preheading<\/p>",
+              "title": "Image with Text Overlay",
+              "subtitle": "<p>Additional info in the subheading<\/p>",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "text_vertical_position": "middle",
+              "background_color": "#FFFFFF",
+              "background_opacity": 77,
+              "border_color": "#FFFFFF",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "Button 1",
+              "button_1_style": "button--secondary",
+              "button_2": "Button 2",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)",
+              "width": "wide",
+              "padding_top": 0,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "page-details__new-1": {
+            "type": "featured_collection",
+            "settings": {
+              "title": "Featured collection",
+              "collection": "",
+              "products_per": 5,
+              "mobile_products_per_row": "1",
+              "products_limit": 10,
+              "align_height": false,
+              "collection_height": 200,
+              "collection_style": "grid",
+              "width": "standard",
+              "show_gutter": true,
+              "padding_top": 20,
+              "padding_bottom": 20,
+              "animation": "none"
+            }
+          },
+          "page-details__new-2": {
+            "type": "rich_text",
+            "settings": {
+              "title": "Rich text",
+              "heading_font": "open_sans_n4",
+              "heading_color": "rgba(0,0,0,0)",
+              "heading_alignment": "center",
+              "heading_size": 30,
+              "text": "<p>Use this section to create some callout text on your page, or add more details about your shop, services, promotions, etc. If you have a large amount of text, you can opt to have it display in <strong>two columns<\/strong> instead so that it&#x27;s much easier to read.<\/p><p><\/p><p>This section also includes the option to add a button in primary or secondary style, and also control the colors, including the option for a gradient background. Since this is rich text, you can also <em>format it as you wish<\/em> and <a href=\"\/collections\/all\" title=\"All Products\">include links<\/a>.<\/p>",
+              "text_font": "open_sans_n4",
+              "text_color": "rgba(0,0,0,0)",
+              "text_alignment": "left",
+              "text_size": 14,
+              "columns": 2,
+              "button_label": "",
+              "button_alignment": "center",
+              "button_style": "button--primary",
+              "background": "#EEEEEE",
+              "gradient": "#C0C0C0",
+              "gradient_rotation": 180,
+              "width": "wide",
+              "padding_top": 20,
+              "padding_bottom": 0,
+              "padding_left": 0,
+              "padding_right": 0,
+              "animation": "none"
+            }
+          },
+          "page-details__new-3": {
+            "type": "blog",
+            "settings": {
+              "title": "Recent blog posts",
+              "blog_widget_select": "",
+              "home_page_articles": 3,
+              "blog_show_tags": true,
+              "blog_author": true,
+              "read_time": true,
+              "blog_date": true,
+              "blog_comment_count": false,
+              "blog_show_excerpt": true,
+              "show-border": true,
+              "button_label": "Read more",
+              "button_type": "button--primary",
+              "width": "standard",
+              "padding_top": 20,
+              "padding_bottom": 0,
+              "animation": "none"
+            }
+          }
+        },
+        "block_order": [
+          "page-details__new-0",
+          "page-details__new-1",
+          "page-details__new-2",
+          "page-details__new-3"
+        ],
+        "settings": {
+          "css_class": "",
+          "custom_css": ""
+        }
+      },
+      "page-contact__main_retail": {
+        "type": "page-contact__main_retail",
+        "blocks": {
+          "b07eb5c5-f9af-4d16-a474-8bfa8df86507": {
+            "type": "product",
+            "settings": {
+              "product": "upbar-air"
+            }
+          },
+          "c40926cf-6adf-462e-8827-a2520294b49e": {
+            "type": "product",
+            "settings": {
+              "product": "upbar-box"
+            }
+          },
+          "310f1f53-d766-4ecb-aea9-4aea8744e939": {
+            "type": "product",
+            "settings": {
+              "product": "upbar"
+            }
+          },
+          "7f16bb4b-1eac-4e3e-9437-ae34ab23861b": {
+            "type": "product",
+            "settings": {
+              "product": "upbar-pnt"
+            }
+          },
+          "04270f11-0b13-4290-a677-6f5a0e9a04af": {
+            "type": "product",
+            "settings": {
+              "product": "upbar-rs"
+            }
+          }
+        },
+        "block_order": [
+          "b07eb5c5-f9af-4d16-a474-8bfa8df86507",
+          "c40926cf-6adf-462e-8827-a2520294b49e",
+          "310f1f53-d766-4ecb-aea9-4aea8744e939",
+          "7f16bb4b-1eac-4e3e-9437-ae34ab23861b",
+          "04270f11-0b13-4290-a677-6f5a0e9a04af"
+        ],
+        "settings": {
+          "title": "Get in touch today",
+          "content_text": "<p>Customize your contact form to suit your business! Add custom fields like a dropdown menu, checkbox, text fields and more, so that you can gather pertinent info from shoppers right from the get-go, to help answer their inquiries more effectively.<\/p>",
+          "social_enable": true,
+          "text_alignment": "left",
+          "background": "#e5e5e5",
+          "text_color": "#000000",
+          "form_position": "right",
+          "width": "standard",
+          "padding_top": 40,
+          "padding_bottom": 40,
+          "css_class": "",
+          "custom_css": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1592102147383",
+      "1592105262266",
+      "1592105517939",
+      "1592105866855",
+      "1592105977672",
+      "1592106201952"
+    ]
+  }
+}

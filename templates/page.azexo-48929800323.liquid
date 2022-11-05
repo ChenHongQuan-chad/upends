@@ -1,0 +1,90 @@
+
+
+<div id="shopify-section-registration-form" class="shopify-section register-section" style=" text-align:center">
+
+
+<style data-shopify="">
+
+  .section__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  
+
+</style>
+
+<section class="section section__wrapper is-width-standard " style=" text-align:center">
+<header class="container"  style="text-align:center">
+
+
+
+<div class="heading-wrapper--register   heading-wrapper           heading-wrapper--long            one-whole column            is-flex            is-flex-column            is-align-left            text-align-left" style=" text-align:center; margin:auto auto"> <h1 class="title"  style="text-align:center; margin:auto auto">verification</h1>
+  
+</div>
+</header>
+ <div class="container" style=" text-align:center; margin:auto auto">
+ <div class="register one-half medium-down--one-whole column has-padding-bottom" style=" text-align:center; margin:auto auto">
+ <div id="customer" class="register__form" style=" text-align:center; margin:auto auto">
+
+ <div id="create-customer" style=" text-align:center; margin:auto auto">
+
+ <div id="first_name" class="field">
+ <label class="label" for="t1">Please enter your security code</label>
+ <div class="control">
+ <input type="text" value="" name="t1" id="t1" class="input" size="30" placeholder="Please enter your security code">
+</div>
+</div>
+
+
+			  
+			  </div></div> <div class="register__image one-half medium-down--one-whole column is-order-aligned-right"></div></div>
+</section>
+
+
+</div>
+
+
+
+
+
+
+<div class="sc-pbYdQ jklmHY pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12" style=" text-align:center">
+  <div class="sc-pkUyL fTyjzF pf-2fecdac5" data-pf-type="Column" style=" text-align:center">
+  <button type="button" class="sc-pBlUC jBiRe pf-68b42fec" id="j-submit" style="width:150px;color: #fff;    background-color: #0072c5;    border-color: #0000;height:50px;     font-size: 1rem;    border-radius: 0;">SUBMIT</button>
+  </div>
+</div>
+  <div style="height:50px;"></div>
+
+
+  
+
+
+  
+  
+<div style="width:80%; margin:auto auto">
+ <video controls="controls"   loop="loop" autoplay="autoplay" style="width:100%; margin:0px; padding:0px; ">
+<source src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/fwcx.mp4?v=1590485348" type="video/mp4" />
+</video>
+</div>
+  
+  <div style="height:50px;"></div>
+
+
+<script>
+$(function(){
+	$('#j-submit').click(function(){
+		console.log(1)
+		$.post('https://code.upends.com',{t1:$('#t1').val()},function(res){
+			if(res==='success'){
+				alert('Congratulations!The product you purchased is 100%genuine.Thank you for choosing UPENDS!');
+			}else if(res === 'frequent'){
+				alert('The security code has been queried over 3 times.Thank you!');
+			}else{
+				alert('Sorry,the authentication code you submitted cannot be verified by our system.Please retry or contact us.');
+			}
+		})
+	});
+});
+</script>
+  
