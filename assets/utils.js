@@ -7,10 +7,6 @@ function isPC(){
   }  
   return flag;  
 }
-function isMobile(){
-  let flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
-  return flag;
-}
 const isChinese = function (str) {
     return /^[\u4E00-\u9FA5]+$/.test(str)
 }

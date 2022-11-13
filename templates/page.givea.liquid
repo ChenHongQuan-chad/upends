@@ -38,7 +38,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
                 />
             </p>
             <div class="section upox">
-                <div class="absolute-column-center" style="width: 50%">
+                <div class=" margin-top-biggest" style="width: 50%">
                     <h2 style="color: #fff" class="margin-top-littler">
                         JOIN THE<br />
                         GIVEAWAY<br />
@@ -92,22 +92,106 @@ folder for the file name that comes directly after `section`. Eg. {% section
                     ></el-button>
                 </div>
             </div>
-            <el-dialog title=" Pass on the Football Cheer for Your Country" :visible.sync="showDialog" @open="$nextTick(()=>{$refs.givaeVideo.play()})"  @close="$refs.givaeVideo.pause()">
-                <video controls="controls"   loop="loop" autoplay="autoplay" style="width:100%; margin:0px; padding:0px;" ref="givaeVideo">
-                    <source src="https://cdn.shopify.com/videos/c/o/v/149341f181c045b8b55614bebbc705de.mp4" type="video/mp4" />
-                </video>
-            </el-dialog>
+          
         </div>
     </div>
     <div class="mobile new">
-        <div class="wrapper relative height-normal">
-            <p class="img-absolute"><img alt="" src="https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/UpBar_TT-mobile-1.jpg?v=1653816972"></p>
+        <div class="wrapper relative height-bigger">
+            <p class="img-absolute">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/givea-mobile-01.jpg?v=1667656267"
+                    alt=""
+                />
+            </p>
+            <div class="section">
+                <div class="text-center margin-top-big">
+                    <p style="color: #fff">Football Cup 2022 X UPENDS</p>
+                    <h3 style="color: #fff" class="margin-top-littler">
+                        Cheer for Your Country to Win
+                    </h3>
+                    <p style="color: #fff" class="margin-top-little">
+                        Nov 10 - Nov 30
+                    </p>
+                    <a href="#login">
+                        <el-button round :class="['is-uppercase',isMobile?'':'margin-top-normal']" :size="isMobile?'mini':''"
+                            >Join Now</el-button
+                        >
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper relative height-bigger">
+            <p class="img-absolute">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/givea-mobile-02.png?v=1667657011"
+                    alt=""
+                />
+            </p>
+            <div class="section">
+                <div >
+                    <h2 style="color: #fff" class="margin-top-little">
+                        JOIN THE<br />
+                        GIVEAWAY<br />
+                        TO WIN<br />
+                    </h2>
+                    <p style="color: #fff" class="margin-top-little">
+                        How to join:<br />
+                        Join the giveaway below and get entries every day<br />
+                        to vote for your own country, and winners will be<br />
+                        randomly selected from the country with the most
+                        entries.<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper relative height-bigger">
+            <p class="img-absolute">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/givea-mobile-03.jpg?v=1667656267"
+                    alt=""
+                />
+            </p>
+            <div class="section">
+                <div
+            >
+                <h3
+                    style="color: #fff"
+                    class="margin-top-normal is-uppercase"
+                >
+                    Pass on the Football<br />
+                    Cheer for Your Country
+                </h3>
+                <p style="color: #fff" class="margin-top-little">
+                    Here comes the videos shot by influencers<br />
+                    around the world, showing their enthusiasm<br />
+                    and expectation for their countries<br />
+                    in FIFA World Cup Qatar 2022! How about you?<br />
+                    Let’s make videos ourselves to cheer<br />
+                    for our countries and share them<br />
+                    on your social media with #meshcoilisthefuture.<br />
+                </p>
+            </div>
+            <div class="absolute-center">
+                <el-button
+                    :size="isMobile?'small':''"
+                    @click="showDialog = true"
+                    icon="el-icon-caret-right"
+                    circle
+                    :style="{'font-size': isMobile?'5.8667vw':'100px'}"
+                ></el-button>
+            </div>
+            </div>
         </div>
     </div>
+    <el-dialog title=" Pass on the Football Cheer for Your Country" :width="isMobile?'90%':''" :visible.sync="showDialog" @open="$nextTick(()=>{$refs.givaeVideo.play()})"  @close="$refs.givaeVideo.pause()">
+        <video controls="controls"   loop="loop" autoplay="autoplay" style="width:100%; margin:0px; padding:0px;" ref="givaeVideo">
+            <source src="https://cdn.shopify.com/videos/c/o/v/149341f181c045b8b55614bebbc705de.mp4" type="video/mp4" />
+        </video>
+    </el-dialog>
     <!-- 投票功能模块 -->
-    <div class="wrapper relative bg-linear"  id="login">
+    <div class=" wrapper relative bg-linear"  id="login">
         <div class="section upox">
-            <div class="margin-top-bigger text-center">
+            <div :class="['margin-top-bigger',{'text-center':!isMobile}]">
                 <h3 style="color: #fff" class="is-uppercase">
                     Cheer for Your Country to Win
                 </h3>
@@ -123,7 +207,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
                     FREE! Hurry up!<br />
                 </p>
             </div>
-            <el-row :gutter="isMobile?60:140" class="margin-top-bigger margin-bottom-bigger">
+            <el-row :gutter="isMobile?0:140" :class="[isMobile?'margin-top-normal':'margin-top-bigger',isMobile?'margin-bottom-normal':'margin-bottom-bigger']">
                 <el-col  :xs="24" :sm="24"  :md="10" :lg="10" >
                     <div class="entry-wrapper row-bg border-radius-little">
                         <!-- 头部积分模块 -->
@@ -149,14 +233,11 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                         >{[item.unit]}</span
                                     >
                                 </div>
-                                <div
-                                    style="
-                                        font-size: 16px;
-                                        line-height: 1.2;
-                                    "
+                                <p
+                                    class="entry-type-top-title"
                                 >
                                     {[item.title]}
-                                </div>
+                                </p>
                             </el-col>
                         </el-row>
                         <!-- 积分banner -->
@@ -242,7 +323,6 @@ folder for the file name that comes directly after `section`. Eg. {% section
                             <el-tabs
                                 :stretch="true"
                                 v-model="activeTab"
-                                @tab-click="handleClick"
                                 class="padding-left-little padding-right-little"
                             >
                                 <el-tab-pane label="Earn Entries" name="01">
@@ -255,6 +335,8 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                             :gutter="20"
                                             type="flex"
                                             align="middle"
+                                            :class="{'cursor':userInfo.email}"
+                                            @click.native="addEntries(item)"
                                         >
                                             <el-col :span="4">
                                                 <div class="img-icon flex">
@@ -269,14 +351,11 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                                 <div
                                                     class="platform-info flex-between"
                                                 >
-                                                    <div
+                                                    <p
                                                         class="left-info"
-                                                        style="
-                                                            font-size: 16px;
-                                                        "
                                                     >
                                                         {[ item.entryInfo ]}
-                                                    </div>
+                                                    </p>
                                                     <div class="right-icon">
                                                         <div
                                                             class="img-icon lock"
@@ -290,7 +369,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                                         </div>
                                                         <div
                                                             class="entry"
-                                                            @click="addEntries(item)"
+                                                           
                                                             v-else
                                                         >
                                                             + {[
@@ -341,27 +420,24 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                                         <div
                                                             class="platform-info flex-between"
                                                         >
-                                                            <div
+                                                            <p
                                                                 class="left-info"
-                                                                style="
-                                                                    font-size: 16px;
-                                                                "
                                                             >
                                                                 + {[
                                                                 item.entryValue
                                                                 ]}
-                                                            </div>
+                                                            </p>
                                                             <div
                                                                 class="right-icon"
                                                             >
-                                                                <div
+                                                                <p
                                                                     class="entry"
                                                                 >
                                                                     {[
                                                                     formatDateTime(new
                                                                     Date(item.createdAt))
                                                                     ]}
-                                                                </div>
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </el-col>
@@ -374,28 +450,90 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                         ></el-empty>
                                     </div>
                                 </el-tab-pane>
+                                <!-- 个人积分 -->
                                 <el-tab-pane label="Leaders" name="03"
-                                    >Leaders</el-tab-pane
+                                    >
+                                    <div
+                                        style="
+                                            max-height: 700px;
+                                            overflow-y: auto;
+                                            overflow-x: hidden;
+                                        "
+                                        class="padding-left-littler padding-right-littler"
+                                    >
+                                        <template
+                                            v-if="peopleEntryList.length>0"
+                                        >
+                                            <div
+                                                class="entry--list padding-top-littler padding-bottom-littler"
+                                                v-for="(item,index) in peopleEntryList"
+                                                :key="index"
+                                            >
+                                                <el-row
+                                                    :gutter="20"
+                                                    type="flex"
+                                                    align="middle"
+                                                >
+                                                    <el-col :span="4">
+                                                        <p
+                                                            class="left-info"
+                                                        >
+                                                            {[
+                                                                item.username
+                                                            ]}
+                                                        </p>
+                                                    </el-col>
+                                                    <el-col :span="20">
+                                                        <div
+                                                            class="platform-info flex-between"
+                                                        >
+                                                            <p
+                                                                class="left-info"
+                                                            >
+                                                                {[
+                                                                    item.email
+                                                                ]}
+                                                            </p>
+                                                            <div
+                                                                class="right-icon"
+                                                            >
+                                                                <p
+                                                                    class="entry"
+                                                                >
+                                                                {[
+                                                                    item.sum
+                                                                ]}
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </el-col>
+                                                </el-row>
+                                            </div>
+                                        </template>
+                                        <el-empty
+                                            v-else
+                                            :image-size="200"
+                                        ></el-empty>
+                                    </div>    
+                                </el-tab-pane
                                 >
                             </el-tabs>
                         </div>
                     </div>
                 </el-col>
-                <el-col  :xs="24" :sm="24"  :md="14" :lg="14" >
+                <el-col  :xs="24" :sm="24"  :md="14" :lg="14" :class="{'margin-top-little':isMobile}">
                     <!-- 国家积分排名 -->
                     <div class="country-wrapper">
-                        <div class="contry-wrapper-title text-center padding-top-little  padding-bottom-little" style="color:#ff4503;font-size:35px">
-                            Points Ranking of Your Country
-                        </div>
+                        <h3 class="text-center padding-top-little  padding-bottom-little"  style="color:#ff4503"> Points Ranking of Your Country</h3>
                         <template v-if="countryEntryList.length>0">
                             <!-- 前三名 -->
                             <el-row
-                                :gutter="20"
+                            :gutter="isMobile?0:20"
                                 type="flex"
                                 align="middle"
                                 class="country-three padding-left-little  padding-right-little  padding-top-little  padding-bottom-little"
                             >
-                                <el-col :span="index===1?10:7" class="text-center"  v-for="(item,index) in countryEntryList.slice(0,3)"
+                                <el-col :span="index===1?10:7" class="text-center"  v-for="(item,index) in countryEntryListThird"
                                 :key="index">
                                     <div :class="['rank-wrapper-top',{'rank-first':index===1}]">
                                         <div class="img-icon">
@@ -417,34 +555,28 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                 </el-col>
                             </el-row>
                             <el-row
-                                :gutter="20"
+                            :gutter="20"
                                 type="flex"
                                 align="middle"
                                 class="country-title margin-bottom-little"
                             >
                                 <el-col :span="6" class="text-center">
-                                    <span :style="rankingStyle">Ranking</span>
+                                    <h4 :style="rankingStyle">
+                                        Ranking  
+                                    </h4>
                                 </el-col>
                                 <el-col :span="9">
-                                    <div
-                                        class="country-box flex-center"
-                                    >
-                                        Country
-                                    </div>
+                                    <h4  class="country-info" style="color: #ff4503;">
+                                        Country  
+                                    </h4>
                                 </el-col>
                                 <el-col :span="9">
-                                    <div
-                                        class="country-info flex-between"
-                                    >
-                                        Entries
-                                    </div>
+                                    <h4  class="country-info" style="color: #ff4503;">
+                                        Entries  
+                                    </h4>
                                 </el-col>
                             </el-row>
-                            <div class="last-country-list  no-scroll"  style="
-                                max-height: 1180px;
-                                overflow-y: auto;
-                                overflow-x: hidden;
-                            ">
+                            <div :class="['last-country-list',  isMobile?'':'no-scroll']"  :style="countryListStyle">
                                 <div
                                 class="country--list margin-bottom-little "
                                 v-for="(item,index) in countryEntryList.slice(3)"
@@ -482,7 +614,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                                 />
                                             </div>
                                             <span
-                                                >{[item.countryName]}</span
+                                                >{[item.countryName.replace('_',' ')]}</span
                                             >
                                         </div>
                                     </el-col>
@@ -490,9 +622,9 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                         <div
                                             class="country-info flex-between"
                                         >
-                                            <div class="left-info">
+                                            <p class="left-info">
                                                 {[ item.sum ]}
-                                            </div>
+                                            </p>
                                         </div>
                                     </el-col>
                                 </el-row>
@@ -514,18 +646,49 @@ folder for the file name that comes directly after `section`. Eg. {% section
 <script src="{{ 'element.min.js' | asset_url }}"></script>
 <script src="{{ 'axios.min.js' | asset_url }}"></script>
 <script>
+    // js 操作cookies 方法
+    //JS操作cookies方法!
+    //Expires		设置Cookie的有效期限
+    //Domain		添加域名限制
+    //Path			添加路径限制
+    //写cookies
+    function setCookie(name,value){
+        var Days=30;//过期时间30天
+        var date=new Date(); 
+        date.setTime(date.getTime()+Days*24*60*60*1000);
+        document.cookie=name+"="+escape(value)+";expires="+date.toGMTString();
+    }
+    //读取cookies的值
+    function getCookie(name){
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg)){
+            return unescape(arr[2]);
+        }
+        else{
+            return null;
+        }
+    }
+    function delCookie(name) {
+        var exp = new Date();
+        var str = ''
+        exp.setTime(exp.getTime() - 1);
+        var cval = getCookie(name);
+        str += "||cval:" +cval;
+        if (cval != null)
+        document.cookie=name+"="+escape(cval)+";expires="+exp.toGMTString();
+    }
+    function countDown(dateString = '2022-11-13 12:00:00') {
+        var endTime = new Date(dateString).getTime();
+        var newTime = new Date().getTime();
+        var diffTime = (endTime - newTime) / 1000;
+        var day = parseInt(diffTime / 60 / 60 / 24);
+        var hour = parseInt(diffTime / 60 / 60 % 24);
+        var min = parseInt(diffTime / 60 % 60);
+        var sen = parseInt(diffTime % 60);
+        return [day,hour,min,sen]
+    }
     // const SERVER = 'http://localhost:8080/server-givea'
     const SERVER = "https://lovewebsite.net";
-    const service = axios.create({
-        baseURL: SERVER, // node环境的不同，对应不同的baseURL
-        timeout: 5000, // 请求的超时时间
-        //设置默认请求头，使post请求发送的是formdata格式数据// axios的header默认的Content-Type好像是'application/json;charset=UTF-8',我的项目都是用json格式传输，如果需要更改的话，可以用这种方式修改
-        // headers: {
-        // "Content-Type": "application/x-www-form-urlencoded"
-        // },
-        withCredentials: true, // 允许携带cookie
-        crossDomain:true
-    });
     const app = new Vue({
         el: "#app",
         delimiters: ["{[", "]}"],
@@ -543,7 +706,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
                         unit: "",
                     },
                     {
-                        title: "20 : 02 : 56",
+                        title: "00 : 00 : 00",
                         entries: 0,
                         unit: "Days",
                     },
@@ -594,15 +757,39 @@ folder for the file name that comes directly after `section`. Eg. {% section
                 entryList: [], //积分类型
                 entryRecordsList: [], //积分类型
                 countryEntryList: [], //国家积分
-                showDialog:false
+                peopleEntryList: [], //用户积分
+                showDialog:false,
+                GWAY: getCookie('GWAY'),
+                timer:null
             };
         },
         computed: {
+            countryEntryListThird(){
+                let third = this.countryEntryList.slice(0,3)
+                third.unshift(third.pop())
+                return third
+            },
             rankingStyle() {
-                return  "transform: translateX(20px);display: inline-block;"
+                return  `transform: ${this.isMobile?'translateX(2.6667vw)':'translateX(20px)'};display: ${this.isMobile?'block':'inline-block'};color: #ff4503;word-break:keep-all;`
+            },
+            countryListStyle() {
+                return  this.isMobile?'':"max-height: 1180px;overflow-y: auto;overflow-x: hidden;"
             },
             isMobile(){
-                return isMobile()
+                return !isPC()
+            },
+            service(){
+                return axios.create({
+                    baseURL: SERVER, // node环境的不同，对应不同的baseURL
+                    timeout: 10000, // 请求的超时时间
+                    //设置默认请求头，使post请求发送的是formdata格式数据// axios的header默认的Content-Type好像是'application/json;charset=UTF-8',我的项目都是用json格式传输，如果需要更改的话，可以用这种方式修改
+                    headers: {
+                        // "Content-Type": "application/x-www-form-urlencoded"
+                        "Authorization": this.GWAY
+                    },
+                    withCredentials: true, // 允许携带cookie
+                    crossDomain:true
+                });
             }
         },
         mounted() {
@@ -610,31 +797,54 @@ folder for the file name that comes directly after `section`. Eg. {% section
                 offset:100
             });
             this.init();
+            clearInterval(this.timer)
+            this.timer = setInterval(()=>{
+                // title: "20 : 02 : 56"
+                let resArr = countDown('2022-11-13 12:00:00')
+                this.entryInfo[2].entries = resArr[0]
+                this.entryInfo[2].title = `${resArr[1]} : ${resArr[2]} : ${resArr[3]}`
+            }, 1000)
         },
+        
         methods: {
             async init() {
-                this.entriesByCountry();
-                this.getCountryList();
-                this.getEntryList();
+                this.GWAY = getCookie('GWAY')
+                this.userInfo = JSON.parse(localStorage.getItem('userInfo')||'{}')
+                if(this.GWAY&&this.userInfo.email){
+                    this.form.username = this.userInfo.username
+                    this.form.email = this.userInfo.email
+                    this.form.country = this.userInfo.country
+                }
+                this.entriesByCountry();//国家积分
+                this.getCountryList();//获取国家select
+                this.getEntryList();//媒体积分list
             },
-            //切换
-            handleClick() {},
-            //新增积分
+            //获取国家的积分
             async entriesByCountry(row) {
-                let res = await service.get(
+                let res = await this.service.get(
                     `${SERVER}/entryRecords/entriesByCountry`
                 );
                 if (res.data && res.data.succces) {
                     this.countryEntryList = res.data.data || [];
                 }
             },
+            //获取人的排名
+            async entriesByPeople(row) {
+                let res = await this.service.get(
+                    `${SERVER}/entryRecords/entriesByPeople`
+                );
+                if (res.data && res.data.succces) {
+                    this.peopleEntryList = res.data.data || [];
+                }
+            },
             //新增积分
             async addEntries(row) {
+                if(!this.userInfo.email) return
                 let data = {
                     platformId: row.platformId,
                     entryType: row.entryType,
                 };
-                let res = await service.post(
+                let res = await this.service.post(
                     `${SERVER}/entryRecords/add`,
                     data
                 );
@@ -643,13 +853,17 @@ folder for the file name that comes directly after `section`. Eg. {% section
                         message: res.data.message,
                         type: "success",
                     });
-                    this.getEntryRecordsList();
-                    this.entriesMyAndAll();
+                    //新窗口打开
+                    window.open(row.platformUrl,'_blank');  
+                    this.getEntryRecordsList();//我的积分记录
+                    this.entriesMyAndAll();//我的和所有积分
+                    this.entriesByPeople();//所有人积分
+                    this.entriesByCountry()//国家积分
                 }
             },
             //获取个人和所有的积分
             async entriesMyAndAll() {
-                let res = await service.get(
+                let res = await this.service.get(
                     `${SERVER}/entryRecords/entriesMyAndAll`
                 );
                 if (res.data && res.data.succces) {
@@ -659,20 +873,21 @@ folder for the file name that comes directly after `section`. Eg. {% section
             },
             //获取积分记录list
             async getEntryRecordsList() {
-                let res = await service.get(`${SERVER}/entryRecords/list`);
+                let res = await this.service.get(`${SERVER}/entryRecords/list`);
                 if (res.data && res.data.succces) {
                     this.entryRecordsList = res.data.data || [];
                 }
             },
             //获取积分类型list
             async getEntryList() {
-                let res = await service.get(`${SERVER}/entries/list`);
+                let res = await this.service.get(`${SERVER}/entries/list`);
                 if (res.data && res.data.succces) {
                     this.entryList = res.data.data || [];
                 }
             },
+            //获取国家select
             async getCountryList() {
-                let res = await service.get(`${SERVER}/countries/list`);
+                let res = await this.service.get(`${SERVER}/countries/list`);
                 if (res.data && res.data.succces) {
                     this.countryList = (res.data.data || []).map((item) => ({
                         label: item.countryName,
@@ -684,14 +899,18 @@ folder for the file name that comes directly after `section`. Eg. {% section
                 this.$refs["loginForm"].validate(async (valid) => {
                     if (valid) {
                         let data = this.form;
-                        let res = await service.post(
+                        let res = await this.service.post(
                             `${SERVER}/users/registerAndLogin`,
                             data
                         );
                         if (res.data && res.data.succces) {
                             this.userInfo = res.data.data;
+                            this.GWAY = this.userInfo.cookies
+                            setCookie('GWAY',this.GWAY)
+                            localStorage.setItem('userInfo',JSON.stringify(this.userInfo))
                             this.getEntryRecordsList();
                             this.entriesMyAndAll();
+                            this.entriesByPeople();//获取其他人积分
                         }
                     } else {
                         return false;
@@ -699,11 +918,14 @@ folder for the file name that comes directly after `section`. Eg. {% section
                 });
             },
             async logout() {
-                let res = await service.get(`${SERVER}/users/logout`);
+                let res = await this.service.get(`${SERVER}/users/logout`);
                 if (res.data && res.data.succces) {
                     this.userInfo = {};
                     this.entryRecordsList = [];
                     this.entryInfo[0].entries = 0;
+                    localStorage.clear()
+                    delCookie('GWAY')
+                    this.GWAY = ''
                     this.$message({
                         message: "The account has been logout",
                         type: "success",
@@ -737,11 +959,19 @@ folder for the file name that comes directly after `section`. Eg. {% section
                 );
             },
         },
+        destroyed () {
+            clearInterval(this.timer);
+            this.timer = null
+        },
     });
 </script>
 <style>
+    .cursor{
+        cursor: pointer;
+    }
     .entry--list {
         border-bottom: 1px solid #eee;
+        word-break: keep-all;
     }
     .row-bg {
         background-color: #fff;
@@ -749,8 +979,8 @@ folder for the file name that comes directly after `section`. Eg. {% section
     .flex-column-center {
         border-right: 1px solie #eeeeee;
     }
-    .right-icon {
-        cursor: pointer;
+    .right-icon .entry{
+        min-width: 25px;
     }
     .rank-wrapper {
         position: relative;
@@ -765,13 +995,13 @@ folder for the file name that comes directly after `section`. Eg. {% section
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        color: #fff;
     }
     .country-wrapper{
         background-color: #5a0671;
         border-radius: 16px;
         border:2px solid #ad263a;
     }
-   
     .country-three .rank-wrapper-top .img-icon{
         position: relative;
     }
@@ -812,6 +1042,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
         font-size: 20px;
         color: #fff;
         margin-left: 10px;
+        word-wrap: keep-all;
     }
     .country-info{
         padding-left: 40px;
@@ -829,21 +1060,71 @@ folder for the file name that comes directly after `section`. Eg. {% section
         padding: 20px;
         background-color: #eee;
     }
-    @media screen and (max-width: 500px) {
-        .el-message-box{
-            width: 300px !important;
+    @media screen and (max-width: 641px) {
+        .entry--list .img-icon{
+            width: 8vw;
         }
-        /* .el-dialog__wrapper .el-dialog {
-            width: 300px !important;
-            .el-dialog__body{
-                padding: 10px 20px!important;
-                .el-form-item__label{
-                width: 68px!important;
-                }
-                .el-select,.el-input{
-                width: 180px!important;
-                }
-            }
-        } */
+        .country-three.padding-bottom-little{
+            padding-bottom: 0!important;
+        }
+        .country-three .rank-wrapper-top .img-icon .icon-country{
+            width: 5.3333vw;
+            top: 40%;
+        }
+        .country-three .rank-wrapper-top .img-icon .coutry-name{
+            font-size: 2.4vw;
+            bottom: 11%;
+        }
+        .country-three .rank-wrapper-top.rank-first .img-icon .icon-country{
+            top: 42%;
+            width: 10vw;
+        }
+        .country-three .rank-wrapper-top.rank-first .img-icon .coutry-name{
+            bottom: 10%;
+        }
+        .country-three .rank-wrapper-top>span{
+            font-size: 2.4vw!important;
+            margin-top: -6vw!important;
+        }
+        .rank-wrapper {
+            transform: translateX(2.6667vw);
+        }
+        .rank-wrapper .img-icon{
+            width: 8vw;
+        }
+        .rank-wrapper span{
+            font-size: 2.1333vw;
+        }
+        .country-box {
+            padding-left: 0;
+        }
+        .country-box .img-icon {
+            width: 8vw;
+        }
+        .country-box span {
+            font-size: 2.6667vw;
+            margin-left: 1.3333vw;
+        }
+        .country-info{
+            padding-left: 1.3333vw;
+        }
+        .country-info .left-info {
+            font-size: 3.2vw;
+            padding: 0 4vw 0 2.6667vw;
+            height: 5.3333vw;
+            line-height: 5.3333vw;
+            border-radius: 5.3333vw;
+            background-image: linear-gradient(to right, #c52092, #5a0671); 
+        }
+        /* 组件 */
+        .el-dialog__title{
+            font-size: 3.2vw ;
+        }
+        .el-dialog__headerbtn{
+            top: 15px;
+        }
+        .el-dialog__header {
+            padding: 10px 20px 10px;
+        }
     }
 </style>

@@ -1,10 +1,28 @@
 /* 移动端样式 */
 @media screen and (max-width: 641px) {
-  .margin-bottom-bigger {
-    margin-bottom: 14.6667vw !important;
+  .margin-top-littler {
+    margin-top: 2.6667vw !important;
   }
-  .mobile .upox .margin-bottom-bigger {
-    margin-bottom: 14.6667vw !important;
+  .margin-bottom-litter {
+    margin-bottom: 2.6667vw;
+  }
+  .padding-right-litter {
+    padding-right: 2.6667vw !important;
+  }
+  .padding-left-litter {
+    padding-left: 2.6667vw !important;
+  }
+  .padding-right-little {
+    padding-right: 5.3333vw !important;
+  }
+  .padding-left-little {
+    padding-left: 5.3333vw !important;
+  }
+  .margin-bottom-normal {
+    margin-bottom: 8vw !important;
+  }
+  .margin-top-normal {
+    margin-top: 8vw !important;
   }
   .margin-top-big {
     margin-top: 12vw !important;
@@ -12,20 +30,14 @@
   .mobile .upox .margin-top-big {
     margin-top: 12vw !important;
   }
+  .margin-bottom-bigger {
+    margin-bottom: 14.6667vw !important;
+  }
+  .mobile .upox .margin-bottom-bigger {
+    margin-bottom: 14.6667vw !important;
+  }
   .margin-top-bigger {
     margin-top: 14.6667vw !important;
-  }
-  .margin-top-littler {
-    margin-top: 4vw !important;
-  }
-  .margin-bottom-litter {
-    margin-bottom: 3.0667vw;
-  }
-  .margin-bottom-normal {
-    margin-bottom: 4vw !important;
-  }
-  .margin-bottom-little-more {
-    margin-bottom: 2vw !important;
   }
   .padding-bottom-bigger {
     padding-bottom: 30px;
@@ -154,9 +166,6 @@
     height: 160vw;
     overflow: hidden;
   }
-  .new .margin-bottom-little-more {
-    margin-bottom: 0 !important;
-  }
   .new .padding-top-bigger {
     padding-top: 13.333vw;
   }
@@ -232,12 +241,23 @@
     font-size: 24px;
     color: #1d1d1f;
   }
+  .new .section.upox h2 {
+    font-size: 9.0667vw;
+  }
   .new .border-btn {
     font-size: 3.2vw;
     line-height: 5.0667vw;
   }
   .new .out-border {
     width: 22.4vw;
+  }
+  .section.upox p {
+    font-size: 3.2vw;
+    line-height: 1.4;
+  }
+  .section.upox h3 {
+    font-size: 4.6vw !important;
+    line-height: 1.4 !important;
   }
   .swiper-pagination-bullet {
     width: 5.333vw;
