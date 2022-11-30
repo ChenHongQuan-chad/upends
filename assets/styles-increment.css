@@ -380,3 +380,11 @@
   font-size: 40px;
   line-height: 1.8;
 }
+.announcement-bar__container {
+  line-height: 0;
+}
+.footer .social-icons li a {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}

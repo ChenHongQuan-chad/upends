@@ -9,18 +9,18 @@ folder for the file name that comes directly after `section`. Eg. {% section
         <div class="wrapper relative height-bigger">
             <p class="img-absolute">
                 <img
-                    src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/givea-01.jpg?v=1667395969"
+                    src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/givea-01.jpg?v=1668318536"
                     alt=""
                 />
             </p>
             <div class="section upox">
                 <div class="absolute-column-center" style="width: 50%">
-                    <p style="color: #fff">Football Cup 2022 X UPENDS</p>
+                    <p style="color: #fff">Football Cup 2022 × UPENDS</p>
                     <h3 style="color: #fff" class="margin-top-littler">
                         Cheer for Your Country to Win
                     </h3>
                     <p style="color: #fff" class="margin-top-little">
-                        Nov 10 - Nov 30
+                        Nov 15 - Dec 18
                     </p>
                     <a href="#login">
                         <el-button round class="is-uppercase margin-top-normal"
@@ -105,12 +105,12 @@ folder for the file name that comes directly after `section`. Eg. {% section
             </p>
             <div class="section">
                 <div class="text-center margin-top-big">
-                    <p style="color: #fff">Football Cup 2022 X UPENDS</p>
+                    <p style="color: #fff">Football Cup 2022 × UPENDS</p>
                     <h3 style="color: #fff" class="margin-top-littler">
                         Cheer for Your Country to Win
                     </h3>
                     <p style="color: #fff" class="margin-top-little">
-                        Nov 10 - Nov 30
+                        Nov 15 - Dec 18
                     </p>
                     <a href="#login">
                         <el-button round :class="['is-uppercase',isMobile?'':'margin-top-normal']" :size="isMobile?'mini':''"
@@ -185,7 +185,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
     </div>
     <el-dialog title=" Pass on the Football Cheer for Your Country" :width="isMobile?'90%':''" :visible.sync="showDialog" @open="$nextTick(()=>{$refs.givaeVideo.play()})"  @close="$refs.givaeVideo.pause()">
         <video controls="controls"   loop="loop" autoplay="autoplay" style="width:100%; margin:0px; padding:0px;" ref="givaeVideo">
-            <source src="https://cdn.shopify.com/videos/c/o/v/149341f181c045b8b55614bebbc705de.mp4" type="video/mp4" />
+            <source src="https://cdn.shopify.com/videos/c/o/v/571e33e0962a418c8ca854bbf15cfe23.mp4" type="video/mp4" />
         </video>
     </el-dialog>
     <!-- 投票功能模块 -->
@@ -243,7 +243,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
                         <!-- 积分banner -->
                         <div class="banner img-box">
                             <img
-                                src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/entry-banner.jpg?v=1667401937"
+                                src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/entry-banner.jpg?v=1668439339"
                                 alt=""
                             />
                         </div>
@@ -324,7 +324,9 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                 :stretch="true"
                                 v-model="activeTab"
                                 class="padding-left-little padding-right-little"
+                                @tab-click="tabClick"
                             >
+                                <!-- 个人关怀方式 -->
                                 <el-tab-pane label="Earn Entries" name="01">
                                     <div
                                         class="entry--list padding-top-littler padding-bottom-littler"
@@ -368,13 +370,19 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                                             />
                                                         </div>
                                                         <div
+                                                            class="entry success bold"
+                                                            v-else-if="item.entryType==='01' && item.focused"
+                                                        >
+                                                            <i class="el-icon-check"></i>
+                                                        </div>
+                                                        <div
                                                             class="entry"
                                                            
                                                             v-else
                                                         >
                                                             + {[
                                                             item.entryValue
-                                                            ]}
+                                                            ]} {[item.entryType==='02'?'Per Day':'']}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -451,7 +459,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                     </div>
                                 </el-tab-pane>
                                 <!-- 个人积分 -->
-                                <el-tab-pane label="Leaders" name="03"
+<!--                                 <el-tab-pane label="Leaders" name="03"
                                     >
                                     <div
                                         style="
@@ -516,7 +524,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                         ></el-empty>
                                     </div>    
                                 </el-tab-pane
-                                >
+                                > -->
                             </el-tabs>
                         </div>
                     </div>
@@ -538,12 +546,12 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                     <div :class="['rank-wrapper-top',{'rank-first':index===1}]">
                                         <div class="img-icon">
                                             <img
-                                                :src="`https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/rank-0${index===1?1:index===0?3:2}.png?v=1667529181`"
+                                                :src="`https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/rank-0${index===1?1:index===0?2:3}.png?v=1667529181`"
                                                 alt=""
                                                 srcset=""
                                             />
                                             <img
-                                                :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Country-${item.countryName}.png?v=1667523182`"
+                                                :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Country-${item.countryName.replace(' ','')}.png?v=1667523182`"
                                                 alt=""
                                                 srcset=""
                                                 class="icon-country"
@@ -608,13 +616,13 @@ folder for the file name that comes directly after `section`. Eg. {% section
                                         >
                                             <div class="img-icon">
                                                 <img
-                                                    :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Country-${item.countryName}.png?v=1667523182`"
+                                                    :src="`https://cdn.shopify.com/s/files/1/0283/9815/7955/files/Country-${item.countryName.replace(' ','')}.png?v=1667523182`"
                                                     alt=""
                                                     srcset=""
                                                 />
                                             </div>
                                             <span
-                                                >{[item.countryName.replace('_',' ')]}</span
+                                                >{[item.countryName]}</span
                                             >
                                         </div>
                                     </el-col>
@@ -653,7 +661,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
     //Path			添加路径限制
     //写cookies
     function setCookie(name,value){
-        var Days=30;//过期时间30天
+        var Days= 1;//过期时间1天
         var date=new Date(); 
         date.setTime(date.getTime()+Days*24*60*60*1000);
         document.cookie=name+"="+escape(value)+";expires="+date.toGMTString();
@@ -683,8 +691,11 @@ folder for the file name that comes directly after `section`. Eg. {% section
         var diffTime = (endTime - newTime) / 1000;
         var day = parseInt(diffTime / 60 / 60 / 24);
         var hour = parseInt(diffTime / 60 / 60 % 24);
+        hour = hour<10? '0'+ hour:hour
         var min = parseInt(diffTime / 60 % 60);
+        min = min<10?'0'+min:min
         var sen = parseInt(diffTime % 60);
+        sen = sen<10?'0'+sen:sen
         return [day,hour,min,sen]
     }
     // const SERVER = 'http://localhost:8080/server-givea'
@@ -767,6 +778,9 @@ folder for the file name that comes directly after `section`. Eg. {% section
             countryEntryListThird(){
                 let third = this.countryEntryList.slice(0,3)
                 third.unshift(third.pop())
+                let two = third[2]
+                third[2] = third[0]
+                third[0] = two
                 return third
             },
             rankingStyle() {
@@ -800,7 +814,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
             clearInterval(this.timer)
             this.timer = setInterval(()=>{
                 // title: "20 : 02 : 56"
-                let resArr = countDown('2022-11-13 12:00:00')
+                let resArr = countDown('2022-12-18 23:59:59')
                 this.entryInfo[2].entries = resArr[0]
                 this.entryInfo[2].title = `${resArr[1]} : ${resArr[2]} : ${resArr[3]}`
             }, 1000)
@@ -814,32 +828,39 @@ folder for the file name that comes directly after `section`. Eg. {% section
                     this.form.username = this.userInfo.username
                     this.form.email = this.userInfo.email
                     this.form.country = this.userInfo.country
+                    this.entriesMyAndAll();//我的和所有积分
                 }
                 this.entriesByCountry();//国家积分
                 this.getCountryList();//获取国家select
                 this.getEntryList();//媒体积分list
             },
+            //tab切换
+            tabClick(){
+                //
+                if(this.activeTab==='01'){
+                    this.getEntryList()//积分类型
+                }else if(this.activeTab==='02'){
+                    this.getEntryRecordsList()//积分记录
+                }else{
+                    this.entriesByPeople()//获取人员排名
+                }
+            },
             //获取国家的积分
-            async entriesByCountry(row) {
+            async entriesByCountry() {
                 let res = await this.service.get(
                     `${SERVER}/entryRecords/entriesByCountry`
                 );
                 if (res.data && res.data.succces) {
                     this.countryEntryList = res.data.data || [];
-                }
-            },
-            //获取人的排名
-            async entriesByPeople(row) {
-                let res = await this.service.get(
-                    `${SERVER}/entryRecords/entriesByPeople`
-                );
-                if (res.data && res.data.succces) {
-                    this.peopleEntryList = res.data.data || [];
+                    this.countryEntryList.forEach(item=>{
+                        item.countryName = item.countryName.replace('_',' ')
+                    })
                 }
             },
             //新增积分
             async addEntries(row) {
-                if(!this.userInfo.email) return
+                if(!this.userInfo.email||(row.entryType==='01' && row.focused)) return
+                let oWindow = window.open('', '_blank');
                 let data = {
                     platformId: row.platformId,
                     entryType: row.entryType,
@@ -853,29 +874,13 @@ folder for the file name that comes directly after `section`. Eg. {% section
                         message: res.data.message,
                         type: "success",
                     });
+                    let url = row.platformUrl
+                    console.log(url,'跳转连接');
                     //新窗口打开
-                    window.open(row.platformUrl,'_blank');  
-                    this.getEntryRecordsList();//我的积分记录
+                    oWindow.location.href = url
                     this.entriesMyAndAll();//我的和所有积分
-                    this.entriesByPeople();//所有人积分
                     this.entriesByCountry()//国家积分
-                }
-            },
-            //获取个人和所有的积分
-            async entriesMyAndAll() {
-                let res = await this.service.get(
-                    `${SERVER}/entryRecords/entriesMyAndAll`
-                );
-                if (res.data && res.data.succces) {
-                    this.entryInfo[0].entries = res.data.data.sum;
-                    this.entryInfo[1].entries = res.data.data.sumAll;
-                }
-            },
-            //获取积分记录list
-            async getEntryRecordsList() {
-                let res = await this.service.get(`${SERVER}/entryRecords/list`);
-                if (res.data && res.data.succces) {
-                    this.entryRecordsList = res.data.data || [];
+                    this.getEntryList();//媒体积分list
                 }
             },
             //获取积分类型list
@@ -885,12 +890,38 @@ folder for the file name that comes directly after `section`. Eg. {% section
                     this.entryList = res.data.data || [];
                 }
             },
+             //获取积分记录list
+             async getEntryRecordsList() {
+                let res = await this.service.get(`${SERVER}/entryRecords/list`);
+                if (res.data && res.data.succces) {
+                    this.entryRecordsList = res.data.data || [];
+                }
+            },
+             //获取人的排名
+             async entriesByPeople() {
+                let res = await this.service.get(
+                    `${SERVER}/entryRecords/entriesByPeople`
+                );
+                if (res.data && res.data.succces) {
+                    this.peopleEntryList = res.data.data || [];
+                }
+            },
+             //获取个人和所有的积分
+             async entriesMyAndAll() {
+                let res = await this.service.get(
+                    `${SERVER}/entryRecords/entriesMyAndAll`
+                );
+                if (res.data && res.data.succces) {
+                    this.entryInfo[0].entries = res.data.data.sum;
+                    this.entryInfo[1].entries = res.data.data.sumAll;
+                }
+            },
             //获取国家select
             async getCountryList() {
                 let res = await this.service.get(`${SERVER}/countries/list`);
                 if (res.data && res.data.succces) {
                     this.countryList = (res.data.data || []).map((item) => ({
-                        label: item.countryName,
+                        label: item.countryName.replace('_',' '),
                         value: item.countryCode,
                     }));
                 }
@@ -908,9 +939,9 @@ folder for the file name that comes directly after `section`. Eg. {% section
                             this.GWAY = this.userInfo.cookies
                             setCookie('GWAY',this.GWAY)
                             localStorage.setItem('userInfo',JSON.stringify(this.userInfo))
-                            this.getEntryRecordsList();
-                            this.entriesMyAndAll();
-                            this.entriesByPeople();//获取其他人积分
+                            this.entriesMyAndAll();//我的和所有积分
+                            this.activeTab = '01'
+                            this.tabClick()
                         }
                     } else {
                         return false;
@@ -980,7 +1011,13 @@ folder for the file name that comes directly after `section`. Eg. {% section
         border-right: 1px solie #eeeeee;
     }
     .right-icon .entry{
-        min-width: 25px;
+        min-width: 100px;
+        text-align: right;
+        padding-right: 10px;
+    }
+    .right-icon .entry.success{
+        font-size: 28px;
+        font-weight: bold;
     }
     .rank-wrapper {
         position: relative;
@@ -1052,7 +1089,7 @@ folder for the file name that comes directly after `section`. Eg. {% section
         padding: 0 30px 0 10px;
         color: #fff;
         height: 36px;
-        line-height: 36px;
+        line-height: 36px!important;
         border-radius: 18px;
         background-image: linear-gradient(to right, #c52092, #5a0671);
     }

@@ -48,7 +48,9 @@
   {% endif %}
 
   {% if settings.flickr_link != '' %}
-    <li><a href="{{ settings.flickr_link }}" title="{{ shop.name }} on Flickr" rel="me" target="_blank"  rel="noopener"class="icon-flickr">{% include settings.icon, name: 'flickr' %}</a></li>
+    <li><a href="{{ settings.flickr_link }}" title="{{ shop.name }} on Flickr" rel="me" target="_blank"  rel="noopener"class="icon-flickr">
+      <img src="{{ settings.flickr_link_image | img_url : 'master' }}" />
+    </a></li>
   {% endif %}
 
   {% if settings.email_link != '' %}

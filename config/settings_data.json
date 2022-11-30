@@ -233,7 +233,8 @@
     "linkedin_link": "",
     "dribbble_link": "",
     "behance_link": "",
-    "flickr_link": "",
+    "flickr_link": "https:\/\/www.tiktok.com\/@upends_global",
+    "flickr_link_image": "shopify:\/\/shop_images\/tiktok.png",
     "email_link": "support@upends.com",
     "og_image_fallback": "",
     "favicon": "shopify:\/\/shop_images\/64x64px__-1_2.png",
@@ -2074,6 +2075,37 @@
       "1592102147383": {
         "type": "index__slideshow-classic",
         "blocks": {
+          "372a985f-17f3-4601-ab26-4352a0391231": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/pages\/giveaway",
+              "image": "shopify:\/\/shop_images\/FIFA_-_PC_banner-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/FIFA_-_banner-2.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#FFFFFF",
+              "background_opacity": 77,
+              "border_color": "#FFFFFF",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
           "a7270e73-cbd0-40a8-98df-4d692c39cc0b": {
             "type": "image",
             "settings": {
@@ -2088,9 +2120,9 @@
               "subheading_color": "#000000",
               "text_alignment": "center",
               "text_horizontal_position": "center",
-              "background_color": "#FFFFFF",
+              "background_color": "#ffffff",
               "background_opacity": 77,
-              "border_color": "#FFFFFF",
+              "border_color": "#ffffff",
               "border_width": 0,
               "text_width": 40,
               "button_1": "",
@@ -2448,6 +2480,7 @@
           },
           "1592102147383-0": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "link": "shopify:\/\/products\/upox",
               "image": "shopify:\/\/shop_images\/09-UpOX_banner_PC_9.jpg",
@@ -2479,6 +2512,7 @@
           }
         },
         "block_order": [
+          "372a985f-17f3-4601-ab26-4352a0391231",
           "a7270e73-cbd0-40a8-98df-4d692c39cc0b",
           "90755c67-bc0d-49af-9b0d-6296f9217af7",
           "697c7210-73e8-495c-8b5a-7180e07f2b57",

@@ -2534,8 +2534,12 @@
       {
         "type": "text",
         "id": "flickr_link",
-        "label": "Flickr link",
-        "info": "https:\/\/www.flickr.com\/photos\/shopify\/"
+        "label": "Tiktok link"
+      },
+      {
+        "type": "image_picker",
+        "id": "flickr_link_image",
+        "label": "Tiktok link image"
       },
       {
         "type": "text",
