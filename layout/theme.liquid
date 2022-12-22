@@ -98,6 +98,8 @@ s0.parentNode.insertBefore(s1,s0);
     <link rel="preconnect dns-prefetch" href="https://productreviews.shopifycdn.com" />
   {% endif %}
 
+  {{ 'aos.css' | asset_url | stylesheet_tag }}
+  {{ 'animate-ui.css' | asset_url | stylesheet_tag }}
   {{ 'fancybox.css' | asset_url | stylesheet_tag }}
   {{ 'font-awesome.min.css' | asset_url | stylesheet_tag }}
   {{ 'swiper.min.css' | asset_url | stylesheet_tag }}
@@ -113,14 +115,18 @@ s0.parentNode.insertBefore(s1,s0);
   <script>
     {% include 'js-variables' %}
   </script>
+
   <script src="{{ 'utils.js' | asset_url }}"></script>
   <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+  <script src="{{ 'aos.js' | asset_url }}"></script>
   <script src="{{ 'swiper.min.js' | asset_url }}"></script>
- 
+  
   <script defer src="{{ 'vendors.js' | asset_url }}"></script>
   <script defer src="{{ 'utilities.js' | asset_url }}"></script>
-  <script src="{{ 'smooth-scroll.js' | asset_url }}"></script>
   <script defer src="{{ 'app.js' | asset_url }}"></script>
+ 
+  <script src="{{ 'smooth-scroll.js' | asset_url }}"></script>
+
 
   {%- if settings.show_multiple_currencies or shop.enabled_currencies.size > 1 -%}
     <script defer src="{{ 'currencyConversion.js' | asset_url }}"></script>
@@ -224,12 +230,6 @@ s0.parentNode.insertBefore(s1,s0);
   {%- if settings.show_announcement_bar -%}
     {% section 'announcement-bar' %}
   {%- endif -%}
-  <div>
-    <a href="/pages/giveaway" target="_blank">
-      <img  class="desk" src="https://cdn.shopifycdn.net/s/files/1/0283/9815/7955/files/bar-pc.png?v=1668607001" alt="" srcset="">
-      <img  class="mobile" src="https://cdn.shopify.com/s/files/1/0283/9815/7955/files/bar-mobile.jpg?v=1668576465" alt="" srcset="">
-    </a>
-  </div>
   {%- if settings.header_layout == "classic" -%}
     {% section 'header__top-bar' %}
     {% section 'header-classic' %}
@@ -383,8 +383,7 @@ Hidden products12 29 End-->
     disagree.onclick = function(){
     	location.href = "https://www.google.com/"
     }
-      
- 
+
   </script>
  <!-- Start of LiveChat (www.livechat.com) code
 <script>
@@ -394,6 +393,7 @@ Hidden products12 29 End-->
 </script>
 <noscript><a href="https://www.livechat.com/chat-with/14611962/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
  End of LiveChat code -->
+
  </body>
 </html>
 {% endcapture %}

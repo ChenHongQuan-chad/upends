@@ -1,0 +1,78 @@
+[data-aos][data-aos][data-aos][data-aos="slide-tl"] {
+  transform: translateY(600px) translateX(1200px);
+  transition-property: transform, opacity;
+}
+[data-aos][data-aos][data-aos][data-aos="slide-tl"].aos-animate {
+  transform: translateY(0) translateX(0);
+  transition-property: transform, opacity;
+}
+@media screen and (min-width: 768px) {
+  [data-aos][data-aos][data-aos][data-aos="slide-tl"] {
+    transform: translateY(600px) translateX(1200px);
+    transition-property: transform, opacity;
+  }
+  [data-aos][data-aos][data-aos][data-aos="slide-tl"].aos-animate {
+    transform: translateY(0) translateX(0);
+    transition-property: transform, opacity;
+  }
+}
+[data-aos][data-aos][data-aos][data-aos="width-animate"] {
+  width: 0;
+  transition-property: width;
+}
+[data-aos][data-aos][data-aos][data-aos="width-animate"].aos-animate {
+  width: 100%;
+  transition-property: width;
+}
+@media screen and (min-width: 768px) {
+  [data-aos][data-aos][data-aos][data-aos="width-animate"] {
+    width: 0;
+    transition-property: width;
+  }
+  [data-aos][data-aos][data-aos][data-aos="width-animate"].aos-animate {
+    width: 100%;
+    transition-property: width;
+  }
+}
+/*
+*slide-in-animate / slide-out-animate
+*/
+html:not(.no-js) [data-aos^=slide][data-aos^=slide] {
+  visibility: unset!important;
+}
+[data-aos][data-aos][data-aos][data-aos="slide-in-animate"] {
+  transform: translateY(700px);
+  transition-property: transform;
+}
+[data-aos][data-aos][data-aos][data-aos="slide-in-animate"].aos-animate {
+  transform: translateY(0);
+  transition-property: transform;
+}
+@media screen and (min-width: 768px) {
+  [data-aos][data-aos][data-aos][data-aos="slide-in-animate"] {
+    transform: translateY(700px);
+    transition-property: transform;
+  }
+  [data-aos][data-aos][data-aos][data-aos="slide-in-animate"].aos-animate {
+    transform: translateY(0);
+    transition-property: transform;
+  }
+}
+[data-aos][data-aos][data-aos][data-aos="slide-out-animate"] {
+  transform: translateY(0);
+  transition-property: transform;
+}
+[data-aos][data-aos][data-aos][data-aos="slide-out-animate"].aos-animate {
+  transform: translateY(-700px);
+  transition-property: transform;
+}
+@media screen and (min-width: 768px) {
+  [data-aos][data-aos][data-aos][data-aos="slide-out-animate"] {
+    transform: translateY(0);
+    transition-property: transform;
+  }
+  [data-aos][data-aos][data-aos][data-aos="slide-out-animate"].aos-animate {
+    transform: translateY(-700px);
+    transition-property: transform;
+  }
+}

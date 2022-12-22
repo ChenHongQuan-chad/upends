@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'nordItalic';
+  src: url('Incised901BT-NordItalic.eot');
+  src: url('Incised901BT-NordItalic.eot?#iefix') format('embedded-opentype'), url('Incised901BT-NordItalic.woff') format('woff'), url('Incised901BT-NordItalic.ttf') format('truetype'), url('Incised901BT-NordItalic.svg#iconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /* 公共样式 */
 .no-scroll::-webkit-scrollbar {
   display: none;
@@ -120,13 +127,19 @@
 .padding-top-normal {
   padding-top: 60px !important;
 }
+.padding-left-normal {
+  padding-left: 60px !important;
+}
+.padding-right-normal {
+  padding-right: 60px !important;
+}
 .padding-bottom-normal {
   padding-bottom: 60px;
 }
-.padding-top-bigger {
+.padding-top-big {
   padding-top: 90px;
 }
-.padding-bottom-bigger {
+.padding-bottom-big {
   padding-bottom: 90px;
 }
 .margin-top-big {
@@ -140,6 +153,15 @@
 }
 .margin-bottom-bigger {
   margin-bottom: 110px !important;
+}
+.padding-bottom-bigger {
+  padding-bottom: 110px!important;
+}
+.padding-top-bigger {
+  padding-top: 110px!important;
+}
+.margin-top-bigger {
+  margin-top: 110px !important;
 }
 .margin-top-biggest {
   margin-top: 150px;
@@ -184,6 +206,8 @@
 }
 .absolute {
   position: absolute !important;
+  left: 0;
+  top: 0;
 }
 .absolute-center {
   position: absolute !important;
@@ -231,6 +255,15 @@
 .bg-linear {
   background-image: linear-gradient(to right, #02cdb9, #6462b7);
 }
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.clearfix {
+  clear: both;
+}
 /* 自定义样式 */
 .new .height-normal {
   height: 800px;
@@ -248,6 +281,9 @@
 }
 .width-100 {
   width: 100% !important;
+}
+.width-33 {
+  width: 33.33% !important;
 }
 .wrapper {
   overflow: hidden;
@@ -387,4 +423,140 @@
   display: inline-block;
   width: 22px;
   height: 22px;
+}
+.font-talic {
+  font-family: nordItalic;
+  font-size: 54px!important;
+  line-height: 1.1 !important;
+}
+.product-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.product-right .img-box {
+  position: absolute;
+  right: 10%;
+  bottom: -47px;
+  z-index: 1;
+  width: 24%;
+}
+.product-right .img-top {
+  position: absolute;
+  right: 10%;
+  width: 40%;
+  bottom: 75px;
+  z-index: 10;
+}
+.video-wrapper .img-absolute {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.video-wrapper .img-box img {
+  filter: grayscale(0.9);
+  cursor: pointer;
+}
+.video-wrapper .img-box img:hover {
+  filter: grayscale(0);
+}
+.banner-design {
+  height: 300vh;
+  overflow: initial;
+}
+.banner-design .flex-center {
+  background-color: #222222;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.banner-design .flex-center > div {
+  flex: 1;
+}
+.banner-design .flex-center .image-box {
+  line-height: 0;
+  font-size: 0;
+}
+.sticky {
+  height: 100vh;
+  left: 0;
+  padding-top: 72px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+}
+.sticky .left,
+.sticky .right {
+  position: absolute;
+  width: 433px;
+}
+.sticky .left {
+  left: 0;
+  top: 17.11vh;
+}
+.sticky .right {
+  right: 0;
+  top: 62.33vh;
+}
+.sticky .line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+}
+.sticky .text-wrapper {
+  width: 40%;
+}
+.sticky .text-wrapper .img-icon {
+  width: 166px;
+  height: auto;
+}
+.sticky .text-wrapper h3 {
+  background-image: -webkit-linear-gradient(left, #fce16c, #ffc712, #feb556);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 52px;
+  line-height: 1.3;
+  margin: 0;
+}
+.sticky .right-wrapper {
+  position: absolute;
+  right: 8%;
+  top: 300px;
+  width: 50%;
+}
+.image-wrapper .image-box {
+  font-size: 0;
+  line-height: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.image-wrapper .image-box .image-info {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.image-wrapper:hover .image-btn {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+.image-wrapper:hover .image-box {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.25);
+}
+.image-wrapper .image-btn {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-150px) translateY(70px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
 }

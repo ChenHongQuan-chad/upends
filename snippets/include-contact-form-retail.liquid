@@ -293,7 +293,8 @@
 <script src="{{ 'jquery-editable-select.min.js' | asset_url }}"></script>
 <script src="{{ 'all-country-code.js' | asset_url }}"></script>
 <script>
-      let contryList = getAllCountryCode()
+  $(()=>{
+    let contryList = getAllCountryCode()
       
       //根据id查找对象，
       let countrySelectObj=document.getElementById('countryListSelect');
@@ -339,4 +340,6 @@
           disableOnInteraction: false,
         },
       });
+  })
+     
 </script>

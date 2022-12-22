@@ -3,7 +3,6 @@
 {% comment %}
   Defaults to /sections/product-template.liquid, but default can be changed in Theme Settings > Layout > Product page default template
 {% endcomment %}
-
 {% if settings.product_layout == 'sections' %}
 {% comment %} Product - sections {% endcomment %}
   <div id="template-{{ template | replace: '.', '-' | handle }}" class="shopify-section product-page">
