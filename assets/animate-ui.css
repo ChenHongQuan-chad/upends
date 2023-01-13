@@ -38,41 +38,88 @@
 *slide-in-animate / slide-out-animate
 */
 html:not(.no-js) [data-aos^=slide][data-aos^=slide] {
-  visibility: unset!important;
+  visibility: unset;
 }
 [data-aos][data-aos][data-aos][data-aos="slide-in-animate"] {
-  transform: translateY(700px);
-  transition-property: transform;
+  transform: translateY(100%);
+  opacity: 0;
+  transition-property: transform,opacity;
 }
 [data-aos][data-aos][data-aos][data-aos="slide-in-animate"].aos-animate {
   transform: translateY(0);
-  transition-property: transform;
+  opacity: 1;
+  transition-property: transform,opacity;
 }
 @media screen and (min-width: 768px) {
   [data-aos][data-aos][data-aos][data-aos="slide-in-animate"] {
-    transform: translateY(700px);
-    transition-property: transform;
+    transform: translateY(100%);
+    opacity: 0;
+    transition-property: transform,opacity;
   }
   [data-aos][data-aos][data-aos][data-aos="slide-in-animate"].aos-animate {
     transform: translateY(0);
-    transition-property: transform;
+    opacity: 1;
+    transition-property: transform,opacity;
   }
 }
 [data-aos][data-aos][data-aos][data-aos="slide-out-animate"] {
   transform: translateY(0);
-  transition-property: transform;
+  opacity: 1;
+  transition-property: transform,opacity;
 }
 [data-aos][data-aos][data-aos][data-aos="slide-out-animate"].aos-animate {
-  transform: translateY(-700px);
-  transition-property: transform;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition-property: transform,opacity;
 }
 @media screen and (min-width: 768px) {
   [data-aos][data-aos][data-aos][data-aos="slide-out-animate"] {
     transform: translateY(0);
-    transition-property: transform;
+    opacity: 1;
+    transition-property: transform,opacity;
   }
   [data-aos][data-aos][data-aos][data-aos="slide-out-animate"].aos-animate {
-    transform: translateY(-700px);
-    transition-property: transform;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition-property: transform,opacity;
+  }
+}
+/*
+*fade-in-animate / fade-out-animate
+*/
+[data-aos][data-aos][data-aos][data-aos="fade-in-animate"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+[data-aos][data-aos][data-aos][data-aos="fade-in-animate"].aos-animate {
+  opacity: 1;
+  transition-property: opacity;
+}
+@media screen and (min-width: 768px) {
+  [data-aos][data-aos][data-aos][data-aos="fade-in-animate"] {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  [data-aos][data-aos][data-aos][data-aos="fade-in-animate"].aos-animate {
+    opacity: 1;
+    transition-property: opacity;
+  }
+}
+[data-aos][data-aos][data-aos][data-aos="fade-out-animate"] {
+  opacity: 1;
+  transition-property: opacity;
+}
+[data-aos][data-aos][data-aos][data-aos="fade-out-animate"].aos-animate {
+  opacity: 1;
+  transition-property: opacity;
+}
+@media screen and (min-width: 768px) {
+  [data-aos][data-aos][data-aos][data-aos="fade-out-animate"] {
+    opacity: 1;
+    transition-property: opacity;
+  }
+  [data-aos][data-aos][data-aos][data-aos="fade-out-animate"].aos-animate {
+    opacity: 1;
+    transition-property: opacity;
   }
 }

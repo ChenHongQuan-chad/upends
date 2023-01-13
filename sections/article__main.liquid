@@ -170,15 +170,13 @@
   <div class="container navigation">
   </div>
   <div class="container article-content has-padding-top has-padding-bottom">
-   {% comment %}
     {% if section.settings.image!=blank and section.settings.show_image %}
-    <div class="img-box">
-       <a href="/pages/retail-wholesale-program" target="_blank">
+    <div class="img-box" style="margin:0 15px;">
+       <a href="/products/upbar-gt?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web" target="_blank">
          	<img src="{{ section.settings.image | img_url : 'master' }}" />
        </a>
     </div>
     {% endif %}
-   {% endcomment %}
     <div class="one-whole column content">
       {% if article.image and section.settings.show_featured_image %}
         <p>
@@ -198,7 +196,7 @@
             </span>
           </h2>
 
-          <p>
+          <p class="promo_link">
             <a href="{{ block.settings.promo_link }}">
               <span>
                 <img src="{{ block.settings.image | image_url }}" />

@@ -294,6 +294,15 @@
 <script src="{{ 'all-country-code.js' | asset_url }}"></script>
 <script>
   $(()=>{
+    var swiper = new Swiper(".contact-swiper", {
+      	 	slidesPerView: 4,
+        	spaceBetween: 30,
+          loope:true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+      });
     let contryList = getAllCountryCode()
       
       //根据id查找对象，
@@ -325,20 +334,9 @@
         console.log(ContactFormPhone);
         console.log(ContactFormPhone.value);
       }
-
       $('#contactFormCountry').editableSelect({
           effects: 'fade',   //下拉列表出来的方式
           duration: 200,  //时间
-      });
-      
-      var swiper = new Swiper(".contact-swiper", {
-      	 	slidesPerView: 4,
-        	spaceBetween: 30,
-        loope:true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
       });
   })
      
