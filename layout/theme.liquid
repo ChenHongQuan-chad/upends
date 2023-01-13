@@ -68,6 +68,10 @@
   <meta name="robots" content="index,follow">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.shop_bg_color }}">
+  <!--含/collections/vendors?q=的垃圾页面中加一行meta代码,不让google收录-->
+  {% if template contains "collection" %}
+  <meta name="robots" content="noindex, nofollow" />
+  {% endif %}
   <link rel="canonical" href="{{ canonical_url }}" />
 <meta name="yandex-verification" content="ae8561340cf739fa" />
   <!--Start of Tawk.to Script-->
