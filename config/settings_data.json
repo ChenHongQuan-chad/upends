@@ -2108,6 +2108,7 @@
           },
           "1592102147383-0": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "link": "",
               "image": "shopify:\/\/shop_images\/banner_33d8bc1c-27f9-4b65-b796-36eb7b47c7dd.jpg",
@@ -2139,6 +2140,7 @@
           },
           "a7270e73-cbd0-40a8-98df-4d692c39cc0b": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "link": "",
               "image": "shopify:\/\/shop_images\/RS_-_banner.jpg",
@@ -2170,6 +2172,7 @@
           },
           "90755c67-bc0d-49af-9b0d-6296f9217af7": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "link": "",
               "image": "shopify:\/\/shop_images\/Upleaf-_-_banner.jpg",

@@ -81,6 +81,20 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+/**
+ * url包含'web-pixels-manager','.atom','vendors'则添加<meta name="robots" content="noindex,nofollow">
+ * 
+ * */
+let metaRobots = document.querySelector("meta[name='robots']");
+
+if(['web-pixels-manager','.atom','vendors'].find(item=>location.href.includes(item))){
+  if(!metaRobots){
+    metaRobots = document.createElement('meta');
+    metaRobots.name = 'robots';
+    document.getElementsByTagName('head')[0].appendChild(metaRobots);
+  }
+  metaRobots.content = 'noindex,nofollow';
+}
 </script>
  <!--End of Tawk.to Script-->
   {%- if current_tags -%}{%- assign meta_tags = current_tags | join: ', ' -%}{%- endif -%}
