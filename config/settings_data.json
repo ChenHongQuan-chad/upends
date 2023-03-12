@@ -2075,12 +2075,12 @@
       "1592102147383": {
         "type": "index__slideshow-classic",
         "blocks": {
-          "697c7210-73e8-495c-8b5a-7180e07f2b57": {
+          "a7270e73-cbd0-40a8-98df-4d692c39cc0b": {
             "type": "image",
             "settings": {
-              "link": "shopify:\/\/products\/upbar-gt",
-              "image": "shopify:\/\/shop_images\/UpBAR_GT_banner_1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/UpBAR_GT_banner_1_ed82a0ad-f853-4b60-9e5e-5fb88ff155fa.jpg",
+              "link": "",
+              "image": "shopify:\/\/shop_images\/2116-Spring-Sale-_banner_d89298ba-b499-47d1-8593-1c960c8bd30f.png",
+              "mobile_image": "shopify:\/\/shop_images\/2116-Spring-Sale-_banner.jpg",
               "pretext": "",
               "title": "",
               "subtitle": "",
@@ -2108,11 +2108,10 @@
           },
           "1592102147383-0": {
             "type": "image",
-            "disabled": true,
             "settings": {
               "link": "",
-              "image": "shopify:\/\/shop_images\/banner_33d8bc1c-27f9-4b65-b796-36eb7b47c7dd.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/banner_b9b40890-d24e-4aa4-982f-ebf518a4aa58.jpg",
+              "image": "shopify:\/\/shop_images\/Paraguay-Vape-Show-banner.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Paraguay-Vape-Show-banner-mobile_1.jpg",
               "pretext": "",
               "title": "",
               "subtitle": "",
@@ -2138,13 +2137,12 @@
               "subheading_color_mobile": "#ffffff"
             }
           },
-          "a7270e73-cbd0-40a8-98df-4d692c39cc0b": {
+          "697c7210-73e8-495c-8b5a-7180e07f2b57": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "link": "",
-              "image": "shopify:\/\/shop_images\/RS_-_banner.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/RS-_-_banner.jpg",
+              "link": "shopify:\/\/products\/upbar-gt",
+              "image": "shopify:\/\/shop_images\/UpBAR_GT_banner_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/UpBAR_GT_banner_1_ed82a0ad-f853-4b60-9e5e-5fb88ff155fa.jpg",
               "pretext": "",
               "title": "",
               "subtitle": "",
@@ -2483,9 +2481,9 @@
           }
         },
         "block_order": [
-          "697c7210-73e8-495c-8b5a-7180e07f2b57",
-          "1592102147383-0",
           "a7270e73-cbd0-40a8-98df-4d692c39cc0b",
+          "1592102147383-0",
+          "697c7210-73e8-495c-8b5a-7180e07f2b57",
           "90755c67-bc0d-49af-9b0d-6296f9217af7",
           "d00eae7d-db78-472b-aea6-7a2257bf0bc1",
           "1945d013-aa81-4588-a804-b724294eff44",
@@ -3206,7 +3204,13 @@
           "b07eb5c5-f9af-4d16-a474-8bfa8df86507": {
             "type": "product",
             "settings": {
-              "product": "upbar-air"
+              "product": "upleaf"
+            }
+          },
+          "7f16bb4b-1eac-4e3e-9437-ae34ab23861b": {
+            "type": "product",
+            "settings": {
+              "product": "upbar-gt"
             }
           },
           "c40926cf-6adf-462e-8827-a2520294b49e": {
@@ -3221,12 +3225,6 @@
               "product": "upbar"
             }
           },
-          "7f16bb4b-1eac-4e3e-9437-ae34ab23861b": {
-            "type": "product",
-            "settings": {
-              "product": "upbar-pnt"
-            }
-          },
           "04270f11-0b13-4290-a677-6f5a0e9a04af": {
             "type": "product",
             "settings": {
@@ -3236,9 +3234,9 @@
         },
         "block_order": [
           "b07eb5c5-f9af-4d16-a474-8bfa8df86507",
+          "7f16bb4b-1eac-4e3e-9437-ae34ab23861b",
           "c40926cf-6adf-462e-8827-a2520294b49e",
           "310f1f53-d766-4ecb-aea9-4aea8744e939",
-          "7f16bb4b-1eac-4e3e-9437-ae34ab23861b",
           "04270f11-0b13-4290-a677-6f5a0e9a04af"
         ],
         "settings": {
