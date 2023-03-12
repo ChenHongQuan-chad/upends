@@ -7,7 +7,9 @@ This snippet auto generate by LayoutHub. Please DO NOT modify it
 	
 	{%- if shop.metafields.layouthub -%}
 		{%- if shop.metafields.layouthub.scripts -%}
-			{% capture jquery %} {{ "layouthub-jquery.min.js" | asset_url | script_tag }} {% endcapture %}
+			{% comment %}
+				{% capture jquery %} {{ "layouthub-jquery.min.js" | asset_url | script_tag }} {% endcapture %}
+			{% endcomment %}
 			{% assign jquery_string = '<!--LAYOUTHUB_JQUERY-->' %}
 				{{- shop.metafields.layouthub.scripts | replace: jquery_string, jquery  -}}
 		{%- endif -%}

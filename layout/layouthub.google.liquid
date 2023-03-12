@@ -32,8 +32,9 @@
   <script>
     {% include 'js-variables' %}
   </script>
-
+  {% comment %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  {% endcomment %}
   <script defer src="{{ 'vendors.js' | asset_url }}"></script>
   <script defer src="{{ 'utilities.js' | asset_url }}"></script>
   <script defer src="{{ 'app.js' | asset_url }}"></script>

@@ -197,7 +197,7 @@
           <div class="one-half column">
             <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
               {% assign name_attr = 'contact.form.phone' | handle %}
-              <label for="ContactFormPhone" class="label {% if settings.use_placeholders %}is-sr-only{% endif %}">
+              <label for="contactFormPhone" class="label {% if settings.use_placeholders %}is-sr-only{% endif %}">
                 {{ 'contact.form.phone' | t }} <span class="required">*</span>
               </label>
               <!-- /^([+]?0?\d{2,3}-?|\([+]?0?\d{2,3}\)|\([+]?0?\d{2,3}\))?\d+$|^([+]?0?\d{2,3}-?|\([+]?0?\d{2,3}\)|\([+]?0?\d{2,3}\))?[1-9]\d{4,10}(-\d{1,10})?$/.test(value) -->
@@ -206,7 +206,7 @@
                 </select>
                 <input required="required" onblur=phoneBlur(event)  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" id="formPhone"  class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
               </div>
-              <input style="display:none ;" required="required" onblur=""  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" name="contact[phone]" id="ContactFormPhone" class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
+              <input style="display:none ;" required="required" onblur=""  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" name="contact[phone]" id="contactFormPhone" class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
             </div>
           </div>
 
@@ -221,6 +221,7 @@
           </div>
           
           <!-- country field-->
+          <!-- 选择国家 -->
          <div class="one-half column country-field">
             <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
               <label for="contactFormCountry" class="label">
@@ -289,55 +290,4 @@
 >
   {}
 </script>
-<script src="{{ 'z__jsCustomContactForm.js' | asset_url }}"></script>
-<script src="{{ 'jquery-editable-select.min.js' | asset_url }}"></script>
-<script src="{{ 'all-country-code.js' | asset_url }}"></script>
-<script>
-  $(()=>{
-    var swiper = new Swiper(".contact-swiper", {
-      	 	slidesPerView: 4,
-        	spaceBetween: 30,
-          loope:true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-      });
-    let contryList = getAllCountryCode()
-      
-      //根据id查找对象，
-      let countrySelectObj=document.getElementById('countryListSelect');
-      //ContactFormPhone 和 formPhone
-      //根据id查找对象，
-      let formPhone = document.getElementById('formPhone');
-      let ContactFormPhone = document.getElementById('ContactFormPhone');
 
-      //添加一个选项
-      function addOption(opt){
-        countrySelectObj.add(new Option(`+${opt.dialCode}`,`+${opt.dialCode}`));
-      }
-      contryList.forEach(opt => {
-        addOption(opt)
-      });
-      $('#countryListSelect').editableSelect({
-          effects: 'fade',   //下拉列表出来的方式
-          duration: 200,  //时间
-      }).on('select.editable-select', function (e) {
-        // do something...
-          ContactFormPhone.value = $("#countryListSelect").val() + formPhone.value
-          console.log(ContactFormPhone);
-          console.log(ContactFormPhone.value);
-      })
-      
-      function phoneBlur(e){
-        ContactFormPhone.value = $("#countryListSelect").val()+ e.target.value
-        console.log(ContactFormPhone);
-        console.log(ContactFormPhone.value);
-      }
-      $('#contactFormCountry').editableSelect({
-          effects: 'fade',   //下拉列表出来的方式
-          duration: 200,  //时间
-      });
-  })
-     
-</script>

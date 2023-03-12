@@ -41,8 +41,9 @@ This file can be re-written at any time.
     {% include 'js-variables' %}
   </script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% comment %}
   <script defer src="{{ 'vendors.js' | asset_url }}"></script>
+  {% endcomment %}
   <script defer src="{{ 'utilities.js' | asset_url }}"></script>
   <script src="{{ 'smooth-scroll.js' | asset_url }}"></script>
   <script defer src="{{ 'app.js' | asset_url }}"></script>

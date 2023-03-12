@@ -31,6 +31,59 @@
         </div>
     </div>
 </div>
+<script src="{{ 'z__jsCustomContactForm.js' | asset_url }}"></script>
+<script src="{{ 'jquery-editable-select.min.js' | asset_url }}"></script>
+<script src="{{ 'all-country-code.js' | asset_url }}"></script>
+<script>
+  $(()=>{
+    var swiper = new Swiper(".contact-swiper", {
+      	 	slidesPerView: 4,
+        	spaceBetween: 30,
+          loope:true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+      });
+    /**  S  include-contact-form-retail.liquid */
+      let contryList = getAllCountryCode()
+      //根据id查找对象，
+      let countrySelectObj=document.getElementById('countryListSelect');
+      //contactFormPhone 和 formPhone
+      //根据id查找对象，
+      let formPhone = document.getElementById('formPhone');
+      let contactFormPhone = document.getElementById('contactFormPhone');
+
+      //添加一个选项
+      function addOption(opt){
+        countrySelectObj.add(new Option(`+${opt.dialCode}`,`+${opt.dialCode}`));
+      }
+      contryList.forEach(opt => {
+        addOption(opt)
+      });
+      $('#countryListSelect').editableSelect({
+          effects: 'fade',   //下拉列表出来的方式
+          duration: 200,  //时间
+      }).on('select.editable-select', function (e) {
+        // do something...
+          contactFormPhone.value = $("#countryListSelect").val() + formPhone.value
+          console.log(contactFormPhone);
+          console.log(contactFormPhone.value);
+      })
+      
+      function phoneBlur(e){
+        contactFormPhone.value = $("#countryListSelect").val()+ e.target.value
+        console.log(contactFormPhone);
+        console.log(contactFormPhone.value);
+      }
+      $('#contactFormCountry').editableSelect({
+          effects: 'fade',   //下拉列表出来的方式
+          duration: 200,  //时间
+      });
+      /**  E include-contact-form-retail.liquid */
+  })
+     
+</script>
 <script>
     
     window.__pagefly_setting__ = { "baseURL": "https://apps.pagefly.io", "analyticsURL": "https://analytics.pagefly.io", "isBackend": false, "cdnURL": "https://cdn.pagefly.io", "pageflyVersion": "2.12.0", "shopDomain": "upends.myshopify.com", "elementData": {}, "pageTitle": "Retail & Wholesale Program", "pageType": "page", "pageId": "d2b98072-fa4e-4cbc-b2f3-519e7a5b184e", "lazyLoad": false, "imageLazyLoad": false, "nativeImageLazyLoad": true, "trackingIDs": [] };
