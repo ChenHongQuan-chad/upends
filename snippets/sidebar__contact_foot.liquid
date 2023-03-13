@@ -16,14 +16,30 @@
             <div class="sc-pQQXS iWCqut" style="max-width: 1170px;">
                 <div class="sc-pkUyL fTyjzF pf-37c10ec5" data-pf-type="Column">
                 {% form 'customer' %}<div  data-pf-type="Row">
-                    <div class="sc-pkUyL fTyjzF pf-a758d930" data-pf-type="Column">
-                        <div data-pf-type="Form2.Field" class="sc-qQKBW iRZdgm pf-86c533d2"><label class="sc-prqHV gLlDTH">Email<sup>*</sup></label><input class="input is-primary-btn-style is-regular" style="display: block; line-height:32px;width:100%" oninvalid="checkInput(this)" name="contact[email]" type="email" placeholder="Enter Your Mail" required="" data-drag-disable="true" class="sc-pJhSf gdVGCp" value=""></div>
+                    <div class="block" data-pf-type="Column">
+                        <div data-pf-type="Form2.Field"><label>Email<sup>*</sup></label><input class="input is-primary-btn-style is-regular  border-radius-little" style="display: block; line-height:32px;width:100%" oninvalid="checkInput(this)" name="contact[email]" type="email" placeholder="Enter Your Mail" required="" data-drag-disable="true" class="sc-pJhSf gdVGCp" value=""></div>
                     </div>
-                    <div class="sc-pkUyL fTyjzF pf-b645a94d" data-pf-type="Column">
-                        <div data-pf-type="Form2.Field" class="sc-qQKBW iRZdgm pf-4cf08480"><label class="sc-prqHV gLlDTH">Message<sup>*</sup></label><textarea  class="input is-primary-btn-style is-regular" style="display: block; width: 100%;height:auto;" name="contact[note][Biography]" placeholder="Leave a message" rows="6" data-drag-disable="true" class="sc-pjuKs hxQaV"></textarea></div>
+
+                    <!-- S 电话-->
+                    <div class="contact-form__block contact-form__block--{{ block.type }}" {{ block.shopify_attributes }}>
+                        <label for="contactFormPhone">
+                            {{ 'contact.form.phone' | t }} <span class="required">*</span>
+                        </label>
+                        <!-- /^([+]?0?\d{2,3}-?|\([+]?0?\d{2,3}\)|\([+]?0?\d{2,3}\))?\d+$|^([+]?0?\d{2,3}-?|\([+]?0?\d{2,3}\)|\([+]?0?\d{2,3}\))?[1-9]\d{4,10}(-\d{1,10})?$/.test(value) -->
+                        <div class="select-phone" style="display: flex;align-items:center;justify-content:center;">
+                            <select class="country-list-select"  id="countryListSelect" autocomplete="new-password" style="width:70px;font-size: 1rem;height: 2.25em;" class="border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}">
+                            </select>
+                            <input required="required" onblur=phoneBlur(event)  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" id="formPhone"  class=" form-phone input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
+                        </div>
+                        <input style="display:none ;" required="required" onblur=""  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" name="contact[phone]" id="contactFormPhone" class="contact-form-phone input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
                     </div>
-                    <div class="sc-pkUyL fTyjzF pf-71baa106" data-pf-type="Column" style="margin-top:10px;">
-                        <button type="submit" class="button button--primary is-within-form" style="width:100%;"><span>Submit</span></button>
+                    <!-- E 电话-->
+
+                    <div class="block" data-pf-type="Column">
+                        <div data-pf-type="Form2.Field"><label class="sc-prqHV gLlDTH">Message<sup>*</sup></label><textarea  class="input is-primary-btn-style is-regular  border-radius-little" style="display: block; width: 100%;height:auto;" name="contact[note][Biography]" placeholder="Leave a message" rows="4" data-drag-disable="true"></textarea></div>
+                    </div>
+                    <div class="block" data-pf-type="Column" style="margin-top:10px;">
+                        <button type="submit" class="button button--primary is-within-form border-radius-little" style="width:100%;"><span>Submit</span></button>
                     </div>
                     {% for field in form.errors %}{% if field == 'form' %}<p class="sc-qYVps kEvrqM">Sorry, the submission can not be sent! Please try again later!</p>{{ form.errors.messages[field] }}{% endif %}{% if form.errors.messages[field] contains "can't be blank." %}<p class="sc-qYVps kEvrqM">Field can't be blank</p>{% else %}<p class="sc-qYVps kEvrqM">Sorry, the submission can not be sent! Please try again later!</p>{% endif %}{% endfor %}{% if form.posted_successfully? %}<p class="sc-qYVps hYCNmc">Thank you for your submissions!</p>{% endif %}{% endform %}
                 </div>
@@ -35,52 +51,44 @@
 <script src="{{ 'jquery-editable-select.min.js' | asset_url }}"></script>
 <script src="{{ 'all-country-code.js' | asset_url }}"></script>
 <script>
+    function phoneBlur(e){
+        $('.contact-form-phone').val($(".country-list-select").val()+ e.target.value) 
+    }
   $(()=>{
-    var swiper = new Swiper(".contact-swiper", {
-      	 	slidesPerView: 4,
-        	spaceBetween: 30,
-          loope:true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-      });
-    /**  S  include-contact-form-retail.liquid */
-      let contryList = getAllCountryCode()
-      //根据id查找对象，
-      let countrySelectObj=document.getElementById('countryListSelect');
-      //contactFormPhone 和 formPhone
-      //根据id查找对象，
-      let formPhone = document.getElementById('formPhone');
-      let contactFormPhone = document.getElementById('contactFormPhone');
+        var swiper = new Swiper(".contact-swiper", {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            loope:true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+        /**  S  include-contact-form-retail.liquid */
+        //添加手机区号
+        let contryList = getAllCountryCode()
+        contryList.forEach(opt => {
+            console.log($('.country-list-select').length);
+            $('.country-list-select').each((index,item)=>{
+                $(item).append(`<option value='+${opt.dialCode}'>+${opt.dialCode}</option>`)
+            })
+        });
 
-      //添加一个选项
-      function addOption(opt){
-        countrySelectObj.add(new Option(`+${opt.dialCode}`,`+${opt.dialCode}`));
-      }
-      contryList.forEach(opt => {
-        addOption(opt)
-      });
-      $('#countryListSelect').editableSelect({
-          effects: 'fade',   //下拉列表出来的方式
-          duration: 200,  //时间
-      }).on('select.editable-select', function (e) {
-        // do something...
-          contactFormPhone.value = $("#countryListSelect").val() + formPhone.value
-          console.log(contactFormPhone);
-          console.log(contactFormPhone.value);
-      })
-      
-      function phoneBlur(e){
-        contactFormPhone.value = $("#countryListSelect").val()+ e.target.value
-        console.log(contactFormPhone);
-        console.log(contactFormPhone.value);
-      }
-      $('#contactFormCountry').editableSelect({
-          effects: 'fade',   //下拉列表出来的方式
-          duration: 200,  //时间
-      });
-      /**  E include-contact-form-retail.liquid */
+        $('.country-list-select').editableSelect({
+                //下拉列表出来的方式
+                effects: 'fade',   
+                duration: 200,  
+        // 当列表中的一个选项被选中时触发。选定的$element可用作事件的属性。
+        }).on('select.editable-select', function (e) {
+            $('.contact-form-phone').val($(".country-list-select").val() + $('.form-phone').val())
+        })
+        
+        $('.contact-form-country').editableSelect({
+            effects: 'fade',  
+            duration: 200, 
+        });
+        /**  E include-contact-form-retail.liquid */
+
   })
      
 </script>

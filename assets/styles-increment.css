@@ -606,3 +606,20 @@
 .product-last-swiper .swiper-slide {
   width: 100%!important;
 }
+.es-input {
+  background-color: #fff !important;
+  border-color: #dbdbdb;
+  color: #363636;
+  box-shadow: none;
+}
+.es-list {
+  max-height: 300px !important;
+  color: #1d1d1f;
+}
+.contact-form .contact-form__blocks .contact-form__block {
+  position: relative;
+}
+.contact-form .contact-form__blocks .contact-form__block #contactFormCountry + .es-list {
+  position: absolute;
+  width: 100%!important;
+}

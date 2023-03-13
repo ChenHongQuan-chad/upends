@@ -202,11 +202,11 @@
               </label>
               <!-- /^([+]?0?\d{2,3}-?|\([+]?0?\d{2,3}\)|\([+]?0?\d{2,3}\))?\d+$|^([+]?0?\d{2,3}-?|\([+]?0?\d{2,3}\)|\([+]?0?\d{2,3}\))?[1-9]\d{4,10}(-\d{1,10})?$/.test(value) -->
               <div class="select-phone" style="display: flex;align-items:center;justify-content:center;">
-                <select  id="countryListSelect" style="width:13%;font-size: 1rem;height: 2.25em;" class="border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}">
+                <select class="country-list-select"  id="countryListSelect" autocomplete="new-password" style="width:70px;font-size: 1rem;height: 2.25em;" class="border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}">
                 </select>
-                <input required="required" onblur=phoneBlur(event)  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" id="formPhone"  class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
+                <input required="required" onblur=phoneBlur(event)  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" id="formPhone"  class="form-phone input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
               </div>
-              <input style="display:none ;" required="required" onblur=""  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" name="contact[phone]" id="contactFormPhone" class="input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
+              <input style="display:none ;" required="required" onblur=""  type="tel" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="Enter your {{ 'contact.form.phone' | t }}" name="contact[phone]" id="contactFormPhone" class="contact-form-phone input border-radius-little is-{{ field_input_style }} is-{{ field_input_size }}" />
             </div>
           </div>
 
@@ -227,7 +227,7 @@
               <label for="contactFormCountry" class="label">
                 {{ 'contact.form.country' | t }} <span class="required">*</span>
               </label>
-              <select required id="contactFormCountry" name="contact[country]" data-default="" style="height: 36px;line-height: 36px;outline: none;width:100%;" class="border-radius-little">{{ country_option_tags }}</select>
+              <select autocomplete="new-password" required id="contactFormCountry"  class="contact-form-country border-radius-little" name="contact[country]" data-default="" style="height: 36px;line-height: 36px;outline: none;width:100%;">{{ country_option_tags }}</select>
             </div>
           </div>
 
