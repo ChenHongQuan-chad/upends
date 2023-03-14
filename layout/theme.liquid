@@ -87,7 +87,7 @@ s0.parentNode.insertBefore(s1,s0);
  * */
 let metaRobots = document.querySelector("meta[name='robots']");
 
-if(['web-pixels-manager','.atom','vendors'].find(item=>location.href.includes(item))){
+if(['web-pixels-manager','.atom','vendors','wpm@0.0.244'].find(item=>location.href.includes(item))){
   if(!metaRobots){
     metaRobots = document.createElement('meta');
     metaRobots.name = 'robots';
