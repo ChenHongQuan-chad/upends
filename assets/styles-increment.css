@@ -184,17 +184,6 @@
 .margin-right-biggest {
   margin-right: 150px !important;
 }
-.strong {
-  font-weight: bold;
-}
-.normal-response {
-  width: auto;
-  display: inline-block;
-}
-.full-response {
-  width: 100%;
-  height: auto;
-}
 .flex {
   display: flex!important;
 }
@@ -217,12 +206,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.block {
-  display: block;
-}
-.text-linear {
-  background-image: linear-gradient(left, #c7025f, #73a2df);
 }
 .relative {
   position: relative !important;
@@ -247,6 +230,61 @@
   position: absolute !important;
   top: 50%;
   transform: translateY(-50%);
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.clearfix {
+  clear: both;
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 15px!important;
+}
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.glass-bg {
+  position: relative;
+}
+.glass-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+}
+.block {
+  display: block;
+}
+.strong {
+  font-weight: bold;
+}
+.normal-response {
+  width: auto;
+  display: inline-block;
+}
+.full-response {
+  width: 100%;
+  height: auto;
+}
+.text-linear {
+  background-image: linear-gradient(left, #c7025f, #73a2df);
 }
 .margin-auto {
   margin: auto;
@@ -278,32 +316,11 @@
 .bg-linear {
   background-image: linear-gradient(to right, #02cdb9, #6462b7);
 }
-.fr {
-  float: right;
-}
-.fl {
-  float: left;
-}
-.clearfix {
-  clear: both;
-}
-.video {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  margin-bottom: 15px!important;
-}
-.video iframe,
-.video object,
-.video embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 /* 自定义样式 */
+.button,
+button {
+  border-radius: 4px !important;
+}
 .new .height-normal {
   height: 800px;
 }
@@ -611,6 +628,7 @@
   border-color: #dbdbdb;
   color: #363636;
   box-shadow: none;
+  border-style: solid;
 }
 .es-list {
   max-height: 300px !important;

@@ -111,7 +111,12 @@ if(['web-pixels-manager','.atom','vendors','wpm@0.0.244'].find(item=>location.hr
   {% if settings.enable_shopify_review_comments %}
     <link rel="preconnect dns-prefetch" href="https://productreviews.shopifycdn.com" />
   {% endif %}
-
+ <style>
+  .section--has-sidebar-option.has-sidebar-disabled {
+    width: 100%;
+    max-width: none;
+  } 
+ </style>
   {{ 'aos.css' | asset_url | stylesheet_tag }}
   {{ 'animate-ui.css' | asset_url | stylesheet_tag }}
   {{ 'fancybox.css' | asset_url | stylesheet_tag }}
