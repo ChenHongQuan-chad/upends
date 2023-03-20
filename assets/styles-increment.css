@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'nordItalic';
-  src: url('Incised901BT-NordItalic.eot');
-  src: url('Incised901BT-NordItalic.eot?#iefix') format('embedded-opentype'), url('Incised901BT-NordItalic.woff') format('woff'), url('Incised901BT-NordItalic.ttf') format('truetype'), url('Incised901BT-NordItalic.svg#iconfont') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 /* 公共样式 */
 .no-scroll::-webkit-scrollbar {
   display: none;
@@ -640,4 +633,36 @@ button {
 .contact-form .contact-form__blocks .contact-form__block #contactFormCountry + .es-list {
   position: absolute;
   width: 100%!important;
+}
+.color-name {
+  background-color: #dcb31b;
+  height: 56px;
+  line-height: 56px!important;
+  margin-bottom: 0!important;
+  padding: 0 60px;
+  border-radius: 28px;
+  display: inline-block;
+  font-size: 26px!important;
+  font-weight: bold;
+  color: #fff !important;
+}
+.btn-images {
+  display: block;
+  max-width: 530px;
+}
+.btn-images .btn-image {
+  width: 76px;
+  height: 76px;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 25px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.btn-images .btn-image:hover,
+.btn-images .btn-image:active,
+.btn-images .btn-image:visited,
+.btn-images .btn-image.active {
+  box-shadow: 0 2px 12px #00000040;
 }
