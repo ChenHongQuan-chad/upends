@@ -347,8 +347,8 @@ padding-right: 60px !important;
 
 @border-radius-base:8px;
 @border-radius-small:4px;
-@box-shadow-base:0 2px 12px #00000040;
-@box-shadow-small:0 2px 12px #00000040;
+@box-shadow-base:0 2px 12px rgba(0, 0, 0, 0.3);
+@box-shadow-small:0 2px 12px rgba(0, 0, 0, 0.1);
 @transition-base:all 0.3s ease-in-out;
 .button,button{
     border-radius: @border-radius-small!important;
@@ -359,6 +359,10 @@ padding-right: 60px !important;
     }
     h4 {
         font-size: 28px;
+    }
+    h5{
+        font-size: 24px;
+        margin-bottom: 0;
     }
     .upox {
         p {
@@ -744,12 +748,67 @@ padding-right: 60px !important;
         margin-right: 25px;
         display: inline-block;
         transition: @transition-base;
+        border:1px solid #ccc;
         cursor: pointer;
         &:hover,
         &:active,
         &:visited,
         &.active{
+            border-color:#33ffd3;
             box-shadow:@box-shadow-small;
         }
     }
+}
+.taste-box{
+    display: flex;
+    width: 1450px;
+    margin:0 auto;
+    background-color: #fff;
+    padding: 30px;
+    align-items: center;
+    box-shadow:@box-shadow-small;
+    border-radius: 20px;
+    .swiper-container{
+        flex: 1;
+        .swiper-slide{
+            height: auto;
+            text-align: center;
+        }
+    }
+    .right-btns{
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        li{
+            margin-left: 25px;
+            margin-bottom: 20px;
+            width: 140px;
+            height: 36px;
+            line-height: 1;
+            font-size: 12px;
+            text-align: center;
+            border:1px solid #ccc;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover,
+            &:focus,
+            &:active,
+            &.active{
+                background-color: #ff892a;
+                color:#fff;
+                border-color:#ff892a ;
+                box-shadow:@box-shadow-small;
+            }
+        }
+    }
+}
+.text-gradient{
+    background-image:-webkit-linear-gradient(left,#e0c1ff,#7e85dc); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
 }

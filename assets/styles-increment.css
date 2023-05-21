@@ -320,6 +320,10 @@ button {
 .new h4 {
   font-size: 28px;
 }
+.new h5 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
 .new .upox p {
   font-size: 20px;
   color: #1d1d1f;
@@ -658,11 +662,66 @@ button {
   margin-right: 25px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
 .btn-images .btn-image:hover,
 .btn-images .btn-image:active,
 .btn-images .btn-image:visited,
 .btn-images .btn-image.active {
-  box-shadow: 0 2px 12px #00000040;
+  border-color: #33ffd3;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.taste-box {
+  display: flex;
+  width: 1450px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.taste-box .swiper-container {
+  flex: 1;
+}
+.taste-box .swiper-container .swiper-slide {
+  height: auto;
+  text-align: center;
+}
+.taste-box .right-btns {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.taste-box .right-btns li {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  width: 140px;
+  height: 36px;
+  line-height: 1;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.taste-box .right-btns li:hover,
+.taste-box .right-btns li:focus,
+.taste-box .right-btns li:active,
+.taste-box .right-btns li.active {
+  background-color: #ff892a;
+  color: #fff;
+  border-color: #ff892a;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.text-gradient {
+  background-image: -webkit-linear-gradient(left, #e0c1ff, #7e85dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

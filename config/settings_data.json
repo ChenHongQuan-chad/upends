@@ -2075,12 +2075,43 @@
       "1592102147383": {
         "type": "index__slideshow-classic",
         "blocks": {
-          "a646cf79-f01f-49ca-8b23-33d0b4b55624": {
+          "697c7210-73e8-495c-8b5a-7180e07f2b57": {
             "type": "image",
             "settings": {
-              "link": "",
-              "image": "shopify:\/\/shop_images\/banner2.png",
-              "mobile_image": "shopify:\/\/shop_images\/banner_mobile.jpg",
+              "link": "shopify:\/\/products\/upbar-gt",
+              "image": "shopify:\/\/shop_images\/UpBAR-GT_banner.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/UpBAR-GT.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#ffffff",
+              "background_opacity": 77,
+              "border_color": "#ffffff",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
+          "9b632bd7-3ad9-4172-80a0-78ab6b5965de": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upbar-box",
+              "image": "shopify:\/\/shop_images\/UpBar-Box2-Banner.png",
+              "mobile_image": "shopify:\/\/shop_images\/UpBar-Box2_banner_mobile_1.png",
               "pretext": "",
               "title": "",
               "subtitle": "",
@@ -2108,74 +2139,10 @@
           },
           "0743c2c0-f431-4d7a-855a-2395cf527e5e": {
             "type": "image",
-            "disabled": true,
             "settings": {
-              "link": "",
-              "image": "shopify:\/\/shop_images\/1800x900.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/600-x-800.jpg",
-              "pretext": "",
-              "title": "",
-              "subtitle": "",
-              "pretext_color": "#000000",
-              "heading_color": "#000000",
-              "subheading_color": "#000000",
-              "text_alignment": "center",
-              "text_horizontal_position": "center",
-              "background_color": "#FFFFFF",
-              "background_opacity": 77,
-              "border_color": "#FFFFFF",
-              "border_width": 0,
-              "text_width": 40,
-              "button_1": "",
-              "button_1_link": "",
-              "button_1_style": "button--secondary",
-              "button_2": "",
-              "button_2_link": "",
-              "button_2_style": "button--secondary",
-              "mobile_image_crop": "none",
-              "pretext_color_mobile": "rgba(0,0,0,0)",
-              "heading_color_mobile": "rgba(0,0,0,0)",
-              "subheading_color_mobile": "rgba(0,0,0,0)"
-            }
-          },
-          "9b632bd7-3ad9-4172-80a0-78ab6b5965de": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "link": "",
-              "image": "shopify:\/\/shop_images\/1800x900_1.png",
-              "mobile_image": "shopify:\/\/shop_images\/600-x-800.png",
-              "pretext": "",
-              "title": "",
-              "subtitle": "",
-              "pretext_color": "#000000",
-              "heading_color": "#000000",
-              "subheading_color": "#000000",
-              "text_alignment": "center",
-              "text_horizontal_position": "center",
-              "background_color": "#FFFFFF",
-              "background_opacity": 77,
-              "border_color": "#FFFFFF",
-              "border_width": 0,
-              "text_width": 40,
-              "button_1": "",
-              "button_1_link": "",
-              "button_1_style": "button--secondary",
-              "button_2": "",
-              "button_2_link": "",
-              "button_2_style": "button--secondary",
-              "mobile_image_crop": "none",
-              "pretext_color_mobile": "rgba(0,0,0,0)",
-              "heading_color_mobile": "rgba(0,0,0,0)",
-              "subheading_color_mobile": "rgba(0,0,0,0)"
-            }
-          },
-          "63f7c817-5a1e-4513-96d7-a18e6891b616": {
-            "type": "image",
-            "settings": {
-              "link": "",
-              "image": "shopify:\/\/shop_images\/1800x900_banner.png",
-              "mobile_image": "shopify:\/\/shop_images\/600x800_-1.png",
+              "link": "shopify:\/\/products\/upbar-box-plus",
+              "image": "shopify:\/\/shop_images\/UpBar-Box-Plus-Banner.png",
+              "mobile_image": "shopify:\/\/shop_images\/UpBar-Box_Plus2_banner_mobile.png",
               "pretext": "",
               "title": "",
               "subtitle": "",
@@ -2201,12 +2168,12 @@
               "subheading_color_mobile": "rgba(0,0,0,0)"
             }
           },
-          "697c7210-73e8-495c-8b5a-7180e07f2b57": {
+          "63f7c817-5a1e-4513-96d7-a18e6891b616": {
             "type": "image",
             "settings": {
-              "link": "shopify:\/\/products\/upbar-gt",
-              "image": "shopify:\/\/shop_images\/UpBAR_GT_banner_1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/UpBAR_GT_banner_1_ed82a0ad-f853-4b60-9e5e-5fb88ff155fa.jpg",
+              "link": "",
+              "image": "shopify:\/\/shop_images\/1800x900_banner.png",
+              "mobile_image": "shopify:\/\/shop_images\/600x800_-1.png",
               "pretext": "",
               "title": "",
               "subtitle": "",
@@ -2420,11 +2387,10 @@
           }
         },
         "block_order": [
-          "a646cf79-f01f-49ca-8b23-33d0b4b55624",
-          "0743c2c0-f431-4d7a-855a-2395cf527e5e",
-          "9b632bd7-3ad9-4172-80a0-78ab6b5965de",
-          "63f7c817-5a1e-4513-96d7-a18e6891b616",
           "697c7210-73e8-495c-8b5a-7180e07f2b57",
+          "9b632bd7-3ad9-4172-80a0-78ab6b5965de",
+          "0743c2c0-f431-4d7a-855a-2395cf527e5e",
+          "63f7c817-5a1e-4513-96d7-a18e6891b616",
           "d00eae7d-db78-472b-aea6-7a2257bf0bc1",
           "1945d013-aa81-4588-a804-b724294eff44",
           "aef10714-d817-4bd9-9cd7-9a58870c721b",
@@ -2753,8 +2719,8 @@
             "type": "ads",
             "settings": {
               "title": "",
-              "image": "shopify:\/\/shop_images\/upbar-rs_7dabfaca-5ad7-42f3-b784-ece35f81ea64.gif",
-              "promo_link": "https:\/\/www.upends.com\/pages\/retail-wholesale-program"
+              "image": "shopify:\/\/shop_images\/UpBar-GT_1.gif",
+              "promo_link": "shopify:\/\/pages\/retail-wholesale-program"
             }
           }
         },
@@ -2772,7 +2738,7 @@
           "show_tags": true,
           "show_featured_image": true,
           "show_image": true,
-          "image": "shopify:\/\/shop_images\/UpBar-GT_1.gif",
+          "image": "shopify:\/\/shop_images\/20230511203646.jpg",
           "width": "standard",
           "padding_top": 40,
           "padding_bottom": 40,
