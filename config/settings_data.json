@@ -2075,6 +2075,37 @@
       "1592102147383": {
         "type": "index__slideshow-classic",
         "blocks": {
+          "518e17ca-35b3-4bae-8996-fca9c673ebf1": {
+            "type": "image",
+            "settings": {
+              "link": "shopify:\/\/products\/upbar-tube",
+              "image": "shopify:\/\/shop_images\/1920-_banner-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/1920-_banner.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "pretext_color": "#000000",
+              "heading_color": "#000000",
+              "subheading_color": "#000000",
+              "text_alignment": "center",
+              "text_horizontal_position": "center",
+              "background_color": "#FFFFFF",
+              "background_opacity": 77,
+              "border_color": "#FFFFFF",
+              "border_width": 0,
+              "text_width": 40,
+              "button_1": "",
+              "button_1_link": "",
+              "button_1_style": "button--secondary",
+              "button_2": "",
+              "button_2_link": "",
+              "button_2_style": "button--secondary",
+              "mobile_image_crop": "none",
+              "pretext_color_mobile": "rgba(0,0,0,0)",
+              "heading_color_mobile": "rgba(0,0,0,0)",
+              "subheading_color_mobile": "rgba(0,0,0,0)"
+            }
+          },
           "697c7210-73e8-495c-8b5a-7180e07f2b57": {
             "type": "image",
             "settings": {
@@ -2387,6 +2418,7 @@
           }
         },
         "block_order": [
+          "518e17ca-35b3-4bae-8996-fca9c673ebf1",
           "697c7210-73e8-495c-8b5a-7180e07f2b57",
           "9b632bd7-3ad9-4172-80a0-78ab6b5965de",
           "0743c2c0-f431-4d7a-855a-2395cf527e5e",
