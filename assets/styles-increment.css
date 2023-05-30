@@ -723,4 +723,80 @@ button {
   background-image: -webkit-linear-gradient(left, #e0c1ff, #7e85dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.text-boxshow {
+  position: relative;
+}
+.text-boxshow::after {
+  content: attr(data-pre-title) '\a' attr(data-next-title);
+  text-shadow: 0 6px 8px #85ffe9;
+  position: absolute;
+  white-space: pre;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.stroke {
+  -webkit-text-stroke: 0.001em #fff;
+}
+.stroke-outside {
+  -webkit-text-stroke: 2px #fff;
+}
+.stroke-outside::before {
+  content: attr(data-pre-title) '\a' attr(data-next-title);
+  position: absolute;
+  background-image: -webkit-linear-gradient(bottom, #9c54ff 10%, #0dfcff 35%, #4037ff 50%, #ebcbff 62%, #37fff3 76%, #4037ff 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0;
+  white-space: pre;
+}
+.gradient .upox p {
+  font-size: 30px;
+  color: #1d1d1f;
+  line-height: 1.35;
+}
+.gradient .upox p.p-little {
+  font-size: 22px;
+}
+.gradient .height-normal {
+  height: 780px;
+}
+.gradient .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+.gradient .swiper-slide img {
+  background-color: #25078d;
+}
+.gradient .dot-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 140px;
+  text-transform: uppercase;
+}
+.gradient .dots .dot {
+  border: 1px solid #bdff0b;
+  position: relative;
+  background-color: transparent;
+  opacity: 0.6;
+  margin-right: 35px;
+}
+.gradient .dots .dot .dot-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background: #bdff0b;
+  border-radius: 50%;
+}
+.gradient .dots .dot::marker {
+  content: '';
+}
+.gradient .dots .dot.active {
+  opacity: 1;
 }
