@@ -72,29 +72,33 @@
 <meta name="yandex-verification" content="ae8561340cf739fa" />
   <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/61a6e69d53b398095a66dc8a/1flpv9ml9';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-/**
- * url包含'web-pixels-manager','.atom','vendors'则添加<meta name="robots" content="noindex,nofollow">
- * 
- * */
-let metaRobots = document.querySelector("meta[name='robots']");
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61a6e69d53b398095a66dc8a/1flpv9ml9';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+  })();
+  /**
+   * url包含'web-pixels-manager','.atom','vendors'则添加<meta name="robots" content="noindex,nofollow">
+   * 
+   * */
+  let metaRobots = document.querySelector("meta[name='robots']");
 
-if(['web-pixels-manager','.atom','vendors','wpm@0.0.244'].find(item=>location.href.includes(item))){
-  if(!metaRobots){
-    metaRobots = document.createElement('meta');
-    metaRobots.name = 'robots';
-    document.getElementsByTagName('head')[0].appendChild(metaRobots);
+  if(['web-pixels-manager','.atom','vendors','wpm@0.0.244','/wpm','/all/'].find(item=>location.href.includes(item))){
+    if(!metaRobots){
+      metaRobots = document.createElement('meta');
+      metaRobots.name = 'robots';
+      document.getElementsByTagName('head')[0].appendChild(metaRobots);
+    }
+    metaRobots.content = 'noindex,nofollow';
   }
-  metaRobots.content = 'noindex,nofollow';
-}
+  /**
+   * 分类产品路径替换成产品路径
+   * /
+
 </script>
  <!--End of Tawk.to Script-->
   {%- if current_tags -%}{%- assign meta_tags = current_tags | join: ', ' -%}{%- endif -%}

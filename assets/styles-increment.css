@@ -742,6 +742,7 @@ button {
 }
 .stroke-outside {
   -webkit-text-stroke: 2px #fff;
+  display: inline-block;
 }
 .stroke-outside::before {
   content: attr(data-pre-title) '\a' attr(data-next-title);
@@ -752,14 +753,6 @@ button {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0;
   white-space: pre;
-}
-.gradient .upox p {
-  font-size: 30px;
-  color: #1d1d1f;
-  line-height: 1.35;
-}
-.gradient .upox p.p-little {
-  font-size: 22px;
 }
 .gradient .height-normal {
   height: 780px;
@@ -774,7 +767,6 @@ button {
 .gradient .dot-name {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 140px;
   text-transform: uppercase;
 }
 .gradient .dots .dot {
