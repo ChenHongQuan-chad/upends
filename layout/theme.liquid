@@ -97,7 +97,11 @@
   }
   /**
    * 分类产品路径替换成产品路径
-   * /
+  * */
+ if(location.href.includes('/collections')&&location.href.includes('/products')){
+    let replaceUrl = location.href.replace(/\/collections.*(?=\/products)/ig,'')
+    location.replace(replaceUrl)
+ }
 
 </script>
  <!--End of Tawk.to Script-->
