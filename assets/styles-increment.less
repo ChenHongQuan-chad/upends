@@ -198,7 +198,9 @@ padding-right: 60px !important;
 .margin-right-biggest {
     margin-right: 150px !important;
 }
-
+.padding-top-biggest{
+    padding-top: 150px !important;
+}
 
 .flex {
     display: flex!important;
@@ -1000,7 +1002,25 @@ padding-right: 60px !important;
         }
     }
 }
-// 将swiper变白
+// swiper的左右按钮改变颜色
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev,.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     filter: grayscale(100%) brightness(200%);
+}
+// 竖向的swiper样式
+.swiper-container-vertical{
+    position: relative;
+    .swiper-pagination{
+        position: absolute;
+        width: auto;
+        right: 50px;
+        .swiper-pagination-bullet{
+            width: 22px;
+            height: 22px;
+            background-color: #656565;
+            border-color: transparent;
+            &.swiper-pagination-bullet-active{
+                background-color: #ffc915;
+            }
+        }
+    }
 }

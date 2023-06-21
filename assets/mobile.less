@@ -503,7 +503,6 @@
       display: none;
     }
   }
-
   .product__thumbnail {
 
     .gallery-cell,
@@ -521,13 +520,32 @@
       overflow: hidden;
       .image-info{
         color:#1d1d1f;
-        bottom: 0;
+        bottom: 1.3333vw;
       }
+    }
+  }
+  [class*='mobile-normal-swiper']{
+    .swiper-pagination{
+        .swiper-pagination-bullet{
+            background-color: #656565;
+            &.swiper-pagination-bullet-active{
+                background-color: #ffc915;
+            }
+        }
     }
   }
   .mobile-normal-swiper-03{
     .img-box{
       border-radius: 4vw;
+      overflow: hidden;
+    }
+    .swiper-pagination{
+      .swiper-pagination-bullet{
+              background-color: #ffe785;
+          &.swiper-pagination-bullet-active{
+              background-color: #ffffff;
+          }
+      }
     }
   }
 }

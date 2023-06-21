@@ -177,6 +177,9 @@
 .margin-right-biggest {
   margin-right: 150px !important;
 }
+.padding-top-biggest {
+  padding-top: 150px !important;
+}
 .flex {
   display: flex!important;
 }
@@ -895,4 +898,21 @@ button {
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   filter: grayscale(100%) brightness(200%);
+}
+.swiper-container-vertical {
+  position: relative;
+}
+.swiper-container-vertical .swiper-pagination {
+  position: absolute;
+  width: auto;
+  right: 50px;
+}
+.swiper-container-vertical .swiper-pagination .swiper-pagination-bullet {
+  width: 22px;
+  height: 22px;
+  background-color: #656565;
+  border-color: transparent;
+}
+.swiper-container-vertical .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffc915;
 }
