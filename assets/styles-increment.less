@@ -220,8 +220,11 @@ padding-right: 60px !important;
 }
 .flex-justify-center {
     display: flex!important;
-    align-items: center;
     justify-content: center;
+}
+.flex-justify-between {
+    justify-content: space-between;
+    display: flex!important;
 }
 .flex-column-center {
     display: flex!important;
@@ -246,11 +249,13 @@ padding-right: 60px !important;
 .absolute-row-center {
     position: absolute !important;
     left: 50%;
+    top: 0;
     transform: translateX(-50%);
 }
 .absolute-column-center {
     position: absolute !important;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
 }
 .fr{
@@ -707,7 +712,7 @@ padding-right: 60px !important;
         width: 300px;
     }
 }
-.img-icon,.img-box{
+.img-icon,.img-box,.video-box{
     font-size: 0;
     line-height: 0;
 }
@@ -1021,6 +1026,21 @@ padding-right: 60px !important;
             &.swiper-pagination-bullet-active{
                 background-color: #ffc915;
             }
+        }
+    }
+}
+
+// UPENDS Diamond
+.scroll-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .img-box{
+        height: 510px;
+        display: inline-block;
+        img{
+            height: inherit;
+            width: auto;
         }
     }
 }
