@@ -62,12 +62,6 @@
   border-radius: 40px;
   display: inline-block;
 }
-.margin-auto {
-    margin: auto !important;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .margin-auto li {
     display: inline-block;
     text-align: left;
@@ -75,6 +69,14 @@
 
 .text-center {
     text-align: center;
+}
+.margin-auto {
+    margin: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+.margin-top-none{
+    margin-top: 0!important;
 }
 .margin-top-littler {
   margin-top: 15px !important;
@@ -361,6 +363,23 @@ padding-right: 60px !important;
 @transition-base:all 0.3s ease-in-out;
 .button,button{
     border-radius: @border-radius-small!important;
+}
+.upox{
+    .h2,h2{
+        font-size: 56px;
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 36px;
+        letter-spacing: .01em;
+        line-height: 44px;
+        small{
+            font-size: .875em;
+            line-height: 1.2;
+            display: block;
+            font-weight: normal;
+        }
+    }
 }
 .new {
     .height-normal {
@@ -966,7 +985,15 @@ padding-right: 60px !important;
             border-left: 1px solid #fff;
         }
     }
+    &.upbar-nano{
+        .image-wrapper{
+            .image-box{
+                border-radius: 35px;
+            }
+        }
+    }
 }
+
 .scale-swiper{
     padding: 60px 0 80px;
     .swiper-slide {
@@ -1041,5 +1068,11 @@ padding-right: 60px !important;
             height: inherit;
             width: auto;
         }
+    }
+}
+// UpBAR NANO
+.upbar-nano{
+    .img-box{
+        height: 305px;
     }
 }

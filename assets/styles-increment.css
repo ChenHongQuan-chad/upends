@@ -54,17 +54,20 @@
   border-radius: 40px;
   display: inline-block;
 }
-.margin-auto {
-  margin: auto !important;
-  display: flex;
-  flex-wrap: wrap;
-}
 .margin-auto li {
   display: inline-block;
   text-align: left;
 }
 .text-center {
   text-align: center;
+}
+.margin-auto {
+  margin: auto !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+.margin-top-none {
+  margin-top: 0!important;
 }
 .margin-top-littler {
   margin-top: 15px !important;
@@ -325,6 +328,22 @@
 button {
   border-radius: 4px !important;
 }
+.upox .h2,
+.upox h2 {
+  font-size: 56px;
+  line-height: 1.2;
+}
+.upox h3 {
+  font-size: 36px;
+  letter-spacing: 0.01em;
+  line-height: 44px;
+}
+.upox h3 small {
+  font-size: 0.875em;
+  line-height: 1.2;
+  display: block;
+  font-weight: normal;
+}
 .new .height-normal {
   height: 800px;
 }
@@ -531,7 +550,6 @@ button {
   height: 100vh;
   left: 0;
   padding-top: 72px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-position: 50%;
@@ -859,7 +877,6 @@ button {
   padding: 40px 50px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
-  width: -webkit-fit-content;
   width: fit-content;
   float: right;
 }
@@ -870,13 +887,25 @@ button {
   padding-left: 30px;
   border-left: 1px solid #fff;
 }
+.product-gtr.upbar-nano .image-wrapper .image-box {
+  border-radius: 35px;
+}
 .scale-swiper {
   padding: 60px 0 80px;
 }
 .scale-swiper .swiper-slide {
   /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   transition: 300ms;
   transform: scale(0.8);
@@ -934,4 +963,7 @@ button {
 .scroll-wrapper .img-box img {
   height: inherit;
   width: auto;
+}
+.upbar-nano .img-box {
+  height: 305px;
 }
