@@ -366,15 +366,16 @@ padding-right: 60px !important;
 .button,button{
     border-radius: @border-radius-small!important;
 }
+//大于1920分辨率
 .upox{
     .h2,h2{
-        font-size: 56px;
-        line-height: 1.2;
+        font-size: 68px;
+        line-height: 1.4;
     }
     h3 {
-        font-size: 36px;
+        font-size: 56px;
         letter-spacing: .01em;
-        line-height: 44px;
+        line-height: 1.4;
         small{
             font-size: .875em;
             line-height: 1.2;
@@ -382,30 +383,89 @@ padding-right: 60px !important;
             font-weight: normal;
         }
     }
+    p{
+        font-size:28px;
+        line-height:1.4;
+        letter-spacing: .6px;
+    }
 }
 .new {
     .height-normal {
         height: 800px;
     }
     h4 {
-        font-size: 28px;
+        font-size: 36px;
     }
     h5{
-        font-size: 24px;
+        font-size: 34px;
         margin-bottom: 0;
     }
     .upox {
-        p {
-            font-size: 20px;
-            color: #1d1d1f;
-            line-height: 1.35;
-        }
         h2 {
             font-size: 68px;
             line-height: 1.2;
         }
+        p {
+            font-size: 28px;
+            color: #1d1d1f;
+            line-height: 1.35;
+        }
     }
 }
+.section {
+    max-width: 2100px;
+}
+@media screen and (max-width: 1921px) {
+    .section {
+        max-width: 1395px;
+    }
+    .upox{
+        .h2,h2{
+            font-size: 56px;
+            line-height: 1.2;
+        }
+        h3 {
+            font-size: 36px;
+            letter-spacing: .01em;
+            line-height: 1.2;
+            small{
+                font-size: .875em;
+                line-height: 1.2;
+                display: block;
+                font-weight: normal;
+            }
+        }
+        p{
+            font-size:18px;
+            line-height:1.4;
+            letter-spacing: .6px;
+        }
+    }
+    .new {
+        .height-normal {
+            height: 800px;
+        }
+        h4 {
+            font-size: 28px;
+        }
+        h5{
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+        .upox {
+            h2 {
+                font-size: 68px;
+                line-height: 1.2;
+            }
+            p {
+                font-size: 20px;
+                color: #1d1d1f;
+                line-height: 1.35;
+            }
+        }
+    }   
+}
+
 .width-100 {
   width: 100% !important;
 }
@@ -735,6 +795,12 @@ padding-right: 60px !important;
 .img-icon,.img-box,.video-box{
     font-size: 0;
     line-height: 0;
+}
+.img-icon,.img-box{
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
 .product-last-swiper{
     .swiper-slide{
