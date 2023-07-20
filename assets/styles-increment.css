@@ -114,6 +114,9 @@
 .padding-right-little {
   padding-right: 30px !important;
 }
+.margin-bottom-none {
+  margin-bottom: 0!important;
+}
 .margin-top-normal {
   margin-top: 60px !important;
 }
