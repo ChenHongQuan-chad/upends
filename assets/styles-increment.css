@@ -333,13 +333,13 @@ button {
 }
 .upox .h2,
 .upox h2 {
-  font-size: 68px;
-  line-height: 1.4;
+  font-size: 56px;
+  line-height: 1.2;
 }
 .upox h3 {
-  font-size: 56px;
+  font-size: 36px;
   letter-spacing: 0.01em;
-  line-height: 1.4;
+  line-height: 44px;
 }
 .upox h3 small {
   font-size: 0.875em;
@@ -347,77 +347,24 @@ button {
   display: block;
   font-weight: normal;
 }
-.upox p {
-  font-size: 28px;
-  line-height: 1.4;
-  letter-spacing: 0.6px;
-}
 .new .height-normal {
   height: 800px;
 }
 .new h4 {
-  font-size: 36px;
+  font-size: 28px;
 }
 .new h5 {
-  font-size: 34px;
+  font-size: 24px;
   margin-bottom: 0;
+}
+.new .upox p {
+  font-size: 20px;
+  color: #1d1d1f;
+  line-height: 1.35;
 }
 .new .upox h2 {
   font-size: 68px;
   line-height: 1.2;
-}
-.new .upox p {
-  font-size: 28px;
-  color: #1d1d1f;
-  line-height: 1.35;
-}
-.section {
-  max-width: 2100px;
-}
-@media screen and (max-width: 1921px) {
-  .section {
-    max-width: 1395px;
-  }
-  .upox .h2,
-  .upox h2 {
-    font-size: 56px;
-    line-height: 1.2;
-  }
-  .upox h3 {
-    font-size: 36px;
-    letter-spacing: 0.01em;
-    line-height: 1.2;
-  }
-  .upox h3 small {
-    font-size: 0.875em;
-    line-height: 1.2;
-    display: block;
-    font-weight: normal;
-  }
-  .upox p {
-    font-size: 18px;
-    line-height: 1.4;
-    letter-spacing: 0.6px;
-  }
-  .new .height-normal {
-    height: 800px;
-  }
-  .new h4 {
-    font-size: 28px;
-  }
-  .new h5 {
-    font-size: 24px;
-    margin-bottom: 0;
-  }
-  .new .upox h2 {
-    font-size: 68px;
-    line-height: 1.2;
-  }
-  .new .upox p {
-    font-size: 20px;
-    color: #1d1d1f;
-    line-height: 1.35;
-  }
 }
 .width-100 {
   width: 100% !important;
@@ -708,11 +655,6 @@ button {
 .video-box {
   font-size: 0;
   line-height: 0;
-}
-.img-icon img,
-.img-box img {
-  width: 100%;
-  height: auto;
 }
 .product-last-swiper .swiper-slide {
   width: 100%!important;

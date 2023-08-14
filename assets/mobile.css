@@ -1,5 +1,13 @@
 /* 移动端样式 */
 @media screen and (max-width: 641px) {
+  a,
+  button,
+  input,
+  span {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+  }
   .margin-bottom-none {
     margin-bottom: 0!important;
   }
@@ -23,6 +31,9 @@
   }
   .margin-top-big {
     margin-top: 12vw !important;
+  }
+  .margin-bottom-big {
+    margin-bottom: 12vw !important;
   }
   .margin-bottom-bigger {
     margin-bottom: 14.6667vw !important;
@@ -49,15 +60,18 @@
     padding-left: 5.3333vw !important;
     padding-right: 5.3333vw !important;
   }
+  .padding-top-normal {
+    padding-top: 8vw !important;
+  }
   .padding-left-right-normal {
     padding-left: 8vw!important;
     padding-right: 8vw!important;
   }
   .padding-bottom-bigger {
-    padding-bottom: 30px;
+    padding-bottom: 14.6667vw !important;
   }
   .padding-top-bigger {
-    padding-top: 30px;
+    padding-top: 14.6667vw !important;
   }
   .mobile .upox .margin-top-big {
     margin-top: 12vw !important;
